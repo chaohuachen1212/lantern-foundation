@@ -1,0 +1,204 @@
+$header-font: "Roboto Slab", serif;
+$base-font: "Roboto", sans-serif;
+$sans-serif: "Roboto", sans-serif;
+
+$roboto: $header-font;
+$inter: $base-font;
+
+$font-thin: 100;
+$font-light: 300;
+$font-reg: 400;
+$font-med: 500;
+$font-bold: 900;
+
+$tight-spacing: -0.045em;
+$snug-spacing: -0.02em;
+$more-spacing: 0.1em;
+
+body,
+p,
+li,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+small,
+em,
+strong,
+input,
+textarea,
+button,
+figcaption {
+  font-family: $sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  color: $coal;
+  -webkit-font-smoothing: antialiased;
+}
+
+// Headers
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  display: block;
+  margin: 1rem 0;
+  font-weight: 500;
+  font-family: $header-font;
+  line-height: 1.2em;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  a {
+    color: inherit;
+  }
+}
+
+h1,
+.h1 {
+  font-size: 3.8rem;
+
+  @include media(">=desktop") {
+    font-size: 38px;
+  }
+
+  @include main-break {
+    font-size: 30px;
+  }
+}
+
+h2,
+.h2 {
+  font-size: 3rem;
+
+  @include media(">=desktop") {
+    font-size: 30px;
+  }
+
+  @include main-break {
+    font-size: 28px;
+  }
+}
+
+h3,
+.h3 {
+  font-size: 2.4rem;
+
+  @include media(">=desktop") {
+    font-size: 24px;
+  }
+
+  @include main-break {
+    font-size: 22px;
+  }
+}
+
+h4,
+.h4 {
+  font-size: 2.2rem;
+
+  @include media(">=desktop") {
+    font-size: 22px;
+  }
+
+  @include main-break {
+    font-size: 20px;
+  }
+}
+
+h5,
+.h5 {
+  font-size: 2rem;
+
+  @include media(">=desktop") {
+    font-size: 20px;
+  }
+
+  @include main-break {
+    font-size: 18px;
+  }
+}
+
+h6,
+.h6 {
+  font-size: 1.8rem;
+
+  @include media(">=desktop") {
+    font-size: 18px;
+  }
+
+  @include main-break {
+    font-size: 16px;
+  }
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+// Letterspacing
+$tight-spacing: -0.045em;
+$snug-spacing: -0.02em;
+$more-spacing: 0.1em;
+
+// Generic Styles
+p {
+  margin: 2rem 0;
+  color: $coal;
+  font-family: $sans-serif;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+li {
+  color: $coal;
+}
+
+p,
+li {
+  a {
+    color: $green;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+strong {
+  font-weight: bold;
+
+  * {
+    font-weight: inherit !important;
+  }
+}
+
+em {
+  font-style: italic;
+}
+
+a {
+  text-decoration: none;
+}
+
+blockquote {
+  margin: 0;
+
+  cite {
+    display: block;
+  }
+}

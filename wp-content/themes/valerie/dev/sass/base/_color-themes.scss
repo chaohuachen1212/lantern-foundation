@@ -1,0 +1,106 @@
+body.theme-purple {
+  .eyebrow {
+    background-color: $purple;
+
+    p {
+      color: $white;
+    }
+
+    .btn {
+      background-color: rgba(0, 4, 84, 0.2);
+    }
+
+    svg line {
+      stroke: $white;
+    }
+  }
+
+  .header-item:hover .header-link {
+    @include above-main-break {
+      color: #AD87FF;
+    }
+  }
+
+  .header-item.is-expanded .header-link,
+  .header-link:hover,
+  .header-subnav-link:hover {
+    color: #AD87FF;
+  }
+
+  .header-link.highlight {
+    color: #AD87FF;
+  }
+
+  .header-subnav-link svg path {
+    stroke: #AD87FF;
+  }
+}
+
+body.theme-magenta {
+  .eyebrow {
+    background-color: $purple-light;
+
+    .btn {
+      background-color: $black;
+    }
+  }
+
+  .header-item:hover .header-link,
+  .header-subnav-link:hover {
+    @include above-main-break {
+      color: $purple-light;
+    }
+  }
+
+  .header-item.is-expanded .header-link,
+  .header-link:hover,
+  .header-subnav-link:hover {
+    color: $purple-light;
+  }
+
+  .header-link.highlight {
+    color: $purple-light;
+  }
+
+  .header-subnav-link svg path {
+    stroke: $purple-light;
+  }
+}
+
+body.theme-green {
+  .eyebrow {
+    background-color: $green-dark;
+
+    p {
+      color: $white;
+    }
+
+    .btn {
+      background-color: $black;
+    }
+
+    svg line {
+      stroke: $white;
+    }
+  }
+
+  .header-item:hover .header-link {
+    @include above-main-break {
+      color: $green-dark;
+    }
+  }
+
+  .header-item.is-expanded .header-link,
+  .header-link:hover,
+  .header-subnav-link:hover {
+    color: $green-dark;
+  }
+
+  .header-link.highlight {
+    color: $green-dark;
+  }
+
+  .header-subnav-link svg path {
+    stroke: $green-dark;
+  }
+}

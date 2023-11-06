@@ -1,0 +1,71 @@
+// General Settings
+$base-font-size: 16px;
+$global-border-radius: 3px;
+
+$desktop-gutter: 4.5rem;
+$dg: $desktop-gutter;
+$mobile-gutter: 2rem;
+$mg: $mobile-gutter;
+
+$easing: cubic-bezier(0.23, 1, 0.32, 1);
+
+// Breakpoints to be used with include-media
+// Example Css: http://include-media.com/#features
+
+$zero: 0px;
+$mobile: 320px;
+$mobile-l: 640px;
+$tablet: 768px;
+$tablet-m: 960px;
+$tablet-l: 1024px;
+$desktop: 1280px;
+$max-site-width: 1800px;
+
+$breakpoints: (
+  "zero": $zero,
+  "mobile": $mobile,
+  "mobile-l": $mobile-l,
+  "tablet": $tablet,
+  "tablet-m": $tablet-m,
+  "tablet-l": $tablet-l,
+  "desktop": $desktop,
+  "max-site-width": $max-site-width,
+);
+
+// New Main Break
+@mixin main-break {
+  @include media("<tablet") {
+    @content;
+  }
+}
+
+@mixin above-main-break {
+  @include media(">=tablet") {
+    @content;
+  }
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+// For Rem Sizing
+
+$site-basis: 1360;
+$site-basis-widescreen: 1400;
+html {
+  font-size: calc(1050vw / #{$site-basis});
+
+  @media (min-aspect-ratio: 16/9) {
+    font-size: calc(1000vw / #{$site-basis-widescreen});
+  }
+
+  // stop scaling after max
+  @include media(">=max-site-width") {
+    font-size: 78%;
+  }
+
+  @include media("<=tablet") {
+    font-size: calc(1000vw / #{$site-basis} * 3.2);
+  }
+}

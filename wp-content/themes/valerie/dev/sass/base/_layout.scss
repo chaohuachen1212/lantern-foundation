@@ -1,0 +1,62 @@
+
+hr {
+  border: 0;
+  border-bottom: 1px solid rgba(0,0,0,0.15);
+  height: 0;
+  padding: 0;
+  margin: 60px 0;
+}
+
+body, html {
+  position: relative;
+
+  &.is-locked {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+  }
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+.max-container {
+  position: relative;
+  min-height: 100vh;
+  margin: 0 auto;
+  z-index: 1;
+
+  @include media('<tablet') {
+    width: 100%;
+    overflow-x: hidden;
+  }
+}
+
+.container {
+  max-width: 128rem;
+  margin: 0 auto;
+  padding: 0 $dg;
+
+  @include media('<tablet') {
+    padding: 0 2rem;
+  }
+}
+
+img.alignleft {
+  margin-bottom: 1rem;
+
+  @include media('>=tablet') {
+    float: left;
+    margin-right: 2rem;
+  }
+}
+
+img.alignright {
+  margin-bottom: 1rem;
+
+  @include media('>=tablet') {
+    float: right;
+    margin-left: 2rem;
+  }
+}

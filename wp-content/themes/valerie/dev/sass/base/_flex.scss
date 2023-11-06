@@ -1,0 +1,29 @@
+// Flex Classes
+.flex {
+  display: flex;
+
+  &.wrap {
+    flex-wrap: wrap;
+  }
+
+  &.flex-column {
+    flex-direction: column;
+  }
+
+  &.j-sb {
+    justify-content: space-between;
+  }
+
+  &.j-c {
+    justify-content: center;
+  }
+
+  &.a-c {
+    align-items: center;
+  }
+
+  &.center {
+    align-items: center;
+    justify-content: center;
+  }
+}

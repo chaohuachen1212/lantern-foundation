@@ -1,0 +1,7 @@
+**/.DS_Store
+*.DS_Store
+.DS_Store
+dev/node_modules
+style.css
+js/app.js
+.env
