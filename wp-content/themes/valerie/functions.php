@@ -97,7 +97,6 @@ if (function_exists('acf_add_options_page')) {
     'page_title' => 'Header Settings',
     'menu_title' => 'Header',
     'menu_slug' => 'header',
-    'post_id' => 'header',
     'parent_slug' =>  $parent['menu_slug']
   ));
 
@@ -105,7 +104,14 @@ if (function_exists('acf_add_options_page')) {
     'page_title' => 'Footer Settings',
     'menu_title' => 'Footer',
     'menu_slug' => 'footer',
-    'post_id' => 'footer',
+    'parent_slug' =>  $parent['menu_slug']
+  ));
+
+  acf_add_options_sub_page(array(
+    'page_title' => 'Cookie Banner',
+    'menu_title' => 'Cookie Banner',
+    'menu_slug' => 'cookie-banner',
+    'post_id' => 'cookie-banner',
     'parent_slug' =>  $parent['menu_slug']
   ));
 }
