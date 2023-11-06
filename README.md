@@ -1,4 +1,4 @@
-# KNI Wordpress Boilerplate
+# Local build setup
 
 Before you start:
 - Make sure you're at node 9.11.2 or higher (`nvm install 9.11.2` `nvm use 9.11.2`)
@@ -38,18 +38,6 @@ To sync with a live site database
   - paste connection info url from server
   - Open tables tab
   - Click pull
-
-## Contact: ##
--------------
-For questions, comments, concerns, or issues please contact someone from the KNI development team:
-
-* projects@kurtnoble.com  
-* chad@kurtnoble.com
-
-MAMP Wordpress Login:
--------------
-- username: `sitename`_admin
-- password: `1on1Develop!`
 
 Local Wordpress Login:
 -------------
