@@ -12,7 +12,7 @@ Setup for Local
 - Make sure there isn’t a hidden `.htaccess` file, if so, manually delete
 - `git init`
 - `git remote add origin git@github.com:chaohuachen1212/lantern-foundation.git`
-- `git pull origin master`
+- `git pull origin main`
 - Copy contents of `wp-config-local.php` to a new `wp-config.php`
 - If you are using Local, copy contents of `.env.example` to a new `.env`
 - If you are using MAMP, copy contents of `.env.mamp.example` to a new `.env`
