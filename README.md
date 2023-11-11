@@ -7,7 +7,7 @@ Before you start:
 Setup for Local
 -------------
 - make a new local site and point to that project folder
-- Cd `app/public`
+- `cd app/public`
 - `Rm -rf *`
 - Make sure there isn’t a hidden `.htaccess` file, if so, manually delete
 - `git init`
