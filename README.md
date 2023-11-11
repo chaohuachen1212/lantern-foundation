@@ -11,7 +11,7 @@ Setup for Local
 - `Rm -rf *`
 - Make sure there isn’t a hidden `.htaccess` file, if so, manually delete
 - `git init`
-- `git remote add origin git@github.com:kni-labs/bina.git`
+- `git remote add origin git@github.com:chaohuachen1212/lantern-foundation.git`
 - `git pull origin master`
 - Copy contents of `wp-config-local.php` to a new `wp-config.php`
 - If you are using Local, copy contents of `.env.example` to a new `.env`
