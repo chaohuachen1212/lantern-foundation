@@ -3,3 +3,5 @@ import './modules/smooth-scroll';
 import './modules/nav';
 import './modules/form';
 import './modules/flickity';
+import './modules/home';
+
