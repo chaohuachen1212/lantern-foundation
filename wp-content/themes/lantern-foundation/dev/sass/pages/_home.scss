@@ -1,0 +1,116 @@
+.page-index {
+  h2 {
+    @include fluid-type(36px, 48px, 420px, 1024px);
+    color: rgba(85, 34, 0, 0.50);
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
+
+
+
+
+
+
+.meet-out-founders {
+  padding: 100px 0;
+
+
+  .inner-wrap {
+    max-width: 845px;
+    margin: 0 auto;
+  }
+
+  p {
+    font-size: 20px;
+    color: rgba(72, 94, 126, 0.90);
+    line-height: 1.5;
+    margin-bottom: 30px;
+
+    a {
+      color: rgba(72, 94, 126, 0.90);
+      text-decoration: underline;
+    }
+
+    &.contact {
+      text-align: center;
+    }
+  }
+
+  img {
+    max-width: 502px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 45px;
+    margin-bottom: 30px;
+  }
+}
+
+
+.donate--sec {
+  padding: 100px 0;
+
+  .inner-wrap {
+    max-width: 1038px;
+    margin: 0 auto;
+  }
+
+  h3 {
+    font-size: 24px;
+    color: #485E7E;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .btn-wrap {
+    text-align: center;
+    margin-top: 60px;
+  }
+
+  .btn {
+    border-radius: 6.661px;
+    padding: 22px 35px;
+    color: $white;
+    background-color: #3F80FF;
+    font-size: 30px;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 895px;
+    margin: 120px auto 0;
+
+    h3 {
+      font-size: 30px;
+      color: #485E7E;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+  }
+
+  .col {
+    width: 50%;
+    max-width: 432px;
+
+    p {
+      color: #485E7E;
+      font-size: 18px;
+
+      a {
+        color: #485E7E;
+        text-decoration: underline;
+      }
+    }
+
+    &:first-child {
+      max-width: 348px;
+    }
+
+    .box {
+      padding-left: 90px;
+    }
+  }
+}

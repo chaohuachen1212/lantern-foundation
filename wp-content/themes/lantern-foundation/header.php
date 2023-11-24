@@ -15,6 +15,21 @@
 
 
     <header role="navigation">
+      <a class="logo-wrap" href="/">
+        <img src="<?php echo GET_URI ?>/img/LF_LOGO.png">
+      </a>
+
+      <nav>
+        <a href="">About us</a>
+        <a href="/#meet-our-founders">Meet Our Founders</a>
+        <a href="">Our Projects</a>
+        <a href="/#donate">Donate</a>
+      </nav>
+
+      <div class="btn-wrap">
+        <a class="btn" href="">Contact</a>
+        <a class="btn" href="">Donate</a>
+      </div>
     </header>
 
 
