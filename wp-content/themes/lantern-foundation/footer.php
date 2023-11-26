@@ -2,7 +2,16 @@
 
     </div> <!-- End max-container -->
 
-    <footer role="contentinfo">
+    <footer>
+      <div class="container">
+        <div class="row">
+
+        </div>
+
+        <div class="bottom-row">
+          <img class="footer-logo" src="<?php echo GET_URI ?>/img/footer_LOGO.png">
+        </div>
+      </div>
     </footer>
 
     <script
