@@ -3,7 +3,6 @@
   update_option('body_class', 'page-index theme-magenta');
   get_header();
 ?>
-<h1>Home page</h1>
 
 <section class="about-us" id="about-us">
   <div class="container">
