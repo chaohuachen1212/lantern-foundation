@@ -217,7 +217,7 @@
       homeURL = location.origin,
       thankURL = homeURL + thankUrl;
 
-        // console.log(data);
+         console.log(data);
 
     $.ajax({
       url: formUrl,
@@ -234,6 +234,9 @@
     var $submit = $(button),
       form = formSelector,
       url = googleUrl;
+
+      console.log("something");
+
 
     $submit.click(function(e) {
       e.preventDefault();

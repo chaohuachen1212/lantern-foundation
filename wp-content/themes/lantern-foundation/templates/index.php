@@ -5,12 +5,25 @@
 ?>
 <h1>Home page</h1>
 
+<section class="about-us" id="about-us">
+  <div class="container">
+    <h2>About Us</h2>
+    <div class="row">
+      <div class="col">
+        <h3>Introduction</h3>
+        <p>Established early 2023, Lantern Foundation is a nonprofit organization that is dedicated to bettering the lives of children in China who are in poverty. Through donations, events, and campaigns, we want to spark awareness, create an impact, and be a part of the solution for child poverty. Since we have launched our foundation, we have received over $5000 in donations. We hope to continue making a positive impact with your donations.</p>
+      </div>
+      <div class="col">
+        <img src="<?php echo GET_URI ?>/img/About_smilegirl.png">
+      </div>
+    </div>
+  </section>
 
 <section class="meet-out-founders" id="meet-our-founders">
   <div class="container">
     <div class="inner-wrap">
       <h2>Meet Our Founders</h2>
-      <p>Hi! My name is Valerie Li. Besides my work helping improve the lives of kids in poverty, my main passions are community service, human rights, and law and political advocacy. At school, I am the vice president of Key Club, an international community service organization, and president of the Amnesty Club, the largest grassroots human rights organization. I am also a part of my school’s debate team and travel every few weekends to compete in national tournaments. Outside of school, I work on projects related to environmental justice and AAPI hate crime prevention. In my free time, I enjoy traveling to new places, hiking and exploring, and spending time with my family.</p>
+      <p>Hi! My name is Valerie Li. Besides my work helping improve the lives of kids in poverty, my main passions are 0community service, human rights, and law and political advocacy. At school, I am the vice president of Key Club, an international community service organization, and president of the Amnesty Club, the largest grassroots human rights organization. I am also a part of my school’s debate team and travel every few weekends to compete in national tournaments. Outside of school, I work on projects related to environmental justice and AAPI hate crime prevention. In my free time, I enjoy traveling to new places, hiking and exploring, and spending time with my family.</p>
 
       <p>My goal for Lantern Foundation is to expand our impact beyond just helping children who experience poverty in China but rather to children all around the world. I hope that my work can help improve the lives of children in many aspects, whether that be providing them with education, allowing them to receive medical care, or creating a joyful childhood that they can reflect positively upon. Put simply, I hope that this organization can help make a difference in the life of a child.</p>
       <img src="<?php echo GET_URI ?>/img/valerieli.jpg">

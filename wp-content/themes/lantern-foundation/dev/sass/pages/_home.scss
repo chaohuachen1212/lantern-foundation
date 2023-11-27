@@ -9,7 +9,37 @@
 }
 
 
+.about-us {
+  padding: 100px 0;
 
+
+  h3 {
+      font-size: 30px;
+      color: #120202;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+    p {
+      font-size: 20px;
+      color: #120202;
+      font-weight: 400;
+      margin-bottom: 30px;
+      padding-right: 88px;
+    }
+
+  .row { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 895px;
+    margin: 120px auto 0;
+
+  }
+  .col {
+    width: 50%
+
+  }
+}
 
 
 
@@ -85,7 +115,7 @@
 
     h3 {
       font-size: 30px;
-      color: #485E7E;
+      color: #120202;
       font-weight: 700;
       margin-bottom: 30px;
     }
