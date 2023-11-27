@@ -1,6 +1,70 @@
 footer {
+  position: relative;
+  padding: 30px 80px;
 
   .footer-logo {
     max-width: 161px;
+  }
+
+  .footer-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  p {
+    color: $white;
+  }
+
+  .social-wrap {
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background-color: #9F7D6A;
+      position: relative;
+      display: block;
+
+      &:hover {
+        background-color: $white;
+        svg {
+          path {
+            fill: #9F7D6A;
+          }
+        }
+      }
+
+      svg {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+      }
+    }
+  }
+
+  .col-l {
+    width: 200px;
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .col-r {
+    width: calc(100% - 200px );
   }
 }
