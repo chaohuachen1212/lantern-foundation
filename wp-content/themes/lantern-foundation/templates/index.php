@@ -15,6 +15,18 @@
       <div class="col">
         <img src="<?php echo GET_URI ?>/img/About_smilegirl.png">
       </div>
+      <div class="row">
+      <div class="col">
+        <img src="<?php echo GET_URI ?>/img/About_3kids.jpg">
+      </div>
+      <div class="col">
+        <h3>Important Statistics</h3>
+        <p>
+          <li>Almost 100 million children experience poverty in China</li>
+          <li>Estimated 2 million children do not have any access to education</li>
+          <li>Approximately two million children in China live in rural areas.</li>
+        </p>
+      </div>
     </div>
   </section>
 

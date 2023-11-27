@@ -11,6 +11,7 @@
 
 .about-us {
   padding: 100px 0;
+  background: rgba(245,248,235,0.5);
 
 
   h3 {
@@ -36,9 +37,31 @@
 
   }
   .col {
-    width: 50%
+    width: 50%;
 
   }
+
+  h3 {
+      font-size: 30px;
+      color: #120202;
+      font-weight: 700;
+      margin-bottom: 30px;  
+    }
+   li {
+      font-size: 20px;
+      color: #120202;
+      font-weight: 400;
+      margin-bottom: 30px; 
+    }
+    img {
+      padding-right: 88px;
+    }
+
+  
+  .col {
+    width: 50%;
+  }
+
 }
 
 
