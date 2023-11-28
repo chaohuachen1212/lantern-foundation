@@ -7,7 +7,7 @@
       <div class="container">
         <div class="row">
           <div class="col-l">
-            <img class="footer-logo" src="<?php echo GET_URI ?>/img/footer_LOGO.png">
+            <img class="footer-logo" src="<?php echo GET_URI ?>/img/Simple-Circular-Badge.png">
             <div class="copy-wrap">
               <p>Established early 2023, Lantern Foundation is a nonprofit organization that is dedicated to bettering the lives of children in China who are in poverty.</p>
             </div>

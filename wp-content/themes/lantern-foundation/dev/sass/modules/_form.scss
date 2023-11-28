@@ -54,6 +54,12 @@
 
       .half {
         width: calc(50% - 5px);
+
+        &.invalid {
+          input {
+            border-color: #DC143C;
+          }
+        }
       }
     }
 

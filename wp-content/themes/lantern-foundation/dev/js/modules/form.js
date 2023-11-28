@@ -217,7 +217,7 @@
       homeURL = location.origin,
       thankURL = homeURL + thankUrl;
 
-         console.log(data);
+        // console.log(data);
 
     $.ajax({
       url: formUrl,
@@ -234,9 +234,6 @@
     var $submit = $(button),
       form = formSelector,
       url = googleUrl;
-
-      console.log("something");
-
 
     $submit.click(function(e) {
       e.preventDefault();
@@ -261,6 +258,7 @@
     inputFocus();
 
     // formSubmit('.contact-submit', '.contact-form', 'formUrl', '/thank-you/');
+
     formSubmit('#contact-us-submit', '.contact-us--form', 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSdlNJ0bJlccyctVu3BsaNlHH-rQFQHlC_RCzzQT0y0I3XNymQ/formResponse', '/thank-you/');
 
 
