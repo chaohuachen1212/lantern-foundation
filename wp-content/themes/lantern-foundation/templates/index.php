@@ -17,7 +17,8 @@
       </div>
       <div class="row">
       <div class="col">
-        <img src="<?php echo GET_URI ?>/img/About_3kids.jpg">
+        <div id="box"></div>
+          <img src="<?php echo GET_URI ?>/img/About_3kids.jpg">
       </div>
       <div class="col">
         <h3>Important Statistics</h3>

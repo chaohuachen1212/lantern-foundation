@@ -47,17 +47,34 @@
       font-weight: 700;
       margin-bottom: 30px;  
     }
+
    li {
       font-size: 20px;
       color: #120202;
       font-weight: 400;
       margin-bottom: 30px; 
     }
+
     img {
       padding-right: 88px;
+      position: relative;
+
     }
 
-  
+    #box {
+      border: 0px;
+      height: 230px;
+      width: 350px;
+      background-color: rgba(230,242,251,1);
+
+      position: absolute;
+
+      top: 950px;
+      left: 0px;
+
+
+    }
+
   .col {
     width: 50%;
   }
