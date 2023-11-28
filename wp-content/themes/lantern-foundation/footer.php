@@ -8,8 +8,9 @@
         <div class="row">
           <div class="col-l">
             <img class="footer-logo" src="<?php echo GET_URI ?>/img/footer_LOGO.png">
-            <p>Established early 2023, Lantern Foundation is a nonprofit organization that is dedicated to bettering the lives of children in China who are in poverty.</p>
-
+            <div class="copy-wrap">
+              <p>Established early 2023, Lantern Foundation is a nonprofit organization that is dedicated to bettering the lives of children in China who are in poverty.</p>
+            </div>
             <div class="social-wrap">
               <a href="">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -32,9 +33,22 @@
           </div>
 
         <div class="col-r">
-          <h3>Lantern Foundation</h3>
-          <div class="wrap">
+          <h2>Lantern Foundation</h2>
+          <div class="footer-nav">
+            <div class="col">
+              <a href="">About us</a>
+              <a href="">Meet Our Founders</a>
+              <a href="">Our Projects</a>
+              <a href="">Donate</a>
+            </div>
 
+            <div class="col">
+              <h3>Contact</h3>
+              <p>Email:</p>
+              <p>lanternfoundation2023@gmail.com</p>
+              <p>Instagram:</p>
+              <p>@lanternfoundationus</p>
+            </div>
           </div>
         </div>
 
