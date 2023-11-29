@@ -13,7 +13,7 @@
         <p>Established early 2023, Lantern Foundation is a nonprofit organization that is dedicated to bettering the lives of children in China who are in poverty. Through donations, events, and campaigns, we want to spark awareness, create an impact, and be a part of the solution for child poverty. Since we have launched our foundation, we have received over $5000 in donations. We hope to continue making a positive impact with your donations.</p>
       </div>
       <div class="col">
-        <img src="<?php echo GET_URI ?>/img/About_smilegirl.png">
+        <img src="<?php echo GET_URI ?>/img/About_smilegirl.jpg">
       </div>
       <div class="row">
       <div class="col">
