@@ -36,10 +36,10 @@
           <h2>Lantern Foundation</h2>
           <div class="footer-nav">
             <div class="col">
-              <a href="">About us</a>
-              <a href="">Meet Our Founders</a>
+              <a href="#about-us">About us</a>
+              <a href="/#meet-our-founders">Meet Our Founders</a>
               <a href="">Our Projects</a>
-              <a href="">Donate</a>
+              <a target="_blank" href="https://square.link/u/hOHmgOj0">Donate</a>
             </div>
 
             <div class="col">
