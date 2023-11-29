@@ -4,4 +4,4 @@ import './modules/nav';
 import './modules/form';
 import './modules/flickity';
 import './modules/home';
-
+import './modules/headroom';

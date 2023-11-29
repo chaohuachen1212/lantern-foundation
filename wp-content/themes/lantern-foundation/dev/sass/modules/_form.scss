@@ -1,5 +1,6 @@
 .form--sec {
-  margin: 100px 0;
+  margin: 50px 0 100px;
+  padding-top: 50px;
 
   .contact-us--form {
     border: 1px solid #120202;
@@ -53,7 +54,7 @@
 
 
       .half {
-        width: calc(50% - 5px);
+        width: calc(50% - 10px);
 
         &.invalid {
           input {

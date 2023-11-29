@@ -48,11 +48,11 @@
 <section class="donate--sec" id="donate">
   <div class="container">
     <div class="inner-wrap">
-      <h2>Ways to Give</h2>
+      <h2>Donate</h2>
       <img src="<?php echo GET_URI ?>/img/ways-to-give.jpg">
       <h3>Through your donation, we can make a difference in the lives of children around the world. Donations of any amount is greatly appreciated and is guaranteed to go towards one of our campaigns and projects.</h3>
       <div class="btn-wrap">
-        <a class="btn" href="https://square.link/u/hOHmgOj0">Donate to Lantern Foundation</a>
+        <a class="btn" target="_blank" href="https://square.link/u/hOHmgOj0">Donate to Lantern Foundation</a>
       </div>
       <div class="row">
         <div class="col">
@@ -75,16 +75,16 @@
 </section>
 
 
-<section class="form--sec">
+<section class="form--sec" id="contact">
   <div class="container">
-    <h2>Send Us Message</h2>
+    <h2>Send Us a Message</h2>
     <form class="contact-us--form">
       <div class="row">
         <div class="half">
           <input type="text" class="input-required" id="fname" name="entry.1865447532" placeholder="First Name">
         </div>
         <div class="half">
-          <input type="text" id="lname" name="entry.646231686" placeholder="Last Name">
+          <input type="text" class="input-required" id="lname" name="entry.646231686" placeholder="Last Name">
         </div>
       </div>
       <div class="row">

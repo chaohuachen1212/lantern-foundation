@@ -7,7 +7,7 @@
       <div class="container">
         <div class="row">
           <div class="col-l">
-            <img class="footer-logo" src="<?php echo GET_URI ?>/img/Simple-Circular-Badge.png">
+            <img class="footer-logo" src="<?php echo GET_URI ?>/img/footer-logo.png">
             <div class="copy-wrap">
               <p>Established early 2023, Lantern Foundation is a nonprofit organization that is dedicated to bettering the lives of children in China who are in poverty.</p>
             </div>
@@ -56,12 +56,8 @@
       </div>
     </footer>
 
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
-      crossorigin="anonymous"
-    >
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
     <?php wp_footer(); ?>
 
     <script id="__bs_script__">//<![CDATA[
