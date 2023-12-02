@@ -3,6 +3,18 @@
   update_option('body_class', 'page-index theme-magenta');
   get_header();
 ?>
+<section class="home-hero">
+  <img src="<?php echo GET_URI ?>/img/HeroBG.png">
+  <div class="container">
+    <article>
+      <h1>Help bring light and hope into the lives of children in poverty</h1>
+      <p>Almost 100 million children experience poverty in China. We must do all that we can to change that and make an impact on these children’s lives.
+      </p>
+    </article>
+
+
+  </div>
+</section>
 
 <section class="about-us" id="about-us">
   <div class="container">
@@ -12,13 +24,15 @@
         <h3>Introduction</h3>
         <p>Established early 2023, Lantern Foundation is a nonprofit organization that is dedicated to bettering the lives of children in China who are in poverty. Through donations, events, and campaigns, we want to spark awareness, create an impact, and be a part of the solution for child poverty. Since we have launched our foundation, we have received over $5000 in donations. We hope to continue making a positive impact with your donations.</p>
       </div>
-      <div class="col">
-        <img src="<?php echo GET_URI ?>/img/About_smilegirl.jpg">
+      <div class="col right">
+        <div id="box1"></div>
+        <div id="box2"></div>
+        <img class="img1" src="<?php echo GET_URI ?>/img/About_smilegirl.jpg">
       </div>
       <div class="row">
       <div class="col">
         <div id="box"></div>
-          <img src="<?php echo GET_URI ?>/img/About_3kids.jpg">
+          <img class="img2" src="<?php echo GET_URI ?>/img/About_3kids.jpg">
       </div>
       <div class="col">
         <h3>Important Statistics</h3>
