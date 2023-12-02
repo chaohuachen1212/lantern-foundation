@@ -1,7 +1,7 @@
 footer {
   position: relative;
-  padding: 40px 80px 30px;
-  min-height: 387px;
+  padding: 4rem 8rem 3rem;
+  min-height: 38.7rem;
 
   h2 {
     @include fluid-type(30px, 38px, 420px, 1024px);
@@ -42,8 +42,8 @@ footer {
     justify-content: space-between;
 
     a {
-      width: 32px;
-      height: 32px;
+      width: 3.2rem;
+      height: 3.2rem;
       border-radius: 50%;
       background-color: #9F7D6A;
       position: relative;
@@ -68,21 +68,21 @@ footer {
   }
 
   .col-l {
-    width: 200px;
+    width: 20rem;
 
     .copy-wrap {
-      margin: 30px 0;
+      margin: 3rem 0;
     }
 
     p {
-      font-size: 14px;
+      font-size: 1.4rem;
       text-align: center;
       line-height: 132.667%;
     }
   }
 
   .col-r {
-    width: calc(100% - 200px );
+    width: calc(100% - 20rem );
     padding-left: 8%;
   }
 
@@ -92,28 +92,28 @@ footer {
     justify-content: space-between;
 
     h3 {
-      font-size: 20px;
+      font-size: 2rem;
       font-weight: 600;
       line-height: 132.667%;
       color: $white;
       text-transform: uppercase;
-      margin-bottom: 25px;
+      margin-bottom: 2.5rem;
     }
 
     p {
       margin: 0;
-      font-size: 16px;
+      font-size: 1.6rem;
       font-weight: 600;
-      margin-bottom: 15px;
+      margin-bottom: 1.5rem;
     }
 
     a {
       display: block;
-      font-size: 20px;
+      font-size: 2rem;
       font-weight: 600;
       line-height: 132.667%;
       color: $white;
-      margin-bottom: 30px;
+      margin-bottom: 3rem;
       text-transform: uppercase;
     }
 

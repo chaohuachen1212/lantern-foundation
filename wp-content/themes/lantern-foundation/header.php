@@ -15,9 +15,14 @@
 
 
     <header role="navigation">
-      <a class="logo-wrap" href="/">
-        <img src="<?php echo GET_URI ?>/img/LF_LOGO.png">
-      </a>
+      <div class="logo-wrap">
+        <a href="/">
+          <img src="<?php echo GET_URI ?>/img/LF_LOGO.png">
+        </a>
+        <div class="hamburger">
+              <span></span>
+        </div>
+      </div>
 
       <nav>
         <a href="/#about-us">About us</a>

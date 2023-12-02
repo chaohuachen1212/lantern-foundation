@@ -1,10 +1,10 @@
 .page-index {
   h2 {
-    @include fluid-type(36px, 48px, 420px, 1024px);
+    font-size: 4.8rem;
     color: rgba(85, 34, 0, 0.50);
     font-weight: 700;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 5rem;
     text-transform: uppercase;
   }
 }
@@ -93,19 +93,19 @@
 
 
 .meet-out-founders {
-  padding: 100px 0 0;
-  margin-bottom: 100px;
+  padding: 10rem 0 0;
+  margin-bottom: 10rem;
 
   .inner-wrap {
-    max-width: 845px;
+    max-width: 84.5rem;
     margin: 0 auto;
   }
 
   p {
-    font-size: 20px;
+    font-size: 2rem;
     color: $black2;
     line-height: 1.5;
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
 
     a {
       color: $black2;
@@ -118,19 +118,19 @@
   }
 
   img {
-    max-width: 502px;
+    max-width: 50.2rem;
     margin: 0 auto;
     display: block;
-    margin-top: 45px;
-    margin-bottom: 30px;
+    margin-top: 4.5rem;
+    margin-bottom: 3rem;
   }
 }
 
 
 .donate--sec {
-  margin: 50px 0 100px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  margin: 5rem 0 10rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 
   .inner-wrap {
     max-width: 1038px;
@@ -138,24 +138,25 @@
   }
 
   h3 {
-    font-size: 24px;
+    font-size: 2.4rem;
     color: $black2;
     line-height: 1.5;
     text-align: center;
+    margin-top: 3rem;
   }
 
   .btn-wrap {
     text-align: center;
-    margin-top: 80px;
+    margin-top: 8rem;
   }
 
   .btn {
     border-radius: 6.661px;
-    padding: 22px 45px;
+    padding: 2.2rem 4.5rem;
     color: $white;
     background-color: #3F80FF;
-    font-size: 30px;
-    min-width: 637px;
+    font-size: 3rem;
+    min-width: 63.7rem;
     font-family: $header-font;
     font-weight: 700;
   }
@@ -164,24 +165,24 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 895px;
-    margin: 120px auto 0;
+    max-width: 89.5rem;
+    margin: 12rem auto 0;
 
     h3 {
-      font-size: 30px;
+      font-size: 3rem;
       color: #120202;
       font-weight: 700;
-      margin-bottom: 30px;
+      margin-bottom: 3rem;
     }
   }
 
   .col {
     width: 50%;
-    max-width: 432px;
+    max-width: 43.2rem;
 
     p {
       color: $black2;
-      font-size: 18px;
+      font-size: 1.8rem;
 
       a {
         color: $black2;
@@ -190,11 +191,11 @@
     }
 
     &:first-child {
-      max-width: 348px;
+      max-width: 34.8rem;
     }
 
     .box {
-      padding-left: 60px;
+      padding-left: 6rem;
     }
   }
 }
