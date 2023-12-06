@@ -50,6 +50,8 @@
               <p>@lanternfoundationus</p>
             </div>
           </div>
+
+          <img class="paperplane" src="<?php echo GET_URI ?>/img/paperplane.png">
         </div>
 
         </div>

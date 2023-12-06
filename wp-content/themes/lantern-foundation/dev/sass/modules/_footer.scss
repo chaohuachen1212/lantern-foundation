@@ -1,17 +1,33 @@
 footer {
   position: relative;
-  padding: 4rem 8rem 3rem;
+  padding: 4rem 8rem 6rem;
   min-height: 38.7rem;
 
+  @include media('<tablet') {
+      padding: 60px 0;
+      min-height: initial;
+  }
+
   h2 {
-    @include fluid-type(30px, 38px, 420px, 1024px);
+    font-size: 3.8rem !important;
     color: $white !important;
     text-align: left !important;
     margin-bottom: 35px !important;
+    text-transform: inherit !important;
+    font-family: $base-font;
+
+    @include media('<tablet') {
+      font-size: 32px !important;
+      margin-top: 45px;
+    }
   }
 
   .footer-logo {
-    max-width: 161px;
+    width: 16.1rem;
+
+    @include media('<tablet') {
+      width: 130px;
+    }
   }
 
   .footer-bg {
@@ -41,6 +57,11 @@ footer {
     display: flex;
     justify-content: space-between;
 
+    @include media('<tablet') {
+      justify-content: flex-start;
+      margin: 30px 0;
+    }
+
     a {
       width: 3.2rem;
       height: 3.2rem;
@@ -48,6 +69,12 @@ footer {
       background-color: #9F7D6A;
       position: relative;
       display: block;
+
+      @include media('<tablet') {
+        margin-right: 15px;
+        width: 40px;
+        height: 40px;
+      }
 
       &:hover {
         background-color: $white;
@@ -70,20 +97,50 @@ footer {
   .col-l {
     width: 20rem;
 
+    @include media('<tablet') {
+      width: 100%;
+    }
+
     .copy-wrap {
       margin: 3rem 0;
+
+      @include media('<tablet') {
+        margin: 30px 0;
+      }
     }
 
     p {
       font-size: 1.4rem;
       text-align: center;
       line-height: 132.667%;
+
+      @include media('<tablet') {
+        font-size: 16px;
+        text-align: left;
+      }
     }
   }
 
   .col-r {
     width: calc(100% - 20rem );
     padding-left: 8%;
+    position: relative;
+
+    @include media('<tablet') {
+      width: 100%;
+      padding-left: 0;
+    }
+
+    .paperplane {
+      position: absolute;
+      bottom: -3rem;
+      right: 0;
+      width: 54rem;
+
+      @include media('<tablet') {
+        display: none;
+      }
+    }
   }
 
   .footer-nav {
@@ -98,6 +155,10 @@ footer {
       color: $white;
       text-transform: uppercase;
       margin-bottom: 2.5rem;
+
+      @include media('<tablet') {
+        font-size: 18px;
+      }
     }
 
     p {
@@ -105,6 +166,10 @@ footer {
       font-size: 1.6rem;
       font-weight: 600;
       margin-bottom: 1.5rem;
+
+      @include media('<tablet') {
+        font-size: 16px;
+      }
     }
 
     a {
@@ -115,10 +180,18 @@ footer {
       color: $white;
       margin-bottom: 3rem;
       text-transform: uppercase;
+
+      @include media('<tablet') {
+        font-size: 18px;
+      }
     }
 
     .col {
       width: 40%;
+
+      @include media('<tablet') {
+        width: 100%;
+      }
     }
   }
 }
