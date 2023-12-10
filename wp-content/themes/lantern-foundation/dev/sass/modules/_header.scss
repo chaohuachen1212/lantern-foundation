@@ -89,6 +89,10 @@ header {
       text-transform: uppercase;
       margin-right: 4.5rem;
 
+      @include media('>1600px') {
+        font-size: 22px;
+      }
+
       @include media('<=tablet') {
         display: block;
         margin-bottom: 2.5rem;
@@ -117,6 +121,10 @@ header {
       box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
       min-width: 11.9rem;
       text-align: center;
+
+      @include media('>1600px') {
+        font-size: 22px;
+      }
 
       &:hover {
         background-color: #FE8718;
