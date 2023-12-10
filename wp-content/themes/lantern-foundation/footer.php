@@ -37,7 +37,7 @@
           <div class="footer-nav">
             <div class="col">
               <a href="#about-us">About us</a>
-              <a href="/#meet-our-founders">Meet Our Founders</a>
+              <a href="/#meet-our-founders">Meet Our Founder</a>
               <a href="">Our Projects</a>
               <a target="_blank" href="https://square.link/u/hOHmgOj0">Donate</a>
             </div>

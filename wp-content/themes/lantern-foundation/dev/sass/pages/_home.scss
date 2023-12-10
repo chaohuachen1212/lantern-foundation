@@ -136,7 +136,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: 89.5rem;
-    margin: 12rem auto 0;
+    margin: 10rem auto 0;
 
   }
   .col {
@@ -164,11 +164,8 @@
     }
 
     .img2 {
-      padding-right: 8.8rem;
+      // padding-right: 8.8rem;
       position: relative;
-      index: 3;
-
-
     }
 
     #box {
@@ -179,7 +176,7 @@
 
       position: absolute;
 
-      top: 8.5rem;
+      top: 12.5rem;
       left: -8rem;
 
 
@@ -187,6 +184,10 @@
 
   .col {
     width: 50%;
+
+    &.right-col {
+      padding-left: 8rem;
+    }
 
   }
 
@@ -247,7 +248,7 @@
 
 
 .donate--sec {
-  margin: 5rem 0 10rem;
+  margin: 5rem 0 6rem;
   padding-top: 5rem;
   padding-bottom: 5rem;
 
@@ -292,11 +293,15 @@
     border-radius: 6.661px;
     padding: 2.2rem 4.5rem;
     color: $white;
-    background-color: #3F80FF;
+    background-color: #F8A475;
     font-size: 3rem;
     min-width: 63.7rem;
     font-family: $header-font;
     font-weight: 700;
+
+    &:hover {
+      background-color: #FE8718;
+    }
 
     @include media('<tablet') {
       min-width: initial;

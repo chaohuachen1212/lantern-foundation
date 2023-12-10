@@ -34,8 +34,8 @@
         <div id="box"></div>
           <img class="img2" src="<?php echo GET_URI ?>/img/About_3kids.jpg">
       </div>
-      <div class="col">
-        <h3>Important Statistics</h3>
+      <div class="col right-col">
+        <h3>Why You Should Care</h3>
         <p>
           <li>Almost 100 million children experience poverty in China</li>
           <li>Estimated 2 million children do not have any access to education</li>
@@ -48,10 +48,8 @@
 <section class="meet-out-founders" id="meet-our-founders">
   <div class="container">
     <div class="inner-wrap">
-      <h2>Meet Our Founders</h2>
-      <p>Hi! My name is Valerie Li. Besides my work helping improve the lives of kids in poverty, my main passions are 0community service, human rights, and law and political advocacy. At school, I am the vice president of Key Club, an international community service organization, and president of the Amnesty Club, the largest grassroots human rights organization. I am also a part of my school’s debate team and travel every few weekends to compete in national tournaments. Outside of school, I work on projects related to environmental justice and AAPI hate crime prevention. In my free time, I enjoy traveling to new places, hiking and exploring, and spending time with my family.</p>
-
-      <p>My goal for Lantern Foundation is to expand our impact beyond just helping children who experience poverty in China but rather to children all around the world. I hope that my work can help improve the lives of children in many aspects, whether that be providing them with education, allowing them to receive medical care, or creating a joyful childhood that they can reflect positively upon. Put simply, I hope that this organization can help make a difference in the life of a child.</p>
+      <h2>Meet Our Founder</h2>
+      <p>Valerie is currently a junior at the Harker School. Besides her passion for helping improve the lives of kids in poverty, her main interests are community service, human rights, and law and political advocacy. At school, she is the vice president of Key Club, an international community service organization, and president of Amnesty Club, the largest grassroots human rights organization. She is also a part of her school’s debate team and often competes in national tournaments. Outside of school, she works on projects related to environmental justice and AAPI hate crime prevention. In her free time, she enjoys traveling to new places, hiking and exploring, and spending time with her family.</p>
       <img src="<?php echo GET_URI ?>/img/valerieli.jpg">
       <p class="contact">Contact me @ <a href="mailto:valerieli2023@gmail.com">valerieli2023@gmail.com</a></p>
     </div>
@@ -63,7 +61,7 @@
   <div class="container">
     <div class="inner-wrap">
       <h2>Donate</h2>
-      <img src="<?php echo GET_URI ?>/img/ways-to-give.jpg">
+      <img src="<?php echo GET_URI ?>/img/donate-img.jpg">
       <h3>Through your donation, we can make a difference in the lives of children around the world. Donations of any amount is greatly appreciated and is guaranteed to go towards one of our campaigns and projects.</h3>
       <div class="btn-wrap">
         <a class="btn" target="_blank" href="https://square.link/u/hOHmgOj0">Donate to Lantern Foundation</a>
