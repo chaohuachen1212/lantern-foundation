@@ -91,6 +91,7 @@ header {
 
       @include media('>1600px') {
         font-size: 22px;
+        margin-right: 45px;
       }
 
       @include media('<=tablet') {
