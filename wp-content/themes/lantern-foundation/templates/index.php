@@ -56,6 +56,26 @@
   </div>
 </section>
 
+<section class="our projects" id="our projects">
+  <div class="container">
+    <h2>Our Projects</h2>
+    <h3>Lantern Foundation hosts different projects and campaigns throughout the year.
+  Learn more about our ongoing campaigns and/or upcoming events below!</h3>
+    <div class="row">
+      <div class="col">
+        <img class="img3" src="<?php echo GET_URI ?>/img/Img 1.1.png">
+        <h3>Campaign 1</h3>
+        <h4>Healing Smiles, Changing Lives</h4>
+        <p>Supporting children in need of cleft palate surgeries and giving them a reason to smile</p>
+        <p>In impoverished communities where medical resources are scarce, many children face the daily challenges of living with a cleft palate, hindering their ability to eat, speak, and smile with confidence. Lantern Foundation has partnered with Beijing Smile Angel Children’s Hospital, the first charity hospital in China, to provide cleft palate surgeries to children whose families can not afford to pay for them. Through these efforts, we hope that these children can have the simple joys of experiencing a healthy, happy childhood.</p>
+      </div>
+      <div class="colright">
+        <img class="img4" src="<?php echo GET_URI ?>/img/Img 1.2 1.3-2.png">
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <section class="donate--sec" id="donate">
   <div class="container">

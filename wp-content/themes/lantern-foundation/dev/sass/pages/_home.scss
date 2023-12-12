@@ -246,7 +246,38 @@
   }
 }
 
+.our-projects{
 
+  h3 {
+      font-size: 3rem;
+      color: #120202;
+      font-weight: 700;
+      margin-bottom: 3rem;
+    }
+
+  .img3 {
+
+    position: relative;
+    top: 3rem;
+    margin-top: 5rem;
+    index: 3;
+    max-width: 43.5rem;
+
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 89.5rem;
+    margin: 10rem auto 0;
+  }
+
+  .col {
+    width: 40rem;
+  }
+
+
+}
 .donate--sec {
   margin: 5rem 0 6rem;
   padding-top: 5rem;
