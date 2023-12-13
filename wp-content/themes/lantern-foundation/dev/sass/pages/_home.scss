@@ -271,8 +271,15 @@
     max-width: 89.5rem;
     margin: 10rem auto 0;
 
+    .line {
+      width:0.05%;
+      height: 85rem;
+      background-color: $black2;
+      margin-top: 6rem;
+    }
+
     .col {
-      width:50%;
+      width:45%;
 
         .img3 {
           position: relative;
@@ -303,31 +310,48 @@
           margin-left:-9.5rem;
         }
 
-        h5{
-          font-size: 2.4rem;
-          color: #120202;
-          font-weight: 400;
-          margin-top:5rem;
-          margin-bottom: 2.5rem;
-          text-align: left;
-          margin-left:-9.5rem;
-          text-align:center;
-        }
         p{
-          font-size: 2.4rem;
+          font-size: 2rem;
           color: #120202;
           font-weight: 400;
           margin-top:2rem;
           margin-bottom: 2.5rem;
           text-align: left;
           margin-left:-9.5rem;
+          line-height: 3.5rem;
         }
+
+        h5{
+          color: rgba(246, 199, 167, 0.15);
+          font-size: 68px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          margin-top: -13rem;
+          margin-bottom: 1rem;
+          margin-left: -13rem;
+        }
+
+        #box4 {
+          height: 19.8rem;
+          width: 19.8rem;
+          background: linear-gradient(223deg, rgba(252, 242, 234, 0.70) 9.27%, rgba(252, 242, 234, 0.00) 96.93%);
+          top: 11.5rem;
+          margin-left: 30rem;
+        }
+
+        .img7 {
+          max-width: 77rem;
+          margin-top: -25rem;
+          margin-left: -22.5rem;
+          index:1;
+        }
+
         .img4 {
           position: relative;
-          index: 3;
           max-width: 43.5rem;
-          margin-top: 40rem;
-          margin-left: 6.5rem;
+          margin-top: -18rem;
+          margin-left: 4.5rem;
         }
 
         .img5 {
@@ -338,14 +362,47 @@
           margin-left: -6.5rem;
         }
 
-        .img6 {
+        #box5 {
+          border: 0rem;
+          height: 82rem;
+          width: 70rem;
+          margin-top:-72rem;
+          margin-left: -7rem;
+          transform: rotate(-90.217deg);
+
           position: relative;
-          index: 3;
-          max-width: 43.5rem;
-          margin-top: 40rem;
-          margin-left: 6.5rem;
+
+          background: linear-gradient(120deg, #FCF2EA -0.25%, rgba(252, 242, 234, 0.00) 35.26%)
         }
 
+        .img6 {
+          position: relative;
+          max-width: 43.5rem;
+          margin-top: -13rem;
+          margin-left: 4.5rem;
+        }
+
+        #box6{
+          position: relative;
+          width:30rem;
+          height:33rem;
+          margin-left:20rem;
+          transform: rotate(-90.217deg);
+          margin-top:18rem;
+          background: linear-gradient(141deg, #FCF2EA 5.33%, rgba(252, 242, 234, 0.00) 88.24%);
+        }
+
+        #box7{
+          position:absolute;
+          width: 23.5rem;
+          height: 14.3rem;
+          stroke:#F7EEE9;
+          stroke-width:0.7rem;
+          transform: rotate(-90.217deg);
+          flex-shrink: 0;
+          margin-top:1rem;
+          mix-blend-mode: multiply;
+        }
 
     }
   }
