@@ -247,22 +247,22 @@
 }
 
 .our-projects{
+  padding: 10rem 0 0;
+  margin-bottom: 10rem;
+
+  .inner-wrap {
+    max-width: 101.8rem;
+    margin: 0 auto;
+  }
 
   h3 {
-      font-size: 3rem;
-      color: #120202;
-      font-weight: 700;
-      margin-bottom: 3rem;
+    font-size: 2.4rem;
+    color: #120202;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+    text-align: center;
+    line-height: 5rem;
     }
-
-  .img3 {
-
-    position: relative;
-    top: 3rem;
-    margin-top: 5rem;
-    index: 3;
-    max-width: 43.5rem;
-
 
   .row {
     display: flex;
@@ -270,14 +270,88 @@
     justify-content: space-between;
     max-width: 89.5rem;
     margin: 10rem auto 0;
+
+    .col {
+      width:50%;
+
+        .img3 {
+          position: relative;
+          index: 3;
+          max-width: 43.5rem;
+          margin-top: -2.8rem;
+          margin-left: -6.5rem;
+        }
+
+        h3{
+          font-size: 2.4rem;
+          color: #120202;
+          font-weight: 700;
+          margin-top:7rem;
+          margin-bottom: 2.5rem;
+          text-align: center;
+          margin-left:-9.5rem;
+
+        }
+
+        h4{
+          font-size: 2.4rem;
+          color: #120202;
+          font-weight: 700;
+          margin-top:2rem;
+          margin-bottom: 3rem;
+          text-align: center;
+          margin-left:-9.5rem;
+        }
+
+        h5{
+          font-size: 2.4rem;
+          color: #120202;
+          font-weight: 400;
+          margin-top:5rem;
+          margin-bottom: 2.5rem;
+          text-align: left;
+          margin-left:-9.5rem;
+          text-align:center;
+        }
+        p{
+          font-size: 2.4rem;
+          color: #120202;
+          font-weight: 400;
+          margin-top:2rem;
+          margin-bottom: 2.5rem;
+          text-align: left;
+          margin-left:-9.5rem;
+        }
+        .img4 {
+          position: relative;
+          index: 3;
+          max-width: 43.5rem;
+          margin-top: 40rem;
+          margin-left: 6.5rem;
+        }
+
+        .img5 {
+          position: relative;
+          index: 3;
+          max-width: 43.5rem;
+          margin-top: 3.5rem;
+          margin-left: -6.5rem;
+        }
+
+        .img6 {
+          position: relative;
+          index: 3;
+          max-width: 43.5rem;
+          margin-top: 40rem;
+          margin-left: 6.5rem;
+        }
+
+
+    }
   }
-
-  .col {
-    width: 40rem;
-  }
-
-
 }
+
+
 .donate--sec {
   margin: 5rem 0 6rem;
   padding-top: 5rem;
