@@ -77,7 +77,7 @@
           <img class="img4" src="<?php echo GET_URI ?>/img/Img 1.2 1.3-2.png">
         </div>
     </div>
-    <div class="row">
+    <div class="row second">
       <div class="col left">
         <img class="img5" src="<?php echo GET_URI ?>/img/Img 2.1.png">
         <h3>Campaign 2</h3>

@@ -267,8 +267,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 89.5rem;
+    // max-width: 89.5rem;
     margin: 10rem auto 0;
+
+    &.second {
+      margin-top: 16rem;
+    }
 
     .line {
       width:0.05%;
@@ -290,10 +294,10 @@
 
         .img3 {
           position: relative;
-          index: 3;
+          z-index: 3;
           max-width: 43.5rem;
           margin-top: -2.8rem;
-          margin-left: -6.5rem;
+          // margin-left: -6.5rem;
         }
 
         h3{
@@ -314,7 +318,7 @@
           margin-top:-2rem;
           margin-bottom: 6rem;
           text-align: center;
-          margin-left:-9.5rem;
+          // margin-left:-9.5rem;
         }
 
         p{
@@ -322,8 +326,7 @@
           color: #120202;
           margin-top:4rem;
           margin-bottom: -1.5rem;
-          text-align:justify;
-          margin-left:-9.5rem;
+          // margin-left:-9.5rem;
           line-height: 3.5rem;
         }
 
@@ -365,8 +368,8 @@
         .img5 {
           position: relative;
           max-width: 43.5rem;
-          margin-top: 3.5rem;
-          margin-left: -6.5rem;
+          margin-top: -3.5rem;
+          // margin-left: -6.5rem;
         }
 
         #box5 {
@@ -383,8 +386,8 @@
 
         .img6 {
           position: relative;
-          max-width: 43.5rem;
-          margin-top: -11rem;
+          max-width: 46.5rem;
+          margin-top: -10rem;
           margin-left: 4.5rem;
         }
 
@@ -394,13 +397,14 @@
           height:33rem;
           margin-left:20rem;
           transform: rotate(-90.217deg);
-          margin-top:18rem;
+          margin-top: 0;
+          z-index: -1;
           background: linear-gradient(141deg, #FCF2EA 5.33%, rgba(252, 242, 234, 0.00) 88.24%);
         }
 
         #box7{
           position:absolute;
-          left:-4rem;
+          left:-3rem;
           bottom:22rem;
           width: 23.5rem;
           height: 14.3rem;
@@ -412,7 +416,7 @@
 
         #box8{
           position:absolute;
-          left:3rem;
+          left:-3rem;
           bottom:17rem;
           width:45.5rem;
           height: 14.3rem;

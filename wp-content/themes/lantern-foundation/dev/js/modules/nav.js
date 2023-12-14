@@ -17,6 +17,26 @@
     $html.toggleClass('is-locked');
   });
 
+  var navLinks = $('header nav a');
+
+  var navBtn = $('header .btn-wrap .contact');
+
+  navLinks.on('click', function(){
+    $hamburger.removeClass('is-active');
+    $header.removeClass('is-active');
+    $nav.removeClass('is-active');
+    $body.removeClass('is-locked');
+    $html.removeClass('is-locked');
+  });
+
+  navBtn.on('click', function(){
+    $hamburger.removeClass('is-active');
+    $header.removeClass('is-active');
+    $nav.removeClass('is-active');
+    $body.removeClass('is-locked');
+    $html.removeClass('is-locked');
+  });
+
   $eyebrowClose.on('click', function() {
     $eyebrow.removeClass('is-active');
     sessionStorage.setItem('eyebrow', 'hide');

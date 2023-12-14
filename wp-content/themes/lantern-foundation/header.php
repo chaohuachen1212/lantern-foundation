@@ -32,7 +32,7 @@
       </nav>
 
       <div class="btn-wrap">
-        <a href="/#contact" class="btn" href="">Contact</a>
+        <a href="/#contact" class="btn contact" href="">Contact</a>
         <a class="btn" target="_blank" href="https://square.link/u/hOHmgOj0">Donate</a>
       </div>
     </header>

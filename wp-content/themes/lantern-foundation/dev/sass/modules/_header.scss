@@ -53,7 +53,6 @@ header {
   }
 
   &.is-active {
-    background-color: $black;
     height: 100vh;
     align-items: flex-start;
     width: 100%;
@@ -61,10 +60,18 @@ header {
     @include media('<=tablet') {
       nav {
         display: block;
+
+        a {
+          color: $black;
+        }
       }
 
       .btn-wrap {
-        display: block;
+        display: flex;
+        padding-left: 0;
+        width: 100%;
+        justify-content: flex-start;
+        padding: 0 5%;
       }
     }
 
@@ -77,7 +84,7 @@ header {
 
     @include media('<=tablet') {
       display: none;
-      border-top: 0.1rem solid rgba(222,222,222,0.3);
+      border-top: 0.1rem solid $black;
       margin-top: 20px;
       padding: 8rem 5% 4rem;
       width: 100%;
@@ -127,12 +134,21 @@ header {
         font-size: 22px;
       }
 
+      @include media('<=tablet') {
+        min-width: 100px;
+        display: inline-block;
+
+      }
+
       &:hover {
         background-color: #FE8718;
       }
 
       &:not(:last-child) {
         margin-right: 4.5rem;
+        @include media('<=tablet') {
+          margin-right: 20px;
+        }
       }
     }
   }
@@ -187,13 +203,13 @@ header {
         &::before {
           transform: rotate(45deg);
           top: -1px;
-          background-color: $white;
+          background-color: $black;
         }
 
         &::after {
           transform: rotate(-45deg);
           bottom: -1px;
-          background-color: $white;
+          background-color: $black;
         }
       }
     }
