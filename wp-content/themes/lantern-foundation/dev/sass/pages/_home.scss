@@ -29,7 +29,6 @@
     margin: 0;
   }
 
-
   img {
     position: absolute;
     width: 100%;
@@ -274,12 +273,20 @@
     .line {
       width:0.05%;
       height: 85rem;
-      background-color: $black2;
+      background-color: #907245;
       margin-top: 6rem;
+      position: absolute;
+      left:0;
+      right:0;
+      margin:0 auto;
     }
 
     .col {
-      width:45%;
+      width:50%;
+
+      &.left{
+        padding-right: 5.5rem;
+      }
 
         .img3 {
           position: relative;
@@ -304,8 +311,8 @@
           font-size: 2.4rem;
           color: #120202;
           font-weight: 700;
-          margin-top:2rem;
-          margin-bottom: 3rem;
+          margin-top:-2rem;
+          margin-bottom: 6rem;
           text-align: center;
           margin-left:-9.5rem;
         }
@@ -313,10 +320,9 @@
         p{
           font-size: 2rem;
           color: #120202;
-          font-weight: 400;
-          margin-top:2rem;
-          margin-bottom: 2.5rem;
-          text-align: left;
+          margin-top:4rem;
+          margin-bottom: -1.5rem;
+          text-align:justify;
           margin-left:-9.5rem;
           line-height: 3.5rem;
         }
@@ -330,6 +336,7 @@
           margin-top: -13rem;
           margin-bottom: 1rem;
           margin-left: -13rem;
+          z-index: 3;
         }
 
         #box4 {
@@ -341,22 +348,22 @@
         }
 
         .img7 {
+          position: relative;
           max-width: 77rem;
           margin-top: -25rem;
           margin-left: -22.5rem;
-          index:1;
+          z-index:-2;
         }
 
         .img4 {
           position: relative;
           max-width: 43.5rem;
-          margin-top: -18rem;
+          margin-top: -20rem;
           margin-left: 4.5rem;
         }
 
         .img5 {
           position: relative;
-          index: 3;
           max-width: 43.5rem;
           margin-top: 3.5rem;
           margin-left: -6.5rem;
@@ -366,25 +373,24 @@
           border: 0rem;
           height: 82rem;
           width: 70rem;
-          margin-top:-72rem;
+          margin-top:-71rem;
           margin-left: -7rem;
           transform: rotate(-90.217deg);
-
           position: relative;
-
+          z-index: -1;
           background: linear-gradient(120deg, #FCF2EA -0.25%, rgba(252, 242, 234, 0.00) 35.26%)
         }
 
         .img6 {
           position: relative;
           max-width: 43.5rem;
-          margin-top: -13rem;
+          margin-top: -11rem;
           margin-left: 4.5rem;
         }
 
         #box6{
           position: relative;
-          width:30rem;
+          width:34rem;
           height:33rem;
           margin-left:20rem;
           transform: rotate(-90.217deg);
@@ -394,14 +400,26 @@
 
         #box7{
           position:absolute;
+          left:-4rem;
+          bottom:22rem;
           width: 23.5rem;
           height: 14.3rem;
           stroke:#F7EEE9;
           stroke-width:0.7rem;
           transform: rotate(-90.217deg);
-          flex-shrink: 0;
           margin-top:1rem;
-          mix-blend-mode: multiply;
+        }
+
+        #box8{
+          position:absolute;
+          left:3rem;
+          bottom:17rem;
+          width:45.5rem;
+          height: 14.3rem;
+          stroke:#F7EEE9;
+          stroke-width:0.7rem;
+          transform: rotate(-90.217deg);
+          margin-top:1rem;
         }
 
     }
