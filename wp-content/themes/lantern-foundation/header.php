@@ -27,7 +27,7 @@
       <nav>
         <a href="/#about-us">About us</a>
         <a href="/#meet-our-founders">Meet Our Founder</a>
-        <a href="">Our Projects</a>
+        <a href="/#our-projects">Our Projects</a>
         <a href="/#donate">Donate</a>
       </nav>
 

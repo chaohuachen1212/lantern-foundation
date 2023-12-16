@@ -67,11 +67,13 @@
           <img class="img3" src="<?php echo GET_URI ?>/img/Img 1.1.png">
           <h3>Campaign 1</h3>
           <h4>Healing Smiles, Changing Lives</h4>
-          <p><b>Supporting children in need of cleft palate surgeries and giving them a reason to smile</b></p>
+          <div class="top-copy">
+            <p>Supporting children in need of cleft palate surgeries and giving them a reason to smile</p>
+          </div>
           <p>In impoverished communities where medical resources are scarce, many children face the daily challenges of living with a cleft palate, hindering their ability to eat, speak, and smile with confidence. Lantern Foundation has partnered with Beijing Smile Angel Children’s Hospital, the first charity hospital in China, to provide cleft palate surgeries to children whose families can not afford to pay for them. Through these efforts, we hope that these children can have the simple joys of experiencing a healthy, happy childhood.</p>
         </div>
         <div class="line"></div>
-        <div class="col">
+        <div class="col right">
           <div id="box4"></div>
           <img class="img7" src="<?php echo GET_URI ?>/img/Project 1 BG.png">
           <img class="img4" src="<?php echo GET_URI ?>/img/Img 1.2 1.3-2.png">
@@ -82,27 +84,32 @@
         <img class="img5" src="<?php echo GET_URI ?>/img/Img 2.1.png">
         <h3>Campaign 2</h3>
         <h4>Education for Every Child</h4>
-        <p><b>Breaking the cycle of poverty by providing education to young children</b></p>
+        <div class="top-copy">
+          <p>Breaking the cycle of poverty by providing education to young children</p>
+        </div>
         <p>Millions of children in rural China face many challenges when it comes to obtaining an education. Some of these challenges include lack of funds for school, long and treacherous transportation routes, and the need to work to provide for their families. As part of our campaign, Lantern Foundation provides grants for them to go to school. Every few months, we select a group of children to whom these funds go to. Our mission is to ensure that all children receive a proper education in which they can learn and grow.</p>
         <div id="box5"></div>
-        <h5><b>DONATE</b></h5>
+        <h5><b>Donate</b></h5>
+
       </div>
       <div class="line"></div>
-      <div class="col">
-        <div id="box6">
-          <div id="box8">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20rem" height="20rem" viewBox="0 0 194 198" fill="none">
-              <g style="mix-blend-mode:multiply">
-                <path d="M3.5 3.5H190.5V194.5H3.5V3.5Z" stroke="#F7EEE9" stroke-width="7"/>
-              </g>
-            </svg>
-          </div>
-          <div id="box7">
-            <svg xmlns="http://www.w3.org/2000/svg" width="23.5rem" height="14.3rem" viewBox="0 0 235 143" fill="none">
-              <g style="mix-blend-mode:multiply">
-                <path d="M3.5 3.5H231.5V139.5H3.5V3.5Z" stroke="#F7EEE9" stroke-width="7"/>
-              </g>
-            </svg>
+      <div class="col right">
+        <div class="boxes-wrap">
+          <div id="box6">
+            <div id="box8">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20rem" height="20rem" viewBox="0 0 194 198" fill="none">
+                <g style="mix-blend-mode:multiply">
+                  <path d="M3.5 3.5H190.5V194.5H3.5V3.5Z" stroke="#F7EEE9" stroke-width="7"/>
+                </g>
+              </svg>
+            </div>
+            <div id="box7">
+              <svg xmlns="http://www.w3.org/2000/svg" width="23.5rem" height="14.3rem" viewBox="0 0 235 143" fill="none">
+                <g style="mix-blend-mode:multiply">
+                  <path d="M3.5 3.5H231.5V139.5H3.5V3.5Z" stroke="#F7EEE9" stroke-width="7"/>
+                </g>
+              </svg>
+            </div>
           </div>
         </div>
         <img class="img6" src="<?php echo GET_URI ?>/img/Img 2.2 2.3.png">
