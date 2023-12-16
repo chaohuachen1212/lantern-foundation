@@ -275,7 +275,7 @@
     }
 
     .line {
-      width:0.05%;
+      width: 0.1rem;
       height: 85rem;
       background-color: #907245;
       margin-top: 6rem;
@@ -283,6 +283,7 @@
       left:0;
       right:0;
       margin:0 auto;
+      opacity: 0.5;
     }
 
     .col {
