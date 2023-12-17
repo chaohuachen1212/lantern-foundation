@@ -247,7 +247,7 @@
 
 .our-projects{
   padding: 10rem 0 0;
-  margin-bottom: 10rem;
+  margin-bottom: 13rem;
 
   .inner-wrap {
     max-width: 101.8rem;
@@ -272,6 +272,7 @@
 
     &.second {
       margin-top: 16rem;
+      position: relative;
     }
 
     .line {
@@ -340,20 +341,20 @@
           }
         }
 
-        h5{
-          color: rgba(246, 199, 167, 0.15);
-          font-size: 68px;
-          font-style: normal;
-          font-weight: 700;
-          line-height: normal;
-          margin-top: -13rem;
-          margin-bottom: 1rem;
-          margin-left: -4rem;
-          z-index: 3;
-          text-transform: inherit;
-          position: relative;
-          mix-blend-mode: multiply;
-        }
+        // h5{
+        //   color: rgba(246, 199, 167, 0.15);
+        //   font-size: 68px;
+        //   font-style: normal;
+        //   font-weight: 700;
+        //   line-height: normal;
+        //   margin-top: -13rem;
+        //   margin-bottom: 1rem;
+        //   margin-left: -4rem;
+        //   z-index: 3;
+        //   text-transform: inherit;
+        //   position: relative;
+        //   mix-blend-mode: multiply;
+        // }
 
         #box4 {
           height: 19.8rem;
@@ -386,15 +387,19 @@
         }
 
         #box5 {
-          border: 0rem;
+          // border: 0rem;
           height: 82rem;
-          width: 70rem;
-          margin-top:-65rem;
-          margin-left: 2rem;
+          // width: 70rem;
+          // margin-top:-65rem;
+          // margin-left: 2rem;
           transform: rotate(-90.217deg);
-          position: relative;
+          // position: relative;
           z-index: -1;
-          background: linear-gradient(120deg, #FCF2EA -0.25%, rgba(252, 242, 234, 0.00) 35.26%)
+          background: linear-gradient(120deg, #FCF2EA -0.25%, rgba(252, 242, 234, 0.00) 35.26%);
+          position: absolute;
+          bottom: 3rem;
+          left: -14rem;
+          width: 100%;
         }
 
         .img6 {
@@ -451,7 +456,7 @@
 
 .donate--sec {
   margin: 5rem 0 6rem;
-  padding-top: 5rem;
+  padding-top: 10rem;
   padding-bottom: 5rem;
 
   @include media('<tablet') {
@@ -466,6 +471,14 @@
 
     @include media('<tablet') {
       max-width: 100%;
+    }
+  }
+
+  h2 {
+    margin-bottom: 4rem;
+
+    @include media('<tablet') {
+      margin-bottom: 30px;
     }
   }
 

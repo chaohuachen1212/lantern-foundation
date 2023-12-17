@@ -89,7 +89,6 @@
         </div>
         <p>Millions of children in rural China face many challenges when it comes to obtaining an education. Some of these challenges include lack of funds for school, long and treacherous transportation routes, and the need to work to provide for their families. As part of our campaign, Lantern Foundation provides grants for them to go to school. Every few months, we select a group of children to whom these funds go to. Our mission is to ensure that all children receive a proper education in which they can learn and grow.</p>
         <div id="box5"></div>
-        <h5><b>Donate</b></h5>
 
       </div>
       <div class="line"></div>
