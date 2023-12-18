@@ -95,6 +95,11 @@ header {
       font-weight: 600;
       text-transform: uppercase;
       margin-right: 4.5rem;
+      color: #120202;
+
+      &:hover {
+        border-bottom: 0.1rem solid #120202;
+      }
 
       @include media('>1600px') {
         font-size: 22px;
