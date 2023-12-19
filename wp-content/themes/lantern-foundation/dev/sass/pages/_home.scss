@@ -142,6 +142,10 @@
     width: 50%;
     position: relative;
 
+    @include media('<tablet') {
+      width: 100%;
+    }
+
     &.right {
       padding-left: 5rem;
     }
@@ -153,6 +157,10 @@
       color: #120202;
       font-weight: 700;
       margin-bottom: 3rem;
+
+      @include media('<tablet') {
+        font-size: 2rem;
+      }
     }
 
    li {
@@ -183,6 +191,10 @@
 
   .col {
     width: 50%;
+
+    @include media('<tablet') {
+      width: 100%;
+    }
 
     &.right-col {
       padding-left: 8rem;
