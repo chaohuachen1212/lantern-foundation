@@ -2,7 +2,7 @@ footer {
   position: relative;
   padding: 4rem 8rem 6rem;
   min-height: 38.7rem;
-
+  z-index: 1;
   @include media('<tablet') {
       padding: 60px 0;
       min-height: initial;
