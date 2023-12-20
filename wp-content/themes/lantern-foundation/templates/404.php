@@ -4,13 +4,22 @@
   get_header();
 ?>
 
-<section class="404">
-  <img src="<?php echo GET_URI ?>/img/Group 1.png">
-  <div class="dot"></div>
+<section class="thank-you">
+
+
   <div class="container">
-    <div class="content">
-      <h1>404 - Sorry, we can't locate that page.</h1>
-    </div>
+      <div class="box-ty">
+        <h1>404</h1>
+        <p>Sorry, we can't locate that page.</p>
+        <a class="btn" href="/">HOME PAGE</a>
+      </div>
+      <div class="cycle4"></div>
+      <div class="cycle2"></div>
+      <div class="cycle3"></div>
+      <div class="cycle"></div>
+
+      <div class="cycle5"></div>
+      <div class="cycle6"></div>
   </div>
 </section>
 
