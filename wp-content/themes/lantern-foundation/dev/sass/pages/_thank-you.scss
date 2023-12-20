@@ -6,23 +6,13 @@
   align-items: center;
   justify-content: center;
 
-
-  img {
-    position: absolute;
-    object-fit: cover;
-    z-index:-1;
-    left:0;
-    top:0;
-    max-width: 100%;
-    height:80%;
-  }
-
   .container {
     margin: 0;
     display:flex;
     justify-content: center;
     align-items: center;
     max-width: 100rem;
+    z-index: 3;
 
     .box-ty {
       max-width: 100rem;
@@ -57,7 +47,88 @@
           margin-left: 16rem;
           border-radius:1rem;
         }
+    }
+    .cycle{
+      position:absolute;
+      width: 90rem;
+      height: 90rem;
+      border-radius:50%;
+      background: #D9D9D9;
+      top: 2%;
+      left:20rem;
+      z-index: 1;
+      flex-shrink: 0;
+      opacity:0.8;
 
     }
+
+      .cycle2{
+        position:absolute;
+        width: 62rem;
+        height: 62rem;
+        border-radius:50%;
+        background:rgba(172, 141, 141, 0.60);
+        top: 18%;
+        left:-1rem;
+        z-index: 2;
+        flex-shrink: 0;
+        opacity: 0.6;
+
+    }
+
+      .cycle3 {
+        position:absolute;
+        width: 28rem;
+        height: 28rem;
+        border-radius:50%;
+        background:#be9595;
+        top: 10%;
+        left:4rem;
+        z-index: 0;
+        flex-shrink: 0;
+        opacity:0.3;
+    }
+
+      .cycle4 {
+        position:absolute;
+        width: 16rem;
+        height: 16rem;
+        border-radius:50%;
+        background:#E28787;
+        top: 9%;
+        left:23rem;
+        z-index: 0;
+        flex-shrink: 0;
+        opacity:0.3;
+
+    }
+
+      .cycle5 {
+        position:absolute;
+        width: 16rem;
+        height: 16rem;
+        border-radius:50%;
+        background:#a16e6e;
+        top: 40%;
+        right:10rem;
+        z-index: 0;
+        flex-shrink: 0;
+        opacity:0.3;
+      }
+
+
+      .cycle6 {
+        position:absolute;
+        width: 50rem;
+        height: 50rem;
+        border-radius:50%;
+        background:rgba(177, 138, 138, 0.60);
+        top: 45%;
+        right:-1rem;
+        z-index: -1;
+        flex-shrink: 0;
+        opacity: 0.5;
+      }
+
   }
 }
