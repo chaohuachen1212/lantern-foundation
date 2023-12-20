@@ -8,8 +8,8 @@
     text-transform: uppercase;
 
     @include media('<tablet') {
-      font-size: 33px;
-      margin-bottom: 35px;
+      font-size: 30px;
+      margin-bottom: 25px;
     }
   }
 }
@@ -67,24 +67,26 @@
         max-width: 100%;
       }
     }
-
   }
-
-
-
 }
 
 .about-us {
   padding: 100px 0;
   background: rgba(245,248,235,0.5);
 
-
   h3 {
       font-size: 3rem;
       color: #120202;
       font-weight: 700;
       margin-bottom: 3rem;
+
+      @include media('<tablet') {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
     }
+
     p {
       font-size: 2rem;
       color: #120202;
@@ -92,6 +94,13 @@
       margin-bottom: 3rem;
       max-width: 46.1rem;
       padding-right: 8.8rem;
+
+      @include media('<tablet') {
+        font-size: 18px;
+        text-align: justify;
+        padding-right: 0.2rem;
+        margin-bottom: -4rem;
+      }
     }
     .img1 {
 
@@ -101,19 +110,24 @@
       index: 3;
       max-width: 43.5rem;
 
+      @include media('<tablet') {
+        max-width: 26rem;
+      }
     }
 
     #box1 {
-
       height: 38rem;
       width: 40rem;
       background: linear-gradient(180deg, rgba(217, 217, 217, 0.90) 0%, rgba(217, 217, 217, 0.00) 100%);
-
       position: absolute;
-
       top: 11.5rem;
       left: -4rem;
-
+      @include media('<tablet') {
+        top: 10rem;
+        left: -2rem;
+        height: 5rem;
+        width: 10rem;
+      }
     }
 
     #box2 {
@@ -128,6 +142,12 @@
       left: 0rem;
       opacity: 0.7;
 
+      @include media('<tablet') {
+        top: 5.5rem;
+        left: 1rem;
+        height: 10.7rem;
+        width: 10.7rem;
+      }
     }
 
   .row {
@@ -136,6 +156,11 @@
     justify-content: space-between;
     max-width: 89.5rem;
     margin: 10rem auto 0;
+
+    @include media('<tablet') {
+      text-align: center;
+      margin: 1px auto 0;
+    }
 
   }
   .col {
@@ -150,29 +175,57 @@
       padding-left: 5rem;
     }
 
+    .containerleft{
+
+      top:20rem;
+      width:100rem;
+
+
+      h3 {
+          font-size: 3rem;
+          color: #120202;
+          font-weight: 700;
+          margin-bottom: 3rem;
+
+          @include media('<tablet') {
+            font-size: 20px;
+            text-align: center;
+            top: 20px;
+          }
+        }
+    }
   }
 
-  h3 {
-      font-size: 3rem;
-      color: #120202;
-      font-weight: 700;
-      margin-bottom: 3rem;
 
-      @include media('<tablet') {
-        font-size: 2rem;;
-      }
-    }
-
-   li {
+    li {
       font-size: 2rem;
       color: #120202;
       font-weight: 400;
       margin-bottom: 3rem;
+      text-align:left;
+      position: relative;
+      left: 2rem;
+
+      @include media('<tablet') {
+        font-size: 18px;
+        text-align: justify;
+        top:-150px;
+        left:-75px;
+        margin-bottom: 1rem;
+      }
     }
+
+
 
     .img2 {
       // padding-right: 8.8rem;
       position: relative;
+
+      @include media('<tablet') {
+        max-width: 26rem;
+        top: 350px;
+        left: 79px;
+      }
     }
 
     #box {
@@ -186,8 +239,16 @@
       top: 12.5rem;
       left: -8rem;
 
+      @include media('<tablet') {
+        max-width: 26rem;
+        top: 400px;
+        left: 30px;
+        height: 15rem;
+        width: 15rem;
+      }
 
     }
+
 
   .col {
     width: 50%;
@@ -199,12 +260,8 @@
     &.right-col {
       padding-left: 8rem;
     }
-
   }
-
 }
-
-
 
 .meet-out-founders {
   padding: 10rem 0 0;

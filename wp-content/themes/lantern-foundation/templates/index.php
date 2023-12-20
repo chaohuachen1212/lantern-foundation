@@ -35,12 +35,13 @@
           <img class="img2" src="<?php echo GET_URI ?>/img/About_3kids.jpg">
       </div>
       <div class="col right-col">
-        <h3>Why You Should Care</h3>
-        <p>
-          <li>Almost 100 million children experience poverty in China</li>
-          <li>Estimated 2 million children do not have any access to education</li>
-          <li>Approximately two million children in China live in rural areas.</li>
-        </p>
+        <div class = "containerleft">
+          <h3>Why You Should Care</h3>
+        </div>
+        <li>Almost 100 million children experience poverty in China</li>
+        <li>Estimated 2 million children do not have any access to education</li>
+        <li>Approximately two million children in China live in rural areas.</li>
+
       </div>
     </div>
   </section>
