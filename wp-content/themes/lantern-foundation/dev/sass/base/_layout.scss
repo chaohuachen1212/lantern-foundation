@@ -26,6 +26,7 @@ html {
   margin: 0 auto;
   z-index: 1;
   max-width: 1600px;
+  overflow: hidden;
 
   @include media('<tablet') {
     width: 100%;

@@ -4,6 +4,13 @@
   display:flex;
   align-items: center;
   justify-content: center;
+  min-height: 90rem;
+
+  @include media('<tablet') {
+    min-height: initial;
+    height: initial;
+    padding: 150px 0;
+  }
 
 
   .container {
@@ -19,6 +26,10 @@
       position:relative;
       z-index: 3;
       margin-top: -2rem;
+
+      @include media('<tablet') {
+        margin-top: 0;
+      }
 
       h1 {
         color: rgba(85,34,0,0.5);
@@ -75,12 +86,12 @@
 
       .cycle2{
         position:absolute;
-        width: 62rem;
-        height: 62rem;
+        width: 59rem;
+        height: 59rem;
         border-radius:50%;
         background:rgba(172, 141, 141, 0.60);
         top: 18%;
-        left:-1rem;
+        left:0rem;
         z-index: 2;
         flex-shrink: 0;
         opacity: 0.6;
@@ -144,7 +155,7 @@
         border-radius:50%;
         background:rgba(177, 138, 138, 0.60);
         top: 45%;
-        right:-1rem;
+        right:0rem;
         z-index: -1;
         flex-shrink: 0;
         opacity: 0.5;
