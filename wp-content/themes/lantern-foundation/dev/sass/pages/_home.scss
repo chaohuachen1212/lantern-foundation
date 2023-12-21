@@ -341,6 +341,7 @@
     @include media('<tablet') {
       font-size: 18px;
       line-height: 2rem;
+      margin-bottom: -11rem;
     }
   }
 
@@ -401,11 +402,19 @@
           // margin-left: -6.5rem;
 
           @include media('<tablet') {
-            max-width: 26rem;
-            left:88px;
-            top:50px;
+            display: none;
           }
         }
+
+        .img9{
+          display: none;
+          @include media('<tablet') {
+            display:block;
+            position: relative;
+            right:-42px;
+          }
+        }
+
 
         h3{
           font-size: 2.4rem;
@@ -417,6 +426,8 @@
 
           @include media('<tablet') {
             font-size: 20px;
+            position:relative;
+            right:-40px;
           }
         }
 
@@ -431,6 +442,8 @@
 
           @include media('<tablet') {
             font-size: 20px;
+            position:relative;
+            right:-40px;
           }
         }
 
@@ -444,6 +457,8 @@
           @include media('<tablet') {
             font-size: 18px;
             text-align: justify;
+            position:relative;
+            right:-40px;
           }
         }
 
@@ -507,7 +522,7 @@
           @include media('<tablet') {
             max-width: 26rem;
             display:grid;
-            top:-250px;
+            top:-110px;
           }
         }
 
@@ -515,7 +530,8 @@
           display: none;
           @include media('<tablet') {
             display:block;
-
+            position: relative;
+            right:-42px;
           }
         }
 
