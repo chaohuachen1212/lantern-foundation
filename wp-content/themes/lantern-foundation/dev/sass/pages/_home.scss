@@ -9,7 +9,7 @@
 
     @include media('<tablet') {
       font-size: 30px;
-      margin-bottom: 25px;
+      margin-bottom: 60px;
     }
   }
 }
@@ -73,6 +73,7 @@
 .about-us {
   padding: 100px 0;
   background: rgba(245,248,235,0.5);
+
 
   h3 {
       font-size: 3rem;
@@ -177,9 +178,14 @@
 
     .containerleft{
 
-      top:20rem;
-      width:100rem;
-
+      top:10rem;
+      width:35rem;
+      height:50rem;
+      @include media('<tablet') {
+        top:3rem;
+        width:40rem;
+        height:50rem;
+      }
 
       h3 {
           font-size: 3rem;
@@ -189,32 +195,32 @@
 
           @include media('<tablet') {
             font-size: 20px;
-            text-align: center;
-            top: 20px;
+            top: -9rem;
+            position:absolute;
+            left: 12rem;
           }
         }
-    }
-  }
 
 
-    li {
-      font-size: 2rem;
-      color: #120202;
-      font-weight: 400;
-      margin-bottom: 3rem;
-      text-align:left;
-      position: relative;
-      left: 2rem;
+      li {
+        font-size: 2rem;
+        color: #120202;
+        font-weight: 400;
+        margin-bottom: 3rem;
+        text-align:left;
+        position: relative;
+        left: 0.5rem;
 
-      @include media('<tablet') {
-        font-size: 18px;
-        text-align: justify;
-        top:-150px;
-        left:-75px;
-        margin-bottom: 1rem;
+        @include media('<tablet') {
+          font-size: 18px;
+          text-align: justify;
+          top:-90px;
+          left:-100px;
+          margin-bottom: 0.4rem;
+        }
       }
     }
-
+  }
 
 
     .img2 {
@@ -287,6 +293,7 @@
     @include media('<tablet') {
       font-size: 18px;
       margin-bottom: 25px;
+      text-align: justify;
     }
 
     a {
@@ -330,7 +337,12 @@
     margin-bottom: 2.5rem;
     text-align: center;
     line-height: 5rem;
+
+    @include media('<tablet') {
+      font-size: 18px;
+      line-height: 2rem;
     }
+  }
 
   .row {
     display: flex;
@@ -342,6 +354,11 @@
     &.second {
       margin-top: 16rem;
       position: relative;
+
+      @include media('<tablet') {
+
+        margin-top:-5rem;
+      }
     }
 
     .line {
@@ -354,10 +371,19 @@
       right:0;
       margin:0 auto;
       opacity: 0.5;
+
+      @include media('<tablet') {
+        width: 0rem;
+        height: 0rem;
+      }
     }
 
     .col {
       width:50%;
+
+      @include media('<tablet') {
+        width: 100%;
+      }
 
       &.left{
         padding-right: 6rem;
@@ -373,6 +399,12 @@
           max-width: 43.5rem;
           margin-top: -2.8rem;
           // margin-left: -6.5rem;
+
+          @include media('<tablet') {
+            max-width: 26rem;
+            left:88px;
+            top:50px;
+          }
         }
 
         h3{
@@ -382,6 +414,13 @@
           margin-top:7rem;
           margin-bottom: 2.5rem;
           text-align: center;
+
+          @include media('<tablet') {
+            font-size: 20px;
+            top:-26rem;
+            position:relative;
+            left:3rem;
+          }
         }
 
         h4{
@@ -392,6 +431,14 @@
           margin-bottom: 5.5rem;
           text-align: center;
           // margin-left:-9.5rem;
+
+          @include media('<tablet') {
+            font-size: 20px;
+            top: -25rem;
+            position:relative;
+            text-align: center;
+            left:3rem;
+          }
         }
 
         p {
@@ -400,13 +447,27 @@
           margin-top:4rem;
           margin-bottom: -1.5rem;
           line-height: 1.5;
+
+          @include media('<tablet') {
+            font-size: 18px;
+            top: -130px;
+            position:relative;
+            text-align: justify;
+            right:-32px;
+
+          }
         }
 
         .top-copy {
           margin-bottom: 5rem;
 
+          @include media('<tablet') {
+            margin-bottom: 2rem;
+          }
+
           p {
             font-weight: 600;
+            text-align: center;
           }
         }
 
@@ -439,6 +500,13 @@
           margin-top: -25rem;
           margin-left: -22.5rem;
           z-index:-2;
+
+          @include media('<tablet') {
+            max-width: 48rem;
+            right: -185px;
+            top:-700px;
+            opacity: 0.5;
+          }
         }
 
         .img4 {
@@ -446,13 +514,27 @@
           max-width: 43.5rem;
           margin-top: -20rem;
           // margin-left: 4.5rem;
+
+          @include media('<tablet') {
+            max-width: 26rem;
+            display:grid;
+            top:-250px;
+          }
         }
+
 
         .img5 {
           position: relative;
           max-width: 43.5rem;
-          margin-top: -3.5rem;
+
           // margin-left: -6.5rem;
+
+          @include media('<tablet') {
+            max-width: 26rem;
+            top:3rem;
+            left:6rem;
+
+          }
         }
 
         #box5 {
@@ -469,6 +551,13 @@
           bottom: 3rem;
           left: -14rem;
           width: 100%;
+
+          @include media('<tablet') {
+            height:200px;
+            width:200px;
+            margin-bottom: -100px;
+            left:38px;
+          }
         }
 
         .img6 {
@@ -476,11 +565,20 @@
           // max-width: 46.5rem;
           margin-top: -10rem;
           // margin-left: 4.5rem;
+          @include media('<tablet') {
+            max-width: 26rem;
+            display: grid;
+            margin-top: -303px;
+          }
         }
 
         .boxes-wrap {
           display: flex;
           justify-content: flex-end;
+
+          @include media('<tablet') {
+            margin-top: -1px;
+          }
         }
 
         #box6{
@@ -492,6 +590,11 @@
           margin-top: 0;
           z-index: -1;
           background: linear-gradient(141deg, #FCF2EA 5.33%, rgba(252, 242, 234, 0.00) 88.24%);
+
+          @include media('<tablet') {
+            width:400px;
+            height:400px;
+          }
         }
 
         #box7{
@@ -504,6 +607,12 @@
           stroke-width:0.7rem;
           transform: rotate(-90.217deg);
           margin-top:1rem;
+          @include media('<tablet') {
+            width:150px;
+            height:200px;
+            margin-top:-100px;
+            left:-40px;
+          }
         }
 
         #box8{
@@ -516,12 +625,15 @@
           stroke-width:0.7rem;
           transform: rotate(-90.217deg);
           margin-top:1rem;
+          @include media('<tablet') {
+            width:300px;
+            height:100px;
+            margin-top:-100px;
+          }
         }
-
     }
   }
 }
-
 
 .donate--sec {
   margin: 5rem 0 6rem;

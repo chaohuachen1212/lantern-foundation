@@ -37,11 +37,10 @@
       <div class="col right-col">
         <div class = "containerleft">
           <h3>Why You Should Care</h3>
+          <li>Almost 100 million children experience poverty in China</li>
+          <li>Estimated 2 million children do not have any access to education</li>
+          <li>Approximately two million children in China live in rural areas.</li>
         </div>
-        <li>Almost 100 million children experience poverty in China</li>
-        <li>Estimated 2 million children do not have any access to education</li>
-        <li>Approximately two million children in China live in rural areas.</li>
-
       </div>
     </div>
   </section>
