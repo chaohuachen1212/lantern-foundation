@@ -84,6 +84,7 @@
         <img class="img5" src="<?php echo GET_URI ?>/img/Img 2.1.png">
         <h3>Campaign 2</h3>
         <h4>Education for Every Child</h4>
+          <img class="img8" src="<?php echo GET_URI ?>/img/Img 2.1.png">
         <div class="top-copy">
           <p>Breaking the cycle of poverty by providing education to young children</p>
         </div>
