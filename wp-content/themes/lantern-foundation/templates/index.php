@@ -37,11 +37,10 @@
       <div class="col right-col">
         <div class = "containerleft">
           <h3>Why You Should Care</h3>
+          <li>Almost 100 million children experience poverty in China</li>
+          <li>Estimated 2 million children do not have any access to education</li>
+          <li>Approximately two million children in China live in rural areas.</li>
         </div>
-        <li>Almost 100 million children experience poverty in China</li>
-        <li>Estimated 2 million children do not have any access to education</li>
-        <li>Approximately two million children in China live in rural areas.</li>
-
       </div>
     </div>
   </section>
@@ -85,6 +84,7 @@
         <img class="img5" src="<?php echo GET_URI ?>/img/Img 2.1.png">
         <h3>Campaign 2</h3>
         <h4>Education for Every Child</h4>
+          <img class="img8" src="<?php echo GET_URI ?>/img/Img 2.1.png">
         <div class="top-copy">
           <p>Breaking the cycle of poverty by providing education to young children</p>
         </div>

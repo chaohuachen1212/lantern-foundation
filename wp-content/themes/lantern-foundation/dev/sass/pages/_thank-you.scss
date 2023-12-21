@@ -9,7 +9,7 @@
   @include media('<tablet') {
     min-height: initial;
     height: initial;
-    padding: 150px 0;
+    padding: 130px 0;
   }
 
 
@@ -37,6 +37,11 @@
         font-weight: 700;
         text-align:center;
         margin-bottom: 2rem;
+
+        @include media('<tablet') {
+          font-size: 40px;
+          margin-bottom: 20px;
+        }
       }
 
       p {
@@ -44,12 +49,19 @@
           color: #120202;
           margin-bottom: 2rem;
           text-align: center;
-          margin-top: -1rem;
+
+          @include media('<tablet') {
+            font-size: 16px;
+          }
         }
 
       .btn-wrap {
         margin-top: 4.5rem;
         text-align: center;
+
+        @include media('<tablet') {
+          margin-top: 40px;
+        }
       }
 
       .btn {
@@ -63,7 +75,18 @@
           min-width: 11.9rem;
           border-radius:1rem;
           text-transform: uppercase;
+
+          @include media('<tablet') {
+            font-size: 20px;
+          }
         }
+    }
+
+    .cycles-wrap {
+      position: relative;
+      margin: 0 auto;
+      width: 100%;
+      height: 100%;
     }
 
 
@@ -79,8 +102,19 @@
         flex-shrink: 0;
         opacity:0.8;
         @include media('<tablet') {
-          width: 9rem;
-          height: 9rem;
+          width: 70px;
+          height: 70px;
+          top: 46%;
+          left: initial;
+          right: 20%;
+        }
+
+        @include media('<mobile-l') {
+          width: 70px;
+          height: 70px;
+          top: 46%;
+          left: initial;
+          right: 0;
         }
       }
 
@@ -96,8 +130,17 @@
         flex-shrink: 0;
         opacity: 0.6;
         @include media('<tablet') {
-          width: 6rem;
-          height: 6rem;
+          width: 200px;
+          height: 200px;
+          top: 27%;
+          left: 12%;
+        }
+
+        @include media('<mobile-l') {
+          width: 150px;
+          height: 150px;
+          top: 10%;
+          left: 5%;
         }
 
       }
@@ -114,6 +157,16 @@
         flex-shrink: 0;
         opacity:0.3;
 
+
+        @include media('<tablet') {
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          width: 350px;
+          height: 350px;
+          top: 5%;
+        }
+
       }
 
       .cycle4 {
@@ -128,8 +181,17 @@
         flex-shrink: 0;
         opacity:0.3;
         @include media('<tablet') {
-          width: 15rem;
-          height: 15rem;
+          width: 60px;
+          height: 60px;
+          left: 25%;
+          top: 18%;
+        }
+
+        @include media('<mobile-l') {
+          width: 60px;
+          height: 60px;
+          left: 82px;
+          top: 5%;
         }
 
     }
@@ -145,6 +207,17 @@
         z-index: 0;
         flex-shrink: 0;
         opacity:0.3;
+
+        @include media('<tablet') {
+          width: 150px;
+          height: 150px;
+          right: 21%;
+          top: 53%;
+        }
+
+        @include media('<mobile-l') {
+          right: 0;
+        }
       }
 
 
@@ -160,8 +233,17 @@
         flex-shrink: 0;
         opacity: 0.5;
         @include media('<tablet') {
-          width: 5rem;
-          height: 5rem;
+          width: 80px;
+          height: 80px;
+          top: 19%;
+          left: 16%;
+        }
+
+        @include media('<mobile-l') {
+          width: 60px;
+          height: 60px;
+          left: 82px;
+          top: 5%;
         }
       }
 
