@@ -67,6 +67,7 @@
           <img class="img3" src="<?php echo GET_URI ?>/img/Img 1.1.png">
           <h3>Campaign 1</h3>
           <h4>Healing Smiles, Changing Lives</h4>
+            <img class="img9" src="<?php echo GET_URI ?>/img/Img 1.1.png">
           <div class="top-copy">
             <p>Supporting children in need of cleft palate surgeries and giving them a reason to smile</p>
           </div>
