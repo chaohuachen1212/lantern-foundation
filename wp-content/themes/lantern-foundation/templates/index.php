@@ -29,7 +29,7 @@
         <div id="box2"></div>
         <img class="img1" src="<?php echo GET_URI ?>/img/About_smilegirl.jpg">
       </div>
-      <div class="row">
+      <div class="row second">
       <div class="col">
         <div id="box"></div>
           <img class="img2" src="<?php echo GET_URI ?>/img/About_3kids.jpg">

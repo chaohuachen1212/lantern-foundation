@@ -9,7 +9,7 @@
 
     @include media('<tablet') {
       font-size: 30px;
-      margin-bottom: 60px;
+      margin-bottom: 40px;
     }
   }
 }
@@ -74,6 +74,10 @@
   padding: 100px 0;
   background: rgba(245,248,235,0.5);
 
+  @include media('<tablet') {
+    padding: 60px 0 90px;
+  }
+
 
   h3 {
       font-size: 3rem;
@@ -82,9 +86,9 @@
       margin-bottom: 3rem;
 
       @include media('<tablet') {
-        font-size: 2rem;
+        font-size: 18px;
         text-align: center;
-        margin-bottom: 2rem;
+        margin-bottom: 30px;
       }
     }
 
@@ -97,9 +101,10 @@
       padding-right: 8.8rem;
 
       @include media('<tablet') {
-        font-size: 1.8rem;
-        padding-right: 0.2rem;
-        margin-bottom: -4rem;
+        font-size: 18px;
+        padding-right: 0;
+        max-width: 100%;
+        margin-bottom: 35px;
       }
     }
     .img1 {
@@ -113,8 +118,9 @@
       @include media('<tablet') {
         top: initial;
         max-width: 100%;
-        width: 90%;
-        margin: 0 auto;
+        width: 85%;
+        margin-top: 35px;
+        margin-left: auto;
       }
     }
 
@@ -126,10 +132,10 @@
       top: 11.5rem;
       left: -4rem;
       @include media('<tablet') {
-        top: 10rem;
-        left: -2rem;
-        height: 5rem;
-        width: 10rem;
+        top: 5rem;
+        left: 0px;
+        height: 17rem;
+        width: 30rem;
       }
     }
 
@@ -138,18 +144,17 @@
       height: 19.7rem;
       width: 19.7rem;
       background: #FCF2EA;
-
       position: absolute;
-
       top: 3.5rem;
       left: 0rem;
       opacity: 0.7;
 
       @include media('<tablet') {
-        top: 5.5rem;
-        left: 1rem;
+        top: 1rem;
+        left: 2.5rem;
         height: 10.7rem;
         width: 10.7rem;
+        opacity: 0.8;
       }
     }
 
@@ -163,6 +168,13 @@
     @include media('<tablet') {
       text-align: center;
       margin: 1px auto 0;
+      max-width: 100%;
+    }
+
+    &.second {
+      @include media('<tablet') {
+        flex-direction: column-reverse;
+      }
     }
 
   }
@@ -185,13 +197,8 @@
 
     .containerleft {
 
-      top:10rem;
-      width:35rem;
-      height:50rem;
-      @include media('<tablet') {
-        top:3rem;
-        width:40rem;
-        height:50rem;
+      @include media('>=tablet') {
+        top:10rem;
       }
 
       h3 {
@@ -201,7 +208,8 @@
           margin-bottom: 3rem;
 
           @include media('<tablet') {
-            font-size: 2rem;
+            font-size: 18px;
+            margin-bottom: 30px;
           }
         }
 
@@ -216,7 +224,7 @@
         left: 0.5rem;
 
         @include media('<tablet') {
-          font-size: 1.8rem;
+          font-size: 18px;
           text-align: left;
           margin-bottom: 0.4rem;
         }
@@ -230,10 +238,8 @@
       position: relative;
 
       @include media('<tablet') {
-        max-width: 26rem;
-        top: 43rem;
-        left:5rem;
-
+        width: 85%;
+        margin-left: auto;
       }
     }
 
@@ -242,18 +248,15 @@
       height: 23rem;
       width: 40rem;
       background-color: rgba(230,242,251,1);
-
       position: absolute;
-
       top: 12.5rem;
       left: -8rem;
 
       @include media('<tablet') {
-        max-width: 26rem;
-        top: 40rem;
-        left: 3rem;
-        height: 15rem;
-        width: 15rem;
+        left: 0;
+        height: 20rem;
+        width: 30rem;
+        top: 5rem;
       }
 
     }
@@ -268,9 +271,12 @@
 
     &.right-col {
       padding-left: 8rem;
+
       @include media('<tablet') {
         width: 100%;
-        padding-left: 0rem;
+        padding-left: 0;
+        margin-bottom: 35px;
+        margin-top: 65px;
       }
     }
 
@@ -283,6 +289,10 @@
   @include media('<tablet') {
     padding-top: 80px;
     margin-bottom: 40px;
+
+    h2 {
+      font-size: 28px;
+    }
 
   }
 
@@ -300,7 +310,7 @@
     @include media('<tablet') {
       font-size: 18px;
       margin-bottom: 25px;
-      text-align: justify;
+      text-align :center;
     }
 
     a {
@@ -331,6 +341,11 @@
 .our-projects{
   padding: 10rem 0 0;
   margin-bottom: 13rem;
+
+  @include media('<tablet') {
+    padding: 80px 0 0;
+    margin-bottom: 120px;
+  }
 
   .inner-wrap {
     max-width: 101.8rem;
@@ -481,20 +496,6 @@
           }
         }
 
-        // h5{
-        //   color: rgba(246, 199, 167, 0.15);
-        //   font-size: 68px;
-        //   font-style: normal;
-        //   font-weight: 700;
-        //   line-height: normal;
-        //   margin-top: -13rem;
-        //   margin-bottom: 1rem;
-        //   margin-left: -4rem;
-        //   z-index: 3;
-        //   text-transform: inherit;
-        //   position: relative;
-        //   mix-blend-mode: multiply;
-        // }
 
         #box4 {
           height: 19.8rem;
@@ -656,7 +657,7 @@
   padding-bottom: 5rem;
 
   @include media('<tablet') {
-    margin: 40px 0 70px;
+    margin: 40px 0 40px;
     padding-bottom: 0px;
     padding-top: 40px;
   }
@@ -686,7 +687,7 @@
     margin-top: 3rem;
 
     @include media('<tablet') {
-      font-size: 22px;
+      font-size: 20px;
       margin-top: 25px;
     }
   }
@@ -738,7 +739,8 @@
     margin: 12rem auto 0;
 
     @include media('<tablet') {
-      margin-top: 60px;
+      margin-top: 20px;
+      max-width: 100%;
     }
 
     h3 {
@@ -748,7 +750,7 @@
       margin-bottom: 3rem;
 
       @include media('<tablet') {
-        font-size: 28px;
+        font-size: 20px;
         margin-bottom: 20px;
       }
     }
@@ -760,7 +762,8 @@
 
     @include media('<tablet') {
       width: 100%;
-      max-width: initial;
+      max-width: 100%;
+      margin-bottom: 25px;
     }
 
     p {
@@ -768,7 +771,7 @@
       font-size: 1.8rem;
 
       @include media('<tablet') {
-        font-size: 18px;
+        font-size: 16px;
         text-align: center;
       }
 
@@ -783,6 +786,7 @@
 
       @include media('<tablet') {
         padding-left: 0;
+        max-width: 100%;
       }
     }
 
