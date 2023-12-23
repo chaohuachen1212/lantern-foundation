@@ -82,9 +82,9 @@
       margin-bottom: 3rem;
 
       @include media('<tablet') {
-        font-size: 20px;
+        font-size: 2rem;
         text-align: center;
-        margin-bottom: 20px;
+        margin-bottom: 2rem;
       }
     }
 
@@ -97,8 +97,7 @@
       padding-right: 8.8rem;
 
       @include media('<tablet') {
-        font-size: 18px;
-        text-align: justify;
+        font-size: 1.8rem;
         padding-right: 0.2rem;
         margin-bottom: -4rem;
       }
@@ -112,7 +111,10 @@
       max-width: 43.5rem;
 
       @include media('<tablet') {
-        max-width: 26rem;
+        top: initial;
+        max-width: 100%;
+        width: 90%;
+        margin: 0 auto;
       }
     }
 
@@ -174,9 +176,14 @@
 
     &.right {
       padding-left: 5rem;
+
+      @include media('<tablet') {
+        padding-left: 0;
+      }
+      }
     }
 
-    .containerleft{
+    .containerleft {
 
       top:10rem;
       width:35rem;
@@ -194,10 +201,7 @@
           margin-bottom: 3rem;
 
           @include media('<tablet') {
-            font-size: 20px;
-            top: -9rem;
-            position:absolute;
-            left: 12rem;
+            font-size: 2rem;
           }
         }
 
@@ -212,10 +216,8 @@
         left: 0.5rem;
 
         @include media('<tablet') {
-          font-size: 18px;
-          text-align: justify;
-          top:-90px;
-          left:-100px;
+          font-size: 1.8rem;
+          text-align: left;
           margin-bottom: 0.4rem;
         }
       }
@@ -229,8 +231,9 @@
 
       @include media('<tablet') {
         max-width: 26rem;
-        top: 350px;
-        left: 79px;
+        top: 43rem;
+        left:5rem;
+
       }
     }
 
@@ -247,8 +250,8 @@
 
       @include media('<tablet') {
         max-width: 26rem;
-        top: 400px;
-        left: 30px;
+        top: 40rem;
+        left: 3rem;
         height: 15rem;
         width: 15rem;
       }
@@ -265,8 +268,12 @@
 
     &.right-col {
       padding-left: 8rem;
+      @include media('<tablet') {
+        width: 100%;
+        padding-left: 0rem;
+      }
     }
-  }
+
 }
 
 .meet-out-founders {
@@ -336,11 +343,10 @@
     font-weight: 700;
     margin-bottom: 2.5rem;
     text-align: center;
-    line-height: 5rem;
+    line-height: 1.5;
 
     @include media('<tablet') {
       font-size: 18px;
-      line-height: 2rem;
       margin-bottom: -11rem;
     }
   }
