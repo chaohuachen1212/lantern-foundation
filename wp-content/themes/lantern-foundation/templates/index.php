@@ -68,6 +68,7 @@
           <h3>Campaign 1</h3>
           <h4>Healing Smiles, Changing Lives</h4>
             <img class="img9" src="<?php echo GET_URI ?>/img/Img 1.1.png">
+            <img class="img10" src="<?php echo GET_URI ?>/img/Layer 1 - map.png">
           <div class="top-copy">
             <p>Supporting children in need of cleft palate surgeries and giving them a reason to smile</p>
           </div>
@@ -78,6 +79,22 @@
           <div id="box4"></div>
           <img class="img7" src="<?php echo GET_URI ?>/img/Project 1 BG.png">
           <img class="img4" src="<?php echo GET_URI ?>/img/Img 1.2 1.3-2.png">
+
+          <div id="box12">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16rem" height="16rem" viewBox="0 0 194 198" fill="none">
+              <g style="mix-blend-mode:multiply">
+                <path d="M3.5 3.5H190.5V194.5H3.5V3.5Z" stroke="#F7EEE9" stroke-width="7"/>
+              </g>
+            </svg>
+          </div>
+          <div id="box13">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20rem" height="14.3rem" viewBox="0 0 235 143" fill="none">
+              <g style="mix-blend-mode:multiply">
+                <path d="M3.5 3.5H231.5V139.5H3.5V3.5Z" stroke="#F7EEE9" stroke-width="7"/>
+              </g>
+            </svg>
+          </div>
+
         </div>
     </div>
     <div class="row second">
