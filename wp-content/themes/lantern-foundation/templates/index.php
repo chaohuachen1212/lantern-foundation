@@ -61,7 +61,7 @@
     <div class="inner-wrap">
       <h2>Our Projects</h2>
       <h3>Lantern Foundation hosts different projects and campaigns throughout the year.
-    Learn more about our ongoing campaigns and/or upcoming events below!</h3>
+    <br>Learn more about our ongoing campaigns and/or upcoming events below!</h3>
       <div class="row">
         <div class="col left">
           <img class="img3" src="<?php echo GET_URI ?>/img/Img 1.1.png">
