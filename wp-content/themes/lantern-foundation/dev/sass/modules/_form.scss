@@ -24,6 +24,7 @@
     input, textarea {
       width: 100%;
       padding: 1rem 2rem;
+      border: 1px solid #120202;
     }
 
     ::-ms-input-placeholder { /* Edge 12-18 */
@@ -32,10 +33,6 @@
 
     ::placeholder {
       color: rgba(18, 2, 2, 0.50);
-    }
-
-    input {
-      border: 1px solid #120202;
     }
 
     input[type="submit"] {
