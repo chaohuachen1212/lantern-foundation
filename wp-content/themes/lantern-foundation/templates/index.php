@@ -64,11 +64,11 @@
     <br>Learn more about our ongoing campaigns and/or upcoming events below!</h3>
       <div class="row">
         <div class="col left">
-          <img class="img3" src="<?php echo GET_URI ?>/img/Img 1.1.png">
+          <img class="img3" src="<?php echo GET_URI ?>/img/Img1-1.png">
           <h3>Campaign 1</h3>
           <h4>Healing Smiles, Changing Lives</h4>
-            <img class="img9" src="<?php echo GET_URI ?>/img/Img 1.1.png">
-            <img class="img10" src="<?php echo GET_URI ?>/img/Layer 1 - map.png">
+            <img class="img9" src="<?php echo GET_URI ?>/img/Img1-1.png">
+            <img class="img10" src="<?php echo GET_URI ?>/img/map.png">
           <div class="top-copy">
             <p>Supporting children in need of cleft palate surgeries and giving them a reason to smile</p>
           </div>
@@ -77,8 +77,8 @@
         <div class="line"></div>
         <div class="col right">
           <div id="box4"></div>
-          <img class="img7" src="<?php echo GET_URI ?>/img/Project 1 BG.png">
-          <img class="img4" src="<?php echo GET_URI ?>/img/Img 1.2 1.3-2.png">
+          <img class="img7" src="<?php echo GET_URI ?>/img/Project-1-BG.png">
+          <img class="img4" src="<?php echo GET_URI ?>/img/Img3-2.png">
 
           <div id="box12">
             <svg xmlns="http://www.w3.org/2000/svg" width="16rem" height="16rem" viewBox="0 0 194 198" fill="none">
@@ -99,10 +99,10 @@
     </div>
     <div class="row second">
       <div class="col left">
-        <img class="img5" src="<?php echo GET_URI ?>/img/Img 2.1.png">
+        <img class="img5" src="<?php echo GET_URI ?>/img/Img2-1.png">
         <h3>Campaign 2</h3>
         <h4>Education for Every Child</h4>
-          <img class="img8" src="<?php echo GET_URI ?>/img/Img 2.1.png">
+          <img class="img8" src="<?php echo GET_URI ?>/img/Img2-1.png">
         <div class="top-copy">
           <p>Breaking the cycle of poverty by providing education to young children</p>
         </div>
@@ -130,7 +130,7 @@
             </div>
           </div>
         </div>
-        <img class="img6" src="<?php echo GET_URI ?>/img/Img 2.2 2.3.png">
+        <img class="img6" src="<?php echo GET_URI ?>/img/Img222-3.png">
       </div>
   </div>
   </div>

@@ -4,7 +4,7 @@
     color: rgba(85, 34, 0, 0.50);
     font-weight: 700;
     text-align: center;
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
     text-transform: uppercase;
 
     @include media('<tablet') {
@@ -55,7 +55,7 @@
       margin-bottom: 2rem;
 
       @include media('<tablet') {
-        font-size: 22px;
+        font-size: 26px;
       }
     }
     p {
@@ -64,7 +64,7 @@
       max-width: 52rem;
 
       @include media('<tablet') {
-        font-size: 12px;
+        font-size: 14px;
         max-width: 100%;
       }
     }
@@ -164,7 +164,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: 89.5rem;
-    margin: 10rem auto 0;
+    margin: 4rem auto 0;
 
     @include media('<tablet') {
       text-align: center;
@@ -345,8 +345,8 @@
   margin-bottom: 13rem;
 
   @include media('<tablet') {
-    padding: 80px 0 0;
-    margin-bottom: 120px;
+    padding: 60px 0 0;
+    margin-bottom: 95px;
   }
 
   .inner-wrap {
@@ -414,13 +414,17 @@
 
       &.left{
         padding-right: 6rem;
+
+        @include media('<tablet') {
+          padding-right: 0;
+        }
       }
 
       &.right {
         padding-left: 6rem;
 
         @include media('<tablet') {
-          margin-top: 40px;
+          margin-top: 50px;
         }
       }
         .img10 {
@@ -482,7 +486,6 @@
           @include media('<tablet') {
             display:block;
             position: relative;
-            right:-42px;
           }
         }
 
@@ -498,7 +501,6 @@
           @include media('<tablet') {
             font-size: 18px;
             position:relative;
-            right:-40px;
             margin-top: 0;
           }
         }
@@ -515,8 +517,6 @@
           @include media('<tablet') {
             font-size: 18px;
             position:relative;
-            right:-4rem;
-            top: 2rem;
           }
         }
 
@@ -528,10 +528,10 @@
           line-height: 1.5;
 
           @include media('<tablet') {
-            font-size: 18px;
+            font-size: 16px;
             position:relative;
-            right:-40px;
             text-align: center;
+            line-height: 30px;
           }
         }
 
@@ -539,12 +539,17 @@
           margin-bottom: 5rem;
 
           @include media('<tablet') {
-            margin-bottom: 2rem;
+            margin-bottom: 50px;
           }
 
           p {
             font-weight: 600;
             text-align: center;
+
+            @include media('<tablet') {
+              line-height: 30px;
+              font-size: 16px;
+            }
           }
         }
 
@@ -592,7 +597,6 @@
           @include media('<tablet') {
             display:block;
             position: relative;
-            right:-42px;
           }
         }
 
@@ -712,7 +716,7 @@
   padding-bottom: 5rem;
 
   @include media('<tablet') {
-    margin: 40px 0 40px;
+    margin: 0px 0 40px;
     padding-bottom: 0px;
     padding-top: 40px;
   }
@@ -742,8 +746,9 @@
     margin-top: 3rem;
 
     @include media('<tablet') {
-      font-size: 20px;
+      font-size: 18px;
       margin-top: 25px;
+      line-height: 30px;
     }
   }
 
