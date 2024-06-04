@@ -22,7 +22,7 @@
     <div class="row">
       <div class="col">
         <h3>Introduction</h3>
-        <p>Established early 2023, Lantern Foundation is a nonprofit organization that is dedicated to bettering the lives of children in China who are in poverty. Through donations, events, and campaigns, we want to spark awareness, create an impact, and be a part of the solution for child poverty. Since we have launched our foundation, we have received over $5000 in donations. We hope to continue making a positive impact with your donations.</p>
+        <p>Established early 2023, Lantern Foundation is a nonprofit organization that is dedicated to bettering the lives of children in China who are in poverty. Through donations, events, and campaigns, we want to spark awareness, create an impact, and be a part of the solution for child poverty. Since we have launched our foundation, we have received over $40,000 in donations. We hope to continue making a positive impact with your donations and support.</p>
       </div>
       <div class="col right">
         <div id="box1"></div>
@@ -61,8 +61,8 @@
     <div class="inner-wrap">
       <h2>Our Projects</h2>
       <h3>Lantern Foundation hosts different projects and campaigns throughout the year.
-    <br>Learn more about our ongoing campaigns and/or upcoming events below!</h3>
-      <div class="row">
+    <br>Learn more about our ongoing campaigns below!</h3>
+      <div class="row first">
         <div class="col left">
           <img class="img3" src="<?php echo GET_URI ?>/img/Img1-1.png">
           <h3>Campaign 1</h3>
@@ -72,7 +72,7 @@
           <div class="top-copy">
             <p>Supporting children in need of cleft palate surgeries and giving them a reason to smile</p>
           </div>
-          <p>In impoverished communities where medical resources are scarce, many children face the daily challenges of living with a cleft palate, hindering their ability to eat, speak, and smile with confidence. Lantern Foundation has partnered with Beijing Smile Angel Children’s Hospital, the first charity hospital in China, to provide cleft palate surgeries to children whose families can not afford to pay for them. Through these efforts, we hope that these children can have the simple joys of experiencing a healthy, happy childhood.</p>
+          <p>In impoverished communities especially rural communities, many children face challenges with easy medical access. Lantern Foundation has partnered with Beijing Smile Angel Children’s Hospital, the first charity hospital in China. Specifically, we provide surgeries for children with a cleft palate, many of whom have difficulties eating, speaking, and even smiling. Additionally, through our collaboration, we help fund travel expenses for doctors to travel to rural areas to provide medical checkups. Through these efforts, we hope to alleviate the burden of lacking medical access for those children who live in poor communities.</p>
         </div>
         <div class="line"></div>
         <div class="col right">
@@ -143,7 +143,7 @@
     <div class="inner-wrap">
       <h2>Donate</h2>
       <img src="<?php echo GET_URI ?>/img/donate-img.jpg">
-      <h3>Through your donation, we can make a difference in the lives of children around the world. Donations of any amount is greatly appreciated and is guaranteed to go towards one of our campaigns and projects.</h3>
+      <h3>Through your donation, we can make a difference in the lives of children around the world. Donations of any amount are greatly appreciated and are guaranteed to go towards one of our campaigns and projects. Thank you for your continued support!</h3>
       <div class="btn-wrap">
         <a class="btn" target="_blank" href="https://square.link/u/hOHmgOj0">Donate to Lantern Foundation</a>
       </div>
@@ -152,7 +152,7 @@
           <h3>Other Ways to Donate</h3>
           <div class="box">
             <p>Mail Your Donation:</p>
-            <p>3986 Summit Road, Dublin CA</p>
+            <p>3962 Summit Road, Dublin CA 94568</p>
           </div>
         </div>
         <div class="col">

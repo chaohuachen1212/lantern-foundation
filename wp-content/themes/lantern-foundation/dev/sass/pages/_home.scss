@@ -379,6 +379,16 @@
         margin: 50px auto 0;
     }
 
+    &.first {
+      .line {
+        height: 94rem;
+
+        @include media('<tablet') {
+          height: 0;
+        }
+      }
+    }
+
     &.second {
       margin-top: 16rem;
       position: relative;
@@ -842,7 +852,7 @@
     }
 
     &:first-child {
-      max-width: 34.8rem;
+      max-width: 36.8rem;
 
       @include media('<tablet') {
         padding-left: 0;
@@ -851,7 +861,7 @@
     }
 
     .box {
-      padding-left: 6rem;
+      padding-left: 4rem;
 
       @include media('<tablet') {
         padding-left: 0;
