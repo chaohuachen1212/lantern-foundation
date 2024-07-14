@@ -1,6 +1,16 @@
 
 
     </div> <!-- End max-container -->
+      <!-- Video Modal -->
+    <section class="video-modal" role="dialog" tabindex="0">
+      <article class="video-modal-wrap">
+        <iframe class="video-iframe" width="420" height="315" src="" frameborder="0" allowfullscreen>
+        </iframe>
+      </article>
+      <div class="video-modal-close" tabindex="0" role="button">
+        <?php include 'inc/vectors/close.svg'; ?>
+      </div>
+    </section>
 
     <footer>
       <img class="footer-bg" src="<?php echo GET_URI ?>/img/FooterBG.jpg">

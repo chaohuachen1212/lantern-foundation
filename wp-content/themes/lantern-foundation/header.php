@@ -17,7 +17,8 @@
     <header role="navigation">
       <div class="logo-wrap">
         <a href="/">
-          <img src="<?php echo GET_URI ?>/img/LF_LOGO.png">
+          <img class="desktop-logo" src="<?php echo GET_URI ?>/img/white-logo.png">
+          <img class="mobile-logo" src="<?php echo GET_URI ?>/img/LF_LOGO.png">
         </a>
         <div class="hamburger">
               <span></span>
@@ -25,15 +26,23 @@
       </div>
 
       <nav>
-        <a href="/#about-us">About us</a>
-        <a href="/#our-projects">Our Projects</a>
-        <a href="/#donate">Donate</a>
+        <li>
+          <a href="/#about-us">About us</a>
+        </li>
+        <li>
+          <a href="/#our-projects">Our Projects</a>
+        </li>
+        <li>
+          <a href="/#donate">Donate</a>
+        </li>
+        <li>
+          <a href="/#contact" class="btn contact" href="">Contact</a>
+        </li>
+        <li>
+          <a class="btn" target="_blank" href="https://square.link/u/hOHmgOj0">Donate</a>
+        </li>
       </nav>
 
-      <div class="btn-wrap">
-        <a href="/#contact" class="btn contact" href="">Contact</a>
-        <a class="btn" target="_blank" href="https://square.link/u/hOHmgOj0">Donate</a>
-      </div>
     </header>
 
 

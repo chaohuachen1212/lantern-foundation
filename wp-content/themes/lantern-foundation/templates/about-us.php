@@ -1,6 +1,6 @@
 <?php
   // Template Name: About Us
-  update_option('body_class', 'about-page theme-magenta');
+  update_option('body_class', 'about-page theme-magenta new-nav');
   get_header();
 ?>
 

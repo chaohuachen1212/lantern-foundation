@@ -5,3 +5,4 @@ import './modules/form';
 import './modules/flickity';
 import './modules/home';
 import './modules/headroom';
+import './modules/video-modal';
