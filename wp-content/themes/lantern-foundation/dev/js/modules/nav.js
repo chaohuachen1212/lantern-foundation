@@ -5,9 +5,8 @@
       $body = $('body'),
       $html = $('html'),
       $nav = $('.header-nav'),
-      $subnavToggles = $('.mobile-subnav-toggle'),
-      $eyebrow = $('.eyebrow'),
-      $eyebrowClose = $('.eyebrow-close');
+      $subnavToggles = $('.mobile-subnav-toggle');
+
 
   $hamburger.on('click', function(){
     $(this).toggleClass('is-active');
@@ -37,10 +36,6 @@
     $html.removeClass('is-locked');
   });
 
-  $eyebrowClose.on('click', function() {
-    $eyebrow.removeClass('is-active');
-    sessionStorage.setItem('eyebrow', 'hide');
-  });
 
   $subnavToggles.on('click', function() {
     if ($(this).parent().hasClass('is-expanded')) {
@@ -51,8 +46,6 @@
     }
   });
 
-  if (!sessionStorage.getItem('eyebrow')) {
-    $eyebrow.addClass('is-active');
-  }
+
 
 }(jQuery));

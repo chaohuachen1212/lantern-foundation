@@ -2,6 +2,7 @@
   header {
     background-color: #252B23;
   }
+
 }
 
 .sticky-nav {
@@ -162,6 +163,7 @@ header {
 
       color: $white;
       border-bottom: 0.1rem solid transparent;
+      text-decoration: none !important;
 
       &:hover {
         border-bottom: 0.1rem solid $white;
