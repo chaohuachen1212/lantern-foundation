@@ -1,0 +1,13 @@
+.btn {
+  font-size: 1.4rem;
+  color: $black;
+  border: 0.2rem solid $black;
+  padding: 1rem 3rem;
+  font-weight: bold;
+  display: inline-block;
+
+  @include media('<tablet') {
+    font-size: 13px;
+    padding: 10px 30px;
+  }
+}

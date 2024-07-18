@@ -36,10 +36,10 @@
           <a href="/#donate">Donate</a>
         </li>
         <li>
-          <a href="/#contact" class="btn contact" href="">Contact</a>
+          <a href="/#contact" class="contact" href="">Contact</a>
         </li>
         <li>
-          <a class="btn" target="_blank" href="https://square.link/u/hOHmgOj0">Donate</a>
+          <a target="_blank" href="https://square.link/u/hOHmgOj0">Donate</a>
         </li>
       </nav>
 

@@ -1,0 +1,89 @@
+.news-updates--main {
+  padding: 8rem 0;
+  h1 {
+    font-size: 6rem;
+    color: $black;
+  }
+
+  p {
+    color: #021112;
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+
+  .rows-wrap {
+    margin-top: 6rem;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 4rem;
+
+    &:hover {
+      .btn {
+        color: $white;
+        background-color: $black;
+
+      }
+    }
+
+    &:not(:last-child) {
+      border-bottom: 0.1rem solid #DDDDDD;
+      padding-bottom: 4rem;
+    }
+  }
+
+  .img-wrap {
+    width: 50%;
+    justify-content: center;
+    display: flex;
+  }
+
+  figure {
+    position: relative;
+    width: 43.4rem;
+
+    &:before {
+      content: '';
+      height: 0;
+      display: block;
+      padding-top: 71%;
+    }
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  article {
+    width: 50%;
+    position: relative;
+
+    h2 {
+      font-size: 3.5rem;
+      color: $black;
+      font-weight: bold;
+      font-family: $base-font;
+    }
+
+    p {
+      font-size: 1.6rem;
+      line-height: 1.4;
+    }
+
+    .btn {
+      margin-top: 3rem;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+}
