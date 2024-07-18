@@ -69,16 +69,6 @@ header {
     }
 
     img {
-      max-width: 9.8rem;
-
-
-      &.desktop-logo {
-        transform: scale(1.1);
-
-        @include media('<=tablet') {
-          transform: scale(1.3);
-        }
-      }
 
       &.mobile-logo {
         display: none;
