@@ -1,0 +1,132 @@
+.volunteer-main {
+  .container{
+    .hero {
+      h1 {
+        font-size: 6rem;
+        color: $black;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 8rem;
+      }
+
+      p {
+        font-size: 3rem;
+        color: $black;
+        font-weight: 300;
+        text-align: center;
+        margin-top: 8rem;
+      }
+    }
+
+    .volunteer-program {
+      h2 {
+        font-size: 4.5rem;
+        color: $black;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 8rem;
+      }
+    }
+
+    .container-rowone {
+      margin-top: 5rem;
+      max-width: 116rem;
+      height: 37.8rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .col-left {
+        width: 50%;
+        position: relative;
+        box-sizing: border-box;
+      }
+      .col-right {
+        width:50%;
+        padding-left:5rem;
+        position: relative;
+        box-sizing: border-box;
+        background-color: #f9f9f9;
+
+        p{
+          padding-top: 7rem;
+          width: 46.5rem;
+          height: 26.3rem;
+          weight: 400;
+          font-size: 2.2rem;
+          line-height: 3.5rem;
+        }
+      }
+    }
+
+    .ambassador-program {
+        h2 {
+          font-size: 4.5rem;
+          color: $black;
+          font-weight: 700;
+          text-align: center;
+          margin-top: 8rem;
+        }
+      }
+
+
+    .container-rowtwo {
+        margin-top: 5rem;
+        max-width: 116rem;
+        height: 65rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 8rem;
+
+      .col-left {
+        width: 50%;
+        position: relative;
+        box-sizing: border-box;
+      }
+
+      .col-right {
+        width:50%;
+        padding-left:5rem;
+        position: relative;
+        box-sizing: border-box;
+        background-color: #f9f9f9;
+
+        p{
+          padding-top: 9rem;
+          width: 46.5rem;
+          height: 26.3rem;
+          weight: 400;
+          font-size: 2.2rem;
+          line-height: 3.5rem;
+        }
+      }
+    }
+
+
+    .container-three {
+      p{
+        padding-bottom: 10rem;
+        width: 115.7rem;
+        height: 24.5rem;
+        weight: 400;
+        font-size: 2.2rem;
+        line-height: 3.5rem;
+        margin-top: 10rem;
+        text-align: center;
+      }
+    }
+
+
+    .container-four {
+      .innerwarp {
+        width: 107rem;
+        height: 165.2rem;
+        margin: auto;
+        margin-bottom: 8rem;
+      }
+    }
+
+
+  }
+}
