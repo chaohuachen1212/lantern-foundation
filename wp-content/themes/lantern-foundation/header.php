@@ -17,7 +17,7 @@
     <header role="navigation">
       <div class="logo-wrap">
         <a href="/">
-          <img class="desktop-logo" src="<?php echo GET_URI ?>/img/orange-logo.png">
+          <img class="desktop-logo" src="<?php echo GET_URI ?>/img/logo-white.png">
           <img class="mobile-logo" src="<?php echo GET_URI ?>/img/LF_LOGO.png">
         </a>
         <div class="hamburger">
