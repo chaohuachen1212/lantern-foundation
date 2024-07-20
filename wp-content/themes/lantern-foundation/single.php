@@ -20,9 +20,11 @@
           <p class="time"><?php echo esc_html(get_the_date( 'M j, Y' )); ?></p>
         </div>
 
-        <figure class="hero-img <?php if($hero['turn_off_featured_image']): echo 'hidden-featured'; endif; ?>">
+        <?php if (get_the_post_thumbnail_url()): ?>
+        <figure class="hero-img">
           <img src="<?php the_post_thumbnail_url(); ?>" alt="Thumbnail">
-         </figure>
+        </figure>
+       <?php endif; ?>
 
          <div class="main-content-wrap">
            <?php the_content() ?>
