@@ -115,3 +115,16 @@ if (function_exists('acf_add_options_page')) {
     'parent_slug' =>  $parent['menu_slug']
   ));
 }
+
+
+// remove the ending [...] from excerp function
+function new_excerpt_more( $more ) {
+    return ' ...';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
+
+// change length of excerp
+function custom_excerpt_length( $length ) {
+    return 45;//change the number for the length you want
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999);
