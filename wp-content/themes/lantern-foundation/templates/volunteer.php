@@ -25,7 +25,10 @@ We offer opportunities to receive volunteer hours through your contributions.</p
         <img class="imgvolunteer1" src="http://lantern-foundation.local/wp-content/themes/lantern-foundation/img/volunteer/imgvolunteer1.jpg">
       </div>
       <div class="col-right">
-        <p>If you’d like to become a volunteer, help us out at our next event! You can sign up for our newsletter through the ‘Contact’ section to receive updates about our future events. After participating in an event, you can fill out the form below to receive your hours.</p>
+        <div>
+          <p>If you’d like to become a volunteer, help us out at our next event! You can sign up for our newsletter through the ‘Contact’ section to receive updates about our future events. After participating in an event, you can fill out the form below to receive your hours.</p>
+          <a class="btn" herf="">CLICK HERE</a>
+        </div>
       </div>
     </div>
 
