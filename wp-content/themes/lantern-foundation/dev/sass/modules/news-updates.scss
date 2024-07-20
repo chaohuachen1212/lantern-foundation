@@ -1,18 +1,40 @@
 .news-updates--main {
   padding: 8rem 0;
+
+  @include media('<tablet') {
+    padding: 60px 0;
+  }
+
   h1 {
     font-size: 6rem;
     color: $black;
+    font-weight: bold;
+    margin-bottom: 3rem;
+
+
+    @include media('<tablet') {
+      font-size: 36px;
+      margin-bottom: 25px;
+    }
   }
 
   p {
     color: #021112;
     font-size: 3rem;
     line-height: 1.2;
+
+    @include media('<tablet') {
+      font-size: 20px;
+      line-height: 1.4;
+    }
   }
 
   .rows-wrap {
     margin-top: 6rem;
+
+    @include media('<tablet') {
+      margin-top: 45px;
+    }
   }
 
   .row {
@@ -40,11 +62,20 @@
     width: 50%;
     justify-content: center;
     display: flex;
+
+    @include media('<tablet') {
+      width: 100%;
+      margin-bottom: 15px;
+    }
   }
 
   figure {
     position: relative;
     width: 43.4rem;
+
+    @include media('<tablet') {
+      width: 100%;
+    }
 
     &:before {
       content: '';
@@ -67,23 +98,50 @@
     width: 50%;
     position: relative;
 
+    @include media('<tablet') {
+      width: 100%;
+    }
+
     h2 {
       font-size: 3.5rem;
       color: $black;
       font-weight: bold;
       font-family: $base-font;
+
+      @include media('<tablet') {
+        font-size: 24px;
+        margin-bottom: 15px;
+      }
     }
 
     p {
       font-size: 1.6rem;
       line-height: 1.4;
+
+      @include media('<tablet') {
+        font-size: 15px;
+      }
+    }
+
+    .date {
+      font-size: 1.6rem;
+      color: $black;
+
+      @include media('<tablet') {
+        font-size: 15px;
+      }
     }
 
     .btn {
-      margin-top: 3rem;
-      position: absolute;
-      bottom: 0;
-      left: 0;
+      margin-top: 30px;
+      transition: 0.35s;
+
+      @include media('>=tablet') {
+        margin-top: 3rem;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
     }
   }
 }

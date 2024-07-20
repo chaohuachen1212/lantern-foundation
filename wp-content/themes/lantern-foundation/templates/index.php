@@ -43,6 +43,7 @@
     </div>
   </div>
 </section>
+
 <section class="home-hero">
   <img src="<?php echo GET_URI ?>/img/HeroBG.png">
   <div class="container">

@@ -6,49 +6,39 @@
 
   <section class="news-updates--main">
     <div class="container">
-      <h1>News & Updates</h1>
-      <p>Welcome to our newly-added News & Updates page! We hope to provide you with continuous updates of what we have been working on—our latest projects, recent events, new collaborations, and more. Read below to learn more!</p>
+      <h1><?php the_title(); ?></h1>
+      <?php the_field('news_introduction'); ?>
 
       <div class="rows-wrap">
-        <a class="row" href="">
+        <?php
+        $options = array(
+          'post_type' => 'post',
+          'post_status' => 'publish',
+          'posts_per_page' => -1,
+        );
+        $wp_query = new WP_Query( $options );
+        while( $wp_query->have_posts() ) : $wp_query->the_post();
+
+       ?>
+
+        <a class="row" href="<?php the_permalink(); ?>">
           <div class="img-wrap">
             <figure>
-              <img src="<?php echo GET_URI ?>/img/news/News1.png" alt="Image">
+              <img src="<?php the_post_thumbnail_url(); ?>" alt="Thumbnail">
             </figure>
           </div>
           <article>
-            <span class="date">Aril 4, 2024 </span>
-            <h2>A Year in Review – Lantern Foundation’s Achievements</h2>
-            <p>Recap of Lantern Foundation’s partnerships and achievements from April 2023 to April 2024. While our external achievements such as our community events are very valuable to us, we also want to highlight the behind-the-scenes efforts and milestones that we have reached as a developing organization</p>
+            <span class="date"><?php echo get_the_date( 'M j, Y' ); ?></span>
+            <h2><?php the_title(); ?></h2>
+            <p><?php the_excerpt(); ?></p>
             <span class="btn">Read More</span>
           </article>
         </a>
-        <a class="row" href="">
-          <div class="img-wrap">
-            <figure>
-              <img src="<?php echo GET_URI ?>/img/news/News1.png" alt="Image">
-            </figure>
-          </div>
-          <article>
-            <span class="date">Aril 4, 2024 </span>
-            <h2>A Year in Review – Lantern Foundation’s Achievements</h2>
-            <p>Recap of Lantern Foundation’s partnerships and achievements from April 2023 to April 2024. While our external achievements such as our community events are very valuable to us, we also want to highlight the behind-the-scenes efforts and milestones that we have reached as a developing organization</p>
-            <span class="btn">Read More</span>
-          </article>
-        </a>
-        <a class="row" href="">
-          <div class="img-wrap">
-            <figure>
-              <img src="<?php echo GET_URI ?>/img/news/News1.png" alt="Image">
-            </figure>
-          </div>
-          <article>
-            <span class="date">Aril 4, 2024 </span>
-            <h2>A Year in Review – Lantern Foundation’s Achievements</h2>
-            <p>Recap of Lantern Foundation’s partnerships and achievements from April 2023 to April 2024. While our external achievements such as our community events are very valuable to us, we also want to highlight the behind-the-scenes efforts and milestones that we have reached as a developing organization</p>
-            <span class="btn">Read More</span>
-          </article>
-        </a>
+        <?php
+         endwhile;
+         wp_reset_postdata();
+         wp_reset_query();
+        ?>
 
       </div>
     </div>

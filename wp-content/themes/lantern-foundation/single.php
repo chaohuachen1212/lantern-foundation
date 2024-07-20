@@ -20,44 +20,45 @@
           <p class="time"><?php echo esc_html(get_the_date( 'M j, Y' )); ?></p>
         </div>
 
-        <figure class="hero-img <?php if($hero['turn_off_featured_image']): echo 'hidden-featured'; endif; ?>">
+        <?php if (get_the_post_thumbnail_url()): ?>
+        <figure class="hero-img">
           <img src="<?php the_post_thumbnail_url(); ?>" alt="Thumbnail">
-         </figure>
+        </figure>
+       <?php endif; ?>
 
          <div class="main-content-wrap">
            <?php the_content() ?>
          </div>
 
          <div class="relatived-news-sec">
-           <h2>Kepp Reading</h2>
+           <h2>Keep Reading</h2>
            <div class="cards-wrap">
-             <a class="card" href="">
+             <?php
+              $post_id = get_the_ID();
+              $cat_ids = array();
+
+              $options = array(
+                'post_type'      => 'post',
+                'orderby' => 'rand',
+                'posts_per_page' => 3
+              );
+
+              $wp_query = new WP_Query($options);
+              $count = 0;
+              while ($wp_query->have_posts()) : $wp_query->the_post();
+            ?>
+             <a class="card" href="<?php the_permalink(); ?>">
                <figure>
-                 <img class="video-img" src="<?php echo GET_URI ?>/img/news/News-3.jpg">
+                 <img class="video-img" src="<?php the_post_thumbnail_url(); ?>">
                </figure>
                <article>
-                 <h3>Guanxi Flash Flood: Disaster Relief & Family Visits</h3>
+                 <h3><?php the_title(); ?></h3>
                  <span class="btn">Read More</span>
                </article>
              </a>
-             <a class="card" href="">
-               <figure>
-                 <img class="video-img" src="<?php echo GET_URI ?>/img/news/News-3.jpg">
-               </figure>
-               <article>
-                 <h3>Guanxi Flash Flood: Disaster Relief & Family Visits</h3>
-                 <span class="btn">Read More</span>
-               </article>
-             </a>
-             <a class="card" href="">
-               <figure>
-                 <img class="video-img" src="<?php echo GET_URI ?>/img/news/News-3.jpg">
-               </figure>
-               <article>
-                 <h3>Guanxi Flash Flood: Disaster Relief & Family Visits</h3>
-                 <span class="btn">Read More</span>
-               </article>
-             </a>
+             <?php
+              endwhile; wp_reset_query();
+            ?>
 
            </div>
          </div>
