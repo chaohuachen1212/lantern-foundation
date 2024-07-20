@@ -29,7 +29,7 @@
          </div>
 
          <div class="relatived-news-sec">
-           <h2>Kepp Reading</h2>
+           <h2>Keep Reading</h2>
            <div class="cards-wrap">
              <?php
               $post_id = get_the_ID();
@@ -57,24 +57,6 @@
              <?php
               endwhile; wp_reset_query();
             ?>
-             <a class="card" href="">
-               <figure>
-                 <img class="video-img" src="<?php echo GET_URI ?>/img/news/News-3.jpg">
-               </figure>
-               <article>
-                 <h3>Guanxi Flash Flood: Disaster Relief & Family Visits</h3>
-                 <span class="btn">Read More</span>
-               </article>
-             </a>
-             <a class="card" href="">
-               <figure>
-                 <img class="video-img" src="<?php echo GET_URI ?>/img/news/News-3.jpg">
-               </figure>
-               <article>
-                 <h3>Guanxi Flash Flood: Disaster Relief & Family Visits</h3>
-                 <span class="btn">Read More</span>
-               </article>
-             </a>
 
            </div>
          </div>
