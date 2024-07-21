@@ -1,37 +1,51 @@
 <?php
   // Template Name: home page
-  update_option('body_class', 'page-home theme-magenta');
+  update_option('body_class', 'page-home theme-magenta sticky-nav');
   get_header();
 ?>
-<h1>Home page</h1>
 
-
-
-
-  <section class="form--sec">
-    <div class="container">
-      <h2>Send Us Message</h2>
-      <form>
+<section class="home--hero">
+  <figure class="hero-video-wrap">
+    <video class="video" role="presentation" autoplay muted loop>
+      <source id="video" src="<?php echo GET_URI ?>/videos/home-hero-bg.mp4" type="video/mp4">
+    </video>
+  </figure>
+  <div class="container">
+    <div class="hero-content">
+      <aticle>
+        <div class="top-wrap">
+          <h1>Lantern Foundation</h1>
+          <p>More than 70% of China’s 367 million children live in rural areas. They face countless barriers because of their remote and underresourced areas. We strive to bridge the health and educational gaps that exist between rural and urban communities.</p>
+        </div>
         <div class="row">
-          <div class="half">
-            <input type="text" class="input-required" id="fname" name="fname" placeholder="First Name">
+          <div class="col video-wrap">
+
+            <p class="text-center">Check out our recap video of our trip to Linxia, Gansu</p>
+            <figure class="video-modal-trigger" data-video-url="https://www.youtube.com/embed/rkOCRmAcYEs?si=KDV7T__h135sEw5S" >
+              <img class="video-img" src="<?php echo GET_URI ?>/img/home/hero-video-img.png">
+              <img class="pay-btn" src="<?php echo GET_URI ?>/img/home/play-bottom.png">
+            </figure>
+
           </div>
-          <div class="half">
-            <input type="text" id="lname" name="lname" placeholder="Last Name">
+          <div class="col">
+            <div class="text-box">
+              <p>Read about our work in Guangxi after its flash flood!</p>
+              <a class="btn">Read More</a>
+            </div>
+            <div class="text-box">
+              <p>Learn about our different campaigns and projects below!</p>
+              <a class="btn">Read More</a>
+            </div>
           </div>
         </div>
-        <div class="row">
-          <input type="email" name="email" placeholder="Email">
-        </div>
-        <div class="row">
-          <input type="email" name="email" placeholder="Email">
-        </div>
-        <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="Leave Your Message">
 
-        </textarea>
-      </form>
+    </article>
     </div>
-  </section>
+  </div>
+</section>
+
+
+  <?php include GET_DIR . '/templates/modules/contact-form.php'; ?>
 <?php
 get_footer();
 ?>

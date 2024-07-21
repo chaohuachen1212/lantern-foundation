@@ -11,7 +11,7 @@
   <?php include GET_DIR . '/templates/modules/our-impact.php'; ?>
   <?php include GET_DIR . '/templates/modules/about-founder.php'; ?>
   <?php include GET_DIR . '/templates/modules/our-partner.php'; ?>
-  <?php include GET_DIR . '/templates/modules/about-feature.php'; ?>
+  <?php include GET_DIR . '/templates/modules/feature-three-images.php'; ?>
   <?php include GET_DIR . '/templates/modules/contact-form.php'; ?>
 
 <?php

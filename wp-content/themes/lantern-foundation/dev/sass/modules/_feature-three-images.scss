@@ -1,0 +1,46 @@
+.featue--three-images {
+  position: relative;
+  display: flex;
+  padding-top: 10rem;
+  padding-bottom: 2rem;
+  @include media('<=tablet') {
+    padding-top: 60px;
+    padding-bottom: 20px;
+  }
+
+  &:before {
+    content: '';
+    height: 0;
+    display: block;
+    padding-top: 53%;
+  }
+
+  .two-img {
+    width: 30%;
+    position: relative;
+
+    img {
+      height: 50%;
+
+
+      &:last-child {
+        bottom: 0;
+        top: inherit;
+      }
+    }
+  }
+
+  .large-img {
+    width: 70%;
+    position: relative;
+  }
+
+  img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}

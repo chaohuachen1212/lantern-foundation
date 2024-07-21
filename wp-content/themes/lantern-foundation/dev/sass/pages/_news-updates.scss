@@ -9,7 +9,7 @@
     font-size: 6rem;
     color: $black;
     font-weight: bold;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
 
 
     @include media('<=tablet') {
@@ -20,17 +20,17 @@
 
   p {
     color: #021112;
-    font-size: 3rem;
-    line-height: 1.2;
+    font-size: 2rem;
+    line-height: 1.4;
 
     @include media('<=tablet') {
-      font-size: 20px;
+      font-size: 18px;
       line-height: 1.4;
     }
   }
 
   .rows-wrap {
-    margin-top: 6rem;
+    margin-top: 7rem;
 
     @include media('<=tablet') {
       margin-top: 45px;
