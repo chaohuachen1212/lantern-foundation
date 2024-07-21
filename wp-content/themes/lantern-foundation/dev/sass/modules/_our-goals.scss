@@ -1,0 +1,59 @@
+.about--goals {
+  margin: 10rem 0;
+
+  @include media('<=tablet') {
+    margin: 60px 0;
+  }
+
+  .cards-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 5rem;
+  }
+
+  .card {
+    padding: 5rem 2%;
+    width: calc(100% / 3 - 2.5rem);
+    background-color: rgba(246,238,237,0.5);
+    text-align: center;
+    border: 0.2rem solid #FF7D04;
+
+    @include media('<=tablet') {
+      width: 100%;
+      padding: 45px 2%;
+      border: 2px solid #FF7D04;
+
+      &:not(:last-child) {
+        margin-bottom: 25px;
+      }
+    }
+
+    img {
+      margin: 0 auto;
+      max-width: 5.6rem;
+    }
+
+    h3 {
+      font-size: 3rem;
+      color: #FF5C00;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+      text-transform: uppercase;
+
+      @include media('<=tablet') {
+        font-size: 26px;
+        margin: 20px 0;
+      }
+    }
+
+    p {
+      font-size: 1.6rem;
+      color: $black;
+
+      @include media('<=tablet') {
+        font-size: 14px;
+      }
+    }
+  }
+}
