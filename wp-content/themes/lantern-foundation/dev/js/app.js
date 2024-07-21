@@ -6,3 +6,4 @@ import './modules/flickity';
 import './modules/home';
 import './modules/headroom';
 import './modules/video-modal';
+import './modules/logo-scroller';
