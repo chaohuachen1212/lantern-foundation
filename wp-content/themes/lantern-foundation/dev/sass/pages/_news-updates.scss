@@ -1,7 +1,7 @@
 .news-updates--main {
   padding: 8rem 0;
 
-  @include media('<tablet') {
+  @include media('<=tablet') {
     padding: 60px 0;
   }
 
@@ -12,7 +12,7 @@
     margin-bottom: 3rem;
 
 
-    @include media('<tablet') {
+    @include media('<=tablet') {
       font-size: 36px;
       margin-bottom: 25px;
     }
@@ -23,7 +23,7 @@
     font-size: 3rem;
     line-height: 1.2;
 
-    @include media('<tablet') {
+    @include media('<=tablet') {
       font-size: 20px;
       line-height: 1.4;
     }
@@ -32,7 +32,7 @@
   .rows-wrap {
     margin-top: 6rem;
 
-    @include media('<tablet') {
+    @include media('<=tablet') {
       margin-top: 45px;
     }
   }
@@ -63,7 +63,7 @@
     justify-content: center;
     display: flex;
 
-    @include media('<tablet') {
+    @include media('<=tablet') {
       width: 100%;
       margin-bottom: 15px;
     }
@@ -73,7 +73,7 @@
     position: relative;
     width: 43.4rem;
 
-    @include media('<tablet') {
+    @include media('<=tablet') {
       width: 100%;
     }
 
@@ -98,7 +98,7 @@
     width: 50%;
     position: relative;
 
-    @include media('<tablet') {
+    @include media('<=tablet') {
       width: 100%;
     }
 
@@ -108,7 +108,7 @@
       font-weight: bold;
       font-family: $base-font;
 
-      @include media('<tablet') {
+      @include media('<=tablet') {
         font-size: 24px;
         margin-bottom: 15px;
       }
@@ -118,7 +118,7 @@
       font-size: 1.6rem;
       line-height: 1.4;
 
-      @include media('<tablet') {
+      @include media('<=tablet') {
         font-size: 15px;
       }
     }
@@ -127,7 +127,7 @@
       font-size: 1.6rem;
       color: $black;
 
-      @include media('<tablet') {
+      @include media('<=tablet') {
         font-size: 15px;
       }
     }
@@ -136,7 +136,7 @@
       margin-top: 30px;
       transition: 0.35s;
 
-      @include media('>=tablet') {
+      @include media('>tablet') {
         margin-top: 3rem;
         position: absolute;
         bottom: 0;

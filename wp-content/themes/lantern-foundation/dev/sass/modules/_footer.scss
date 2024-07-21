@@ -3,7 +3,7 @@ footer {
   padding: 4rem 8rem 6rem;
   min-height: 38.7rem;
   z-index: 1;
-  @include media('<tablet') {
+  @include media('<=tablet') {
       padding: 60px 0;
       min-height: initial;
   }
@@ -16,7 +16,7 @@ footer {
     text-transform: inherit !important;
     font-family: $base-font;
 
-    @include media('<tablet') {
+    @include media('<=tablet') {
       font-size: 32px !important;
       margin-top: 45px;
     }
@@ -25,7 +25,7 @@ footer {
   .footer-logo {
     width: 16.1rem;
 
-    @include media('<tablet') {
+    @include media('<=tablet') {
       width: 130px;
     }
   }
@@ -58,7 +58,7 @@ footer {
     justify-content: space-between;
     display: none;
 
-    @include media('<tablet') {
+    @include media('<=tablet') {
       justify-content: flex-start;
       margin: 30px 0;
     }
@@ -71,7 +71,7 @@ footer {
       position: relative;
       display: block;
 
-      @include media('<tablet') {
+      @include media('<=tablet') {
         margin-right: 15px;
         width: 40px;
         height: 40px;
@@ -98,14 +98,14 @@ footer {
   .col-l {
     width: 20rem;
 
-    @include media('<tablet') {
+    @include media('<=tablet') {
       width: 100%;
     }
 
     .copy-wrap {
       margin: 3rem 0;
 
-      @include media('<tablet') {
+      @include media('<=tablet') {
         margin: 30px 0;
       }
     }
@@ -115,7 +115,7 @@ footer {
       text-align: center;
       line-height: 132.667%;
 
-      @include media('<tablet') {
+      @include media('<=tablet') {
         font-size: 16px;
         text-align: left;
       }
@@ -127,7 +127,7 @@ footer {
     padding-left: 8%;
     position: relative;
 
-    @include media('<tablet') {
+    @include media('<=tablet') {
       width: 100%;
       padding-left: 0;
     }
@@ -138,7 +138,7 @@ footer {
       right: 0;
       width: 54rem;
 
-      @include media('<tablet') {
+      @include media('<=tablet') {
         display: none;
       }
     }
@@ -158,7 +158,7 @@ footer {
       margin-bottom: 2.5rem;
       font-family: $base-font;
 
-      @include media('<tablet') {
+      @include media('<=tablet') {
         font-size: 18px;
       }
     }
@@ -169,7 +169,7 @@ footer {
       font-weight: 600;
       margin-bottom: 1.5rem;
 
-      @include media('<tablet') {
+      @include media('<=tablet') {
         font-size: 16px;
       }
     }
@@ -183,7 +183,7 @@ footer {
       margin-bottom: 3rem;
       text-transform: uppercase;
 
-      @include media('<tablet') {
+      @include media('<=tablet') {
         font-size: 18px;
       }
     }
@@ -191,7 +191,7 @@ footer {
     .col {
       width: 40%;
 
-      @include media('<tablet') {
+      @include media('<=tablet') {
         width: 100%;
       }
     }

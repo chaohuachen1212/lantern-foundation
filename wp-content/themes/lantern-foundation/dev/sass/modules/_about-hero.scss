@@ -2,7 +2,7 @@
   text-align: center;
   position: relative;
 
-  @include media('<tablet') {
+  @include media('<=tablet') {
     min-height: 400px;
   }
 
@@ -46,7 +46,7 @@
     color: $white;
     margin: 0;
 
-    @include media('<tablet') {
+    @include media('<=tablet') {
       font-size: 42px;
     }
   }
