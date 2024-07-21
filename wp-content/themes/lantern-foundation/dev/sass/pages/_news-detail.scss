@@ -1,7 +1,7 @@
 .news-detail--main {
   padding: 100px 0;
 
-  @include media('<tablet') {
+  @include media('<=tablet') {
     padding: 60px 0 35px;
   }
 
@@ -16,7 +16,7 @@
       }
     }
 
-    @include media('<tablet') {
+    @include media('<=tablet') {
       font-size: 18px;
     }
 
@@ -32,7 +32,7 @@
     max-width: 100rem;
     margin: 0 auto;
 
-    @include media('<tablet') {
+    @include media('<=tablet') {
       max-width: 100%;
     }
   }
@@ -44,7 +44,7 @@
     margin-top: 3rem;
     margin-bottom: 2rem;
 
-    @include media('<tablet') {
+    @include media('<=tablet') {
       font-size: 36px;
       margin-bottom: 20px;
       margin-top: 30px;
@@ -56,7 +56,7 @@
     flex-wrap: wrap;
     margin-bottom: 2rem;
 
-    @include media('<tablet') {
+    @include media('<=tablet') {
       margin-bottom: 20px;
     }
 
@@ -69,7 +69,7 @@
         padding-right: 1rem;
         border-right: 0.1rem solid $black;
 
-        @include media('<tablet') {
+        @include media('<=tablet') {
           margin-right: 10px;
           padding-right: 10px;
           border-right: 1px solid $black;
@@ -82,7 +82,7 @@
     position: relative;
     margin-bottom: 4rem;
 
-    @include media('<tablet') {
+    @include media('<=tablet') {
       margin-bottom: 30px;
     }
 
@@ -109,7 +109,7 @@
       font-size: 2rem;
       color: #021112;
 
-      @include media('<tablet') {
+      @include media('<=tablet') {
         font-size: 18px;
         margin: 25px 0;
       }
@@ -131,7 +131,7 @@
       margin-top: 4rem;
       margin-bottom: 4rem;
 
-      @include media('<tablet') {
+      @include media('<=tablet') {
         margin-top: 30px;
         margin-bottom: 30px;
       }
@@ -151,7 +151,7 @@
       position: relative;
       color: $black;
 
-      @include media('<tablet') {
+      @include media('<=tablet') {
         font-size: 20px;
         padding-bottom: 20px;
         margin-bottom: 35px;
@@ -173,7 +173,7 @@
       font-weight: bold;
       color: $black;
 
-      @include media('<tablet') {
+      @include media('<=tablet') {
         font-size: 18px;
       }
     }
@@ -188,7 +188,7 @@
       left: 2rem;
       font-weight: bold;
 
-      @include media('<tablet') {
+      @include media('<=tablet') {
         font-size: 13px;
         padding: 10px 30px;
       }
@@ -229,7 +229,7 @@
       padding-bottom: 9rem;
       transition: 0.35s;
 
-      @include media('<tablet') {
+      @include media('<=tablet') {
         width: 100%;
         margin-bottom: 3rem;
         padding-bottom: 80px;
@@ -245,7 +245,7 @@
       padding: 0 2rem;
       padding-top: 1.5rem;
 
-      @include media('<tablet') {
+      @include media('<=tablet') {
         padding-top: 15px;
       }
     }

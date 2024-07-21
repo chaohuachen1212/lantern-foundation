@@ -1,0 +1,239 @@
+.our-project-main {
+  .container{
+    max-width: 110rem;
+    .hero {
+      margin-top: 10rem;
+      text-align: center;
+
+      h3 {
+        font-size: 2.4rem;
+        color: $black;
+        font-weight: 700;
+        line-height: 4rem;
+      }
+    }
+
+    .campaign1 {
+      padding: 8rem;
+      text-align: center;
+
+
+      h2 {
+        font-size: 4.5rem;
+        color: $black;
+        font-weight: 700;
+        text-align: center;
+      }
+
+      h4 {
+
+        color: $black;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 4rem;
+      }
+
+      h5{
+        color: $black;
+        text-align: center;
+        margin-top: 3rem;
+        font-weight: 700;
+      }
+
+      .content1 {
+        padding: 6rem;
+
+        p{
+          font-size: 2rem;
+          color: $black;
+          text-align: left;
+          font-weight: normal;
+          line-height: 3.5rem;
+        }
+
+        .img1 {
+          display: flex;
+          position:relative;
+          align-items: center;
+          padding-left: 13rem;
+          padding-right: 13rem;
+          padding-bottom: 5rem;
+          max-width: 100%
+        }
+
+        .img2 {
+          display: flex;
+          position:relative;
+          align-items: center;
+          padding-left: 15rem;
+          padding-right: 15rem;
+          padding-bottom: 5rem;
+          padding-top: 3rem;
+          max-width: 100%
+        }
+        .img3 {
+          display: flex;
+          position:relative;
+          align-items: center;
+          padding-left: 15rem;
+          padding-right: 15rem;
+          padding-bottom: 5rem;
+          max-width: 100%
+        }
+        .img4 {
+          display: flex;
+          position:relative;
+          align-items: center;
+          padding-left: 15rem;
+          padding-right: 15rem;
+          padding-top: 5rem;
+          max-width: 100%
+        }
+      }
+    }
+
+
+    .campaign2 {
+      padding: 8rem;
+      text-align: center;
+      background-color: #f9f9f9;
+
+
+      h2 {
+        font-size: 4.5rem;
+        color: $black;
+        font-weight: 700;
+        text-align: center;
+      }
+
+      h4 {
+
+        color: $black;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 4rem;
+      }
+
+      h5{
+        color: $black;
+        text-align: center;
+        margin-top: 3rem;
+        font-weight: 700;
+      }
+
+      .content2 {
+        padding: 6rem;
+
+        p{
+          font-size: 2rem;
+          color: $black;
+          text-align: left;
+          font-weight: normal;
+          line-height: 3.5rem;
+        }
+
+        .img1 {
+          display: flex;
+          position:relative;
+          align-items: center;
+          padding-left: 13rem;
+          padding-right: 13rem;
+          padding-bottom: 5rem;
+          max-width: 100%
+        }
+
+        .img2 {
+          display: flex;
+          position:relative;
+          align-items: center;
+          padding-left: 15rem;
+          padding-right: 15rem;
+          padding-bottom: 5rem;
+          padding-top: 3rem;
+          max-width: 100%
+        }
+        .img3 {
+          display: flex;
+          position:relative;
+          align-items: center;
+          padding-left: 15rem;
+          padding-right: 15rem;
+          padding-bottom: 5rem;
+          max-width: 100%
+        }
+      }
+    }
+
+
+    .campaign3 {
+      padding: 8rem;
+      text-align: center;
+
+      h2 {
+        font-size: 4.5rem;
+        color: $black;
+        font-weight: 700;
+        text-align: center;
+      }
+
+      h4 {
+
+        color: $black;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 4rem;
+      }
+
+      h5{
+        color: $black;
+        text-align: center;
+        margin-top: 3rem;
+        font-weight: 700;
+      }
+
+      .content3 {
+        padding: 6rem;
+
+        p{
+          font-size: 2rem;
+          color: $black;
+          text-align: left;
+          font-weight: normal;
+          line-height: 3.5rem;
+        }
+
+        .img1 {
+          display: flex;
+          position:relative;
+          align-items: center;
+          padding-left: 13rem;
+          padding-right: 13rem;
+          padding-bottom: 5rem;
+          max-width: 100%
+        }
+
+        .img2 {
+          display: flex;
+          position:relative;
+          align-items: center;
+          padding-left: 15rem;
+          padding-right: 15rem;
+          padding-bottom: 5rem;
+          padding-top: 3rem;
+          max-width: 100%
+        }
+        .img3 {
+          display: flex;
+          position:relative;
+          align-items: center;
+          padding-left: 15rem;
+          padding-right: 15rem;
+          padding-bottom: 5rem;
+          max-width: 100%
+        }
+      }
+    }
+
+
+  }
+}
