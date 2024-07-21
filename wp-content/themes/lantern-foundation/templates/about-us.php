@@ -9,6 +9,7 @@
   <?php include GET_DIR . '/templates/modules/our-goals.php'; ?>
   <?php include GET_DIR . '/templates/modules/about-care.php'; ?>
   <?php include GET_DIR . '/templates/modules/our-impact.php'; ?>
+    <?php include GET_DIR . '/templates/modules/about-founder.php'; ?>
   <?php include GET_DIR . '/templates/modules/about-feature.php'; ?>
   <?php include GET_DIR . '/templates/modules/contact-form.php'; ?>
 

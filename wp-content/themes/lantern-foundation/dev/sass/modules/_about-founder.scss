@@ -1,0 +1,59 @@
+.about--founder {
+  background-color: #F9F9F9;
+  padding: 10rem 0;
+
+  @include media('<=tablet') {
+    padding: 60px 0;
+  }
+
+  .max-w-900 {
+    max-width: 90rem;
+    margin: 0 auto;
+  }
+
+  .content {
+    margin-top: 5rem;
+
+    @include media('<=tablet') {
+      margin-top: 30px;
+    }
+
+
+    p {
+      font-size: 2.2rem;
+      color: #120202;
+
+      @include media('<=tablet') {
+        font-size: 18px;
+      }
+
+      &.note {
+        text-align: center;
+        margin-top: 5rem;
+
+        @include media('<=tablet') {
+          margin-top: 30px;
+        }
+
+        a {
+          color: #120202;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    img {
+      margin-bottom: 25px;
+      
+      @include media('>tablet') {
+        float: right;
+        max-width: 38.6rem;
+        margin-left: 2rem;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
