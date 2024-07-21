@@ -40,12 +40,14 @@ We offer opportunities to receive volunteer hours through your contributions.</p
 
     <div class="container-rowtwo">
       <div class="col-left">
-        <img class="imgvolunteer1" src="http://lantern-foundation.local/wp-content/themes/lantern-foundation/img/volunteer/imgambssador.jpg">
+        <img class="imgambassadors" src="http://lantern-foundation.local/wp-content/themes/lantern-foundation/img/volunteer/imgambssador.jpg">
       </div>
       <div class="col-right">
-        <p>To become a Lantern Ambassador, we encourage you to lead your own initiative in raising donations for our foundation. Whether it be through bake sales or selling handmade crafts, we encourage you to use your own creativity and develop your own project!
-   
-  Note that the amount you raise does not matter, what matters is the time you spent on leading your own initiative and raising awareness about our cause. However, you will be required to share at least one photo of you and your project.</p>
+        <div>
+          <p>To become a Lantern Ambassador, we encourage you to lead your own initiative in raising donations for our foundation. Whether it be through bake sales or selling handmade crafts, we encourage you to use your own creativity and develop your own project!
+Note that the amount you raise does not matter, what matters is the time you spent on leading your own initiative and raising awareness about our cause. However, you will be required to share at least one photo of you and your project.</p>
+          <a class="btn" herf="">CLICK HERE</a>
+        </div>
       </div>
     </div>
 
@@ -59,7 +61,31 @@ Here are some photos of our volunteers helping out and our ambassadors’ initia
 
     <div class="container-four">
       <div class="innerwarp">
-        <img class="imgvolunteer1" src="http://lantern-foundation.local/wp-content/themes/lantern-foundation/img/volunteer/group.jpg">
+        <img class="groupimg" src="http://lantern-foundation.local/wp-content/themes/lantern-foundation/img/volunteer/image1033.jpg">
+      </div>
+    </div>
+
+
+    <div class="container-five">
+      <div class="row-img1">
+        <div class="img-left">
+          <img class="groupimg" src="http://lantern-foundation.local/wp-content/themes/lantern-foundation/img/volunteer/image1036.jpg">
+        </div>
+        <div class="img-right">
+          <img class="groupimg" src="http://lantern-foundation.local/wp-content/themes/lantern-foundation/img/volunteer/image1032.jpg">
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container-six">
+      <div class="row-img2">
+        <div class="img-left">
+          <img class="groupimg" src="http://lantern-foundation.local/wp-content/themes/lantern-foundation/img/volunteer/image1034.jpg">
+        </div>
+        <div class="img-right">
+          <img class="groupimg" src="http://lantern-foundation.local/wp-content/themes/lantern-foundation/img/volunteer/image1035.jpg">
+        </div>
       </div>
     </div>
 

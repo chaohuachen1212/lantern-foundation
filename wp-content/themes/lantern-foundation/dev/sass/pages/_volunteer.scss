@@ -39,14 +39,12 @@
       .col-left {
         width: 50%;
         position: relative;
-        box-sizing: border-box;
       }
       .col-right {
         width:50%;
         padding-left:5rem;
         padding-right: 5rem;
         position: relative;
-        box-sizing: border-box;
         background-color: #f9f9f9;
         display: flex;
         align-items: center;
@@ -78,44 +76,47 @@
         max-width: 116rem;
         height: 65rem;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin-bottom: 8rem;
+        align-items: center;
 
       .col-left {
         width: 50%;
-        position: relative;
-        box-sizing: border-box;
+        max-height:65rem;
+        position:relative;
+
+        .imgambassadors {
+          height: 65rem;
+          width: 115.7rem;
+        }
       }
 
       .col-right {
-        width:50%;
-        padding-left:5rem;
+        width: 50%;
+        height: 65rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
         position: relative;
-        box-sizing: border-box;
         background-color: #f9f9f9;
+        display: flex;
+        align-items: center;
 
         p{
-          padding-top: 9rem;
-          width: 46.5rem;
-          height: 26.3rem;
-          weight: 400;
           font-size: 2.2rem;
           line-height: 3.5rem;
+        }
+
+        .btn{
+          margin-top: 3rem;
         }
       }
     }
 
 
     .container-three {
+      margin-top: 10rem;
+      padding-bottom: 10rem;
       p{
-        padding-bottom: 10rem;
-        width: 115.7rem;
-        height: 24.5rem;
-        weight: 400;
         font-size: 2.2rem;
         line-height: 3.5rem;
-        margin-top: 10rem;
         text-align: center;
       }
     }
@@ -124,15 +125,69 @@
     .container-four {
       .innerwarp {
         width: 107rem;
-        height: 165.2rem;
+        height: 65.4rem;
         margin: auto;
-        margin-bottom: 8rem;
+        margin-bottom: 4rem;
 
         img{
           object-fit: cover;
         }
       }
     }
+
+
+    .container-five {
+      height: 45rem;
+      margin: 3rem;
+      margin-bottom:4rem;
+
+      .row-img1 {
+        max-width: 107rem;
+        height: 45rem;
+        margin: 3rem;
+        margin-bottom: 3rem;
+        display: flex;
+
+        .img-left {
+          width: 48%;
+          position:relative;
+
+        }
+
+        .img-right {
+          width: 48%;
+          margin-left: 4rem;
+          position:relative;
+
+        }
+      }
+    }
+
+    .container-six {
+      height: 45rem;
+      margin: 3rem;
+      margin-bottom:10rem;
+
+      .row-img2 {
+        max-width: 107rem;
+        height: 45rem;
+        margin: 3rem;
+        margin-bottom: 3rem;
+        display: flex;
+
+        .img-left {
+          width: 48%;
+          position:relative;
+        }
+
+        .img-right {
+          width: 48%;
+          position:relative;
+          margin-left: 4rem;
+        }
+      }
+    }
+
 
 
   }
