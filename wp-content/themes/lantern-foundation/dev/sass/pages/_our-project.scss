@@ -19,16 +19,20 @@
         line-height: 4rem;
 
         @include media('<=tablet') {
-          margin-bottom: 20px;
+          margin-bottom: 3px;
           font-size: 20px;
         }
       }
     }
 
     .campaign1 {
-      margin-bottom: 8rem;
+      margin: 8rem auto;
       text-align: center;
       justify-content: center;
+
+      @include media('<=tablet') {
+        margin-bottom: 20px;
+      }
 
 
       h2 {
@@ -70,8 +74,131 @@
 
       .content1 {
         justify-content: space-between;
-        margin-left: 10rem;
-        margin-right: 10rem;
+        margin-left: 8rem;
+        margin-right: 8rem;
+        align-items: center;
+
+        p{
+          font-size: 2rem;
+          color: $black;
+          text-align: left;
+          font-weight: normal;
+          line-height: 3.5rem;
+
+          @include media('<=tablet') {
+            margin-bottom: 5px;
+            font-size: 12px;
+            line-height: 20px;
+          }
+        }
+
+        .img1 {
+          display: flex;
+          position:relative;
+          align-items: center;
+          justify-content: center;
+          margin: 6rem auto;
+          max-width: 65rem;
+
+          @include media('<=tablet') {
+            margin-bottom: 20px;
+            max-width: 100%;
+          }
+        }
+
+        .img2 {
+          display: flex;
+          position:relative;
+          align-items: center;
+          justify-content: center;
+          max-width: 45rem;
+          margin: 6rem auto;
+
+          @include media('<=tablet') {
+            margin-bottom: 20px;
+            max-width: 100%;
+          }
+        }
+        .img3 {
+          display: flex;
+          position:relative;
+          align-items: center;
+          justify-content: center;
+          margin: 6rem auto;
+          max-width: 50rem;
+
+          @include media('<=tablet') {
+            margin-bottom: 20px;
+            max-width: 100%;
+          }
+        }
+        .img4 {
+          display: flex;
+          position:relative;
+          align-items: center;
+          justify-content: center;
+          margin: 6rem auto;
+          max-width: 50rem;
+
+          @include media('<=tablet') {
+            margin-bottom: 20px;
+            max-width: 100%;
+          }
+        }
+      }
+    }
+
+
+    .campaign2 {
+      margin: 8rem auto;
+      text-align: center;
+      background-color: #f9f9f9;
+
+      @include media('<=tablet') {
+        margin-bottom: 20px;
+      }
+
+      h2 {
+        font-size: 4.5rem;
+        color: $black;
+        font-weight: 700;
+        text-align: center;
+
+        @include media('<=tablet') {
+          margin-bottom: 20px;
+          font-size: 40px;
+        }
+      }
+
+      h4 {
+
+        color: $black;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 4rem;
+
+        @include media('<=tablet') {
+          margin-bottom: 20px;
+          font-size: 20px;
+        }
+      }
+
+      h5{
+        color: $black;
+        text-align: center;
+        margin-top: 3rem;
+        font-weight: 700;
+
+        @include media('<=tablet') {
+          margin-bottom: 20px;
+          font-size: 15px;
+        }
+      }
+
+      .content2 {
+        justify-content: space-between;
+        margin-left: 8rem;
+        margin-right: 8rem;
         align-items: center;
 
         p{
@@ -83,7 +210,8 @@
 
           @include media('<=tablet') {
             margin-bottom: 20px;
-            font-size: 15px;
+            font-size: 12px;
+            line-height: 20px;
           }
         }
 
@@ -93,11 +221,11 @@
           align-items: center;
           justify-content: center;
           margin: 6rem auto;
-
           max-width: 65rem;
 
           @include media('<=tablet') {
             margin-bottom: 20px;
+            max-width: 100%;
           }
         }
 
@@ -105,116 +233,50 @@
           display: flex;
           position:relative;
           align-items: center;
-          padding-left: 15rem;
-          padding-right: 15rem;
-          padding-bottom: 5rem;
-          padding-top: 3rem;
-          max-width: 100%
+          margin: 6rem auto;
+          max-width: 50rem;
+
+          @include media('<=tablet') {
+            margin-bottom: 20px;
+            max-width: 100%;
+          }
         }
         .img3 {
           display: flex;
           position:relative;
           align-items: center;
-          padding-left: 15rem;
-          padding-right: 15rem;
-          padding-bottom: 5rem;
-          max-width: 100%
-        }
-        .img4 {
-          display: flex;
-          position:relative;
-          align-items: center;
-          padding-left: 15rem;
-          padding-right: 15rem;
-          padding-top: 5rem;
-          max-width: 100%
-        }
-      }
-    }
+          margin: 6rem auto;
+          max-width: 50rem;
 
-
-    .campaign2 {
-      padding: 8rem;
-      text-align: center;
-      background-color: #f9f9f9;
-
-
-      h2 {
-        font-size: 4.5rem;
-        color: $black;
-        font-weight: 700;
-        text-align: center;
-      }
-
-      h4 {
-
-        color: $black;
-        font-weight: 700;
-        text-align: center;
-        margin-top: 4rem;
-      }
-
-      h5{
-        color: $black;
-        text-align: center;
-        margin-top: 3rem;
-        font-weight: 700;
-      }
-
-      .content2 {
-        padding: 6rem;
-
-        p{
-          font-size: 2rem;
-          color: $black;
-          text-align: left;
-          font-weight: normal;
-          line-height: 3.5rem;
-        }
-
-        .img1 {
-          display: flex;
-          position:relative;
-          align-items: center;
-          padding-left: 13rem;
-          padding-right: 13rem;
-          padding-bottom: 5rem;
-          max-width: 100%
-        }
-
-        .img2 {
-          display: flex;
-          position:relative;
-          align-items: center;
-          padding-left: 15rem;
-          padding-right: 15rem;
-          padding-bottom: 5rem;
-          padding-top: 3rem;
-          max-width: 100%
-        }
-        .img3 {
-          display: flex;
-          position:relative;
-          align-items: center;
-          padding-left: 15rem;
-          padding-right: 15rem;
-          padding-bottom: 5rem;
-          padding-top: 3rem;
-          max-width: 100%
+          @include media('<=tablet') {
+            margin-bottom: 20px;
+            max-width: 100%;
+          }
         }
       }
     }
 
 
     .campaign3 {
-      padding: 8rem;
-      text-align: center;
+      justify-content: space-between;
+      margin: 6rem auto;
+      align-items: center;
+
+      @include media('<=tablet') {
+        margin-bottom: 20px;
+      }
+
 
       h2 {
         font-size: 4.5rem;
         color: $black;
         font-weight: 700;
         text-align: center;
+
+        @include media('<=tablet') {
+          margin-bottom: 20px;
+          font-size: 40px;
+        }
       }
 
       h4 {
@@ -223,6 +285,11 @@
         font-weight: 700;
         text-align: center;
         margin-top: 4rem;
+
+        @include media('<=tablet') {
+          margin-bottom: 20px;
+          font-size: 20px;
+        }
       }
 
       h5{
@@ -230,10 +297,19 @@
         text-align: center;
         margin-top: 3rem;
         font-weight: 700;
+
+        @include media('<=tablet') {
+          margin-bottom: 20px;
+          font-size: 15px;
+        }
       }
 
       .content3 {
-        padding: 6rem;
+        justify-content: space-between;
+        margin-left: 8rem;
+        margin-right: 8rem;
+        align-items: center;
+
 
         p{
           font-size: 2rem;
@@ -241,37 +317,53 @@
           text-align: left;
           font-weight: normal;
           line-height: 3.5rem;
+
+          @include media('<=tablet') {
+            margin-bottom: 20px;
+            font-size: 12px;
+            line-height: 20px;
+          }
         }
 
         .img1 {
           display: flex;
           position:relative;
           align-items: center;
-          padding-left: 10rem;
-          padding-right: 10rem;
-          padding-bottom: 5rem;
-          max-width: 100%
+          justify-content: center;
+          margin: 6rem auto;
+          max-width: 65rem;
+
+          @include media('<=tablet') {
+            margin-bottom: 20px;
+            max-width: 100%;
+          }
         }
 
         .img2 {
           display: flex;
           position:relative;
           align-items: center;
-          padding-left: 10rem;
-          padding-right: 10rem;
-          padding-bottom: 5rem;
-          padding-top: 3rem;
-          max-width: 100%
+          justify-content: center;
+          margin: 6rem auto;
+          max-width: 65rem;
+
+          @include media('<=tablet') {
+            margin-bottom: 20px;
+            max-width: 100%;
+          }
         }
         .img3 {
           display: flex;
           position:relative;
           align-items: center;
-          padding-left: 15rem;
-          padding-right: 15rem;
-          padding-bottom: 5rem;
-          padding-top: 3rem;
-          max-width: 100%
+          justify-content: center;
+          margin: 6rem auto;
+          max-width: 65rem;
+
+          @include media('<=tablet') {
+            margin-bottom: 20px;
+            max-width: 100%;
+          }
         }
       }
     }

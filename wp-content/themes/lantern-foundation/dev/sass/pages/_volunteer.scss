@@ -7,6 +7,11 @@
         font-weight: 700;
         text-align: center;
         margin-top: 8rem;
+
+        @include media('<=tablet') {
+          margin-bottom: 20px;
+          font-size: 50px;
+        }
       }
 
       p {
@@ -15,6 +20,11 @@
         font-weight: 300;
         text-align: center;
         margin-top: 8rem;
+
+        @include media('<=tablet') {
+          margin-bottom: 20px;
+          font-size: 20px;
+        }
       }
     }
 
@@ -25,6 +35,11 @@
         font-weight: 700;
         text-align: center;
         margin-top: 8rem;
+
+        @include media('<=tablet') {
+          margin-bottom: 20px;
+          font-size: 40px;
+        }
       }
     }
 
@@ -35,27 +50,67 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+      background-color: #f9f9f9;
+
+      @include media('<=tablet') {
+        width: 100%;
+      }
 
       .col-left {
         width: 50%;
         position: relative;
+        height: 37.8rem;
+
+        @include media('<=tablet') {
+          width: 100%;
+          height:auto;
+        }
+        .imgvolunteer1 {
+          height: 37.8rem;
+
+          @include media('<=tablet') {
+            height: auto;
+          }
+        }
       }
       .col-right {
         width:50%;
-        padding-left:5rem;
-        padding-right: 5rem;
+        margin: auto;
+        justify-content: center;
         position: relative;
-        background-color: #f9f9f9;
+
         display: flex;
         align-items: center;
+
+        @include media('<=tablet') {
+          margin-bottom: 20px;
+          width: 100%;
+        }
 
         p{
           font-size: 2.2rem;
           line-height: 3.5rem;
+          align-content: center;
+          margin-left: 5rem;
+          margin-right: 5rem;
+
+          @include media('<=tablet') {
+            font-size: 12px;
+            line-height: 20px;
+            margin: auto;
+          }
         }
 
         .btn{
           margin-top: 3rem;
+          margin-left: 5rem;
+
+          @include media('<=tablet') {
+            font-size: 12px;
+            width: auto;
+            margin-top: 20px;
+            margin-left: auto;
+          }
         }
       }
     }
@@ -67,6 +122,13 @@
           font-weight: 700;
           text-align: center;
           margin-top: 8rem;
+
+          @include media('<=tablet') {
+            margin-bottom: 20px;
+            font-size: 40px;
+            margin: 100px;
+            align-self: center;
+          }
         }
       }
 
@@ -77,35 +139,72 @@
         height: 65rem;
         display: flex;
         align-items: center;
+        justify-content: center;
+        background-color: #f9f9f9;
+
+        @include media('<=tablet') {
+          width: 100%;
+          display: block;
+          margin-bottom: 20px;
+        }
 
       .col-left {
         width: 50%;
         max-height:65rem;
         position:relative;
 
+        @include media('<=tablet') {
+          margin-bottom: 20px;
+          width: 100%;
+        }
+
         .imgambassadors {
           height: 65rem;
-          width: 115.7rem;
+
+          @include media('<=tablet') {
+            margin-bottom: 20px;
+            width: 100%;
+            height: auto;
+          }
         }
       }
 
       .col-right {
         width: 50%;
         height: 65rem;
-        padding-left: 5rem;
-        padding-right: 5rem;
         position: relative;
-        background-color: #f9f9f9;
         display: flex;
         align-items: center;
+        justify-content: center;
+
+        @include media('<=tablet') {
+          width: 100%;
+          display: block;
+        }
 
         p{
           font-size: 2.2rem;
           line-height: 3.5rem;
+          margin-left: 5rem;
+          margin-right: 5rem;
+
+          @include media('<=tablet') {
+            font-size: 12px;
+            line-height: 20px;
+            margin: auto;
+          }
         }
 
         .btn{
           margin-top: 3rem;
+          margin-left: 5rem;
+
+          @include media('<=tablet') {
+            font-size: 12px;
+            width: auto;
+            margin-top: 20px;
+            margin-left: auto;
+          }
         }
       }
     }
@@ -114,10 +213,21 @@
     .container-three {
       margin-top: 10rem;
       padding-bottom: 10rem;
+
+      @include media('<=tablet') {
+        margin-top: 20px;
+        margin-bottom: auto;
+      }
+
       p{
         font-size: 2.2rem;
         line-height: 3.5rem;
         text-align: center;
+
+        @include media('<=tablet') {
+          font-size: 18px;
+          line-height: 30px;
+        }
       }
     }
 
@@ -128,6 +238,13 @@
         height: 65.4rem;
         margin: auto;
         margin-bottom: 4rem;
+
+        @include media('<=tablet') {
+          margin-bottom: 20px;
+          width: auto;
+          height: auto;
+          justify-content: center;
+        }
 
         img{
           object-fit: cover;
@@ -141,6 +258,14 @@
       margin: 3rem;
       margin-bottom:4rem;
 
+      @include media('<=tablet') {
+        margin-bottom: 20px;
+        width: 100%;
+        height: 100% auto;
+        justify-content: center;
+        margin: 1px auto;
+      }
+
       .row-img1 {
         max-width: 107rem;
         height: 45rem;
@@ -148,16 +273,35 @@
         margin-bottom: 3rem;
         display: flex;
 
+        @include media('<=tablet') {
+          width: 100%;
+          display: block;
+        }
+
         .img-left {
           width: 48%;
           position:relative;
 
+          @include media('<=tablet') {
+            width: 100%;
+            justify-content: center;
+            margin: auto;
+
+
+          }
         }
 
         .img-right {
           width: 48%;
           margin-left: 4rem;
           position:relative;
+
+          @include media('<=tablet') {
+            margin-bottom: auto;
+            width: 100%;
+            justify-content: center;
+          }
+
 
         }
       }
