@@ -22,7 +22,7 @@ We offer opportunities to receive volunteer hours through your contributions.</p
 
     <div class="container-rowone">
       <div class="col-left">
-        <img class="imgvolunteer1" src="http://lantern-foundation.local/wp-content/themes/lantern-foundation/img/volunteer/imgvolunteer1.jpg">
+        <img class="imgvolunteer1" src="<?php echo GET_URI ?>/img/volunteer/imgvolunteer1.jpg">
       </div>
       <div class="col-right">
         <div>
@@ -40,7 +40,7 @@ We offer opportunities to receive volunteer hours through your contributions.</p
 
     <div class="container-rowtwo">
       <div class="col-left">
-        <img class="imgambassadors" src="http://lantern-foundation.local/wp-content/themes/lantern-foundation/img/volunteer/imgambssador.jpg">
+        <img class="imgambassadors" src="<?php echo GET_URI ?>/img/volunteer/imgambssador.jpg">
       </div>
       <div class="col-right">
         <div>
@@ -61,7 +61,7 @@ Here are some photos of our volunteers helping out and our ambassadors’ initia
 
     <div class="container-four">
       <div class="innerwarp">
-        <img class="groupimg" src="http://lantern-foundation.local/wp-content/themes/lantern-foundation/img/volunteer/image1033.jpg">
+        <img class="groupimg" src="<?php echo GET_URI ?>/img/volunteer/image1033.jpg">
       </div>
     </div>
 
@@ -69,10 +69,10 @@ Here are some photos of our volunteers helping out and our ambassadors’ initia
     <div class="container-five">
       <div class="row-img1">
         <div class="img-left">
-          <img class="groupimg" src="http://lantern-foundation.local/wp-content/themes/lantern-foundation/img/volunteer/image1036.jpg">
+          <img class="groupimg" src="<?php echo GET_URI ?>/img/volunteer/image1036.jpg">
         </div>
         <div class="img-right">
-          <img class="groupimg" src="http://lantern-foundation.local/wp-content/themes/lantern-foundation/img/volunteer/image1032.jpg">
+          <img class="groupimg" src="<?php echo GET_URI ?>/img/volunteer/image1032.jpg">
         </div>
       </div>
     </div>
@@ -81,10 +81,10 @@ Here are some photos of our volunteers helping out and our ambassadors’ initia
     <div class="container-six">
       <div class="row-img2">
         <div class="img-left">
-          <img class="groupimg" src="http://lantern-foundation.local/wp-content/themes/lantern-foundation/img/volunteer/image1034.jpg">
+          <img class="groupimg" src="<?php echo GET_URI ?>/img/volunteer/image1034.jpg">
         </div>
         <div class="img-right">
-          <img class="groupimg" src="http://lantern-foundation.local/wp-content/themes/lantern-foundation/img/volunteer/image1035.jpg">
+          <img class="groupimg" src="<?php echo GET_URI ?>/img/volunteer/image1035.jpg">
         </div>
       </div>
     </div>
