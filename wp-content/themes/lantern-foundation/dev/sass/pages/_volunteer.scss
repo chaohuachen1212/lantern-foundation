@@ -46,7 +46,8 @@
     .container-rowone {
       margin-top: 5rem;
       max-width: 116rem;
-      height: 37.8rem;
+      margin-right: auto;
+      margin-left: auto;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -59,18 +60,9 @@
       .col-left {
         width: 50%;
         position: relative;
-        height: 37.8rem;
 
         @include media('<=tablet') {
           width: 100%;
-          height:auto;
-        }
-        .imgvolunteer1 {
-          height: 37.8rem;
-
-          @include media('<=tablet') {
-            height: auto;
-          }
         }
       }
       .col-right {
@@ -78,13 +70,13 @@
         margin: auto;
         justify-content: center;
         position: relative;
-
         display: flex;
         align-items: center;
 
         @include media('<=tablet') {
           margin-bottom: 20px;
           width: 100%;
+          padding: 40px 3%;
         }
 
         p{
@@ -106,10 +98,12 @@
           margin-left: 5rem;
 
           @include media('<=tablet') {
-            font-size: 12px;
+            font-size: 10px;
             width: auto;
             margin-top: 20px;
             margin-left: auto;
+            display: inline-block;
+            padding: 8px 13px;
           }
         }
       }
@@ -126,7 +120,7 @@
           @include media('<=tablet') {
             margin-bottom: 20px;
             font-size: 40px;
-            margin: 100px;
+            margin: 80px 0 45px 0;
             align-self: center;
           }
         }
@@ -136,42 +130,30 @@
     .container-rowtwo {
         margin-top: 5rem;
         max-width: 116rem;
-        height: 65rem;
+        margin-left: auto;
+        margin-right: auto;
         display: flex;
         align-items: center;
         justify-content: center;
         background-color: #f9f9f9;
+        flex-wrap: wrap;
 
         @include media('<=tablet') {
-          width: 100%;
-          display: block;
+          max-width: 100%;
           margin-bottom: 20px;
         }
 
       .col-left {
         width: 50%;
-        max-height:65rem;
         position:relative;
 
         @include media('<=tablet') {
-          margin-bottom: 20px;
           width: 100%;
-        }
-
-        .imgambassadors {
-          height: 65rem;
-
-          @include media('<=tablet') {
-            margin-bottom: 20px;
-            width: 100%;
-            height: auto;
-          }
         }
       }
 
       .col-right {
         width: 50%;
-        height: 65rem;
         position: relative;
         display: flex;
         align-items: center;
@@ -180,6 +162,7 @@
         @include media('<=tablet') {
           width: 100%;
           display: block;
+          padding: 40px 3%;
         }
 
         p{
@@ -215,8 +198,9 @@
       padding-bottom: 10rem;
 
       @include media('<=tablet') {
-        margin-top: 20px;
+        margin-top: 60px;
         margin-bottom: auto;
+        padding-bottom: 60px;
       }
 
       p{
@@ -235,14 +219,12 @@
     .container-four {
       .innerwarp {
         width: 107rem;
-        height: 65.4rem;
         margin: auto;
         margin-bottom: 4rem;
 
         @include media('<=tablet') {
           margin-bottom: 20px;
           width: auto;
-          height: auto;
           justify-content: center;
         }
 
@@ -254,28 +236,32 @@
 
 
     .container-five {
-      height: 45rem;
       margin: 3rem;
       margin-bottom:4rem;
 
       @include media('<=tablet') {
         margin-bottom: 20px;
         width: 100%;
-        height: 100% auto;
         justify-content: center;
         margin: 1px auto;
       }
 
       .row-img1 {
         max-width: 107rem;
-        height: 45rem;
         margin: 3rem;
         margin-bottom: 3rem;
         display: flex;
 
         @include media('<=tablet') {
-          width: 100%;
+          max-width: 100%;
           display: block;
+          margin-left: 0;
+          margin-right: 0;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          img {
+            width: 100%;
+          }
         }
 
         .img-left {
@@ -285,7 +271,7 @@
           @include media('<=tablet') {
             width: 100%;
             justify-content: center;
-            margin: auto;
+            margin-bottom: 20px;
 
 
           }
@@ -297,37 +283,55 @@
           position:relative;
 
           @include media('<=tablet') {
-            margin-bottom: auto;
+            margin-bottom: 20px;
+            margin-left: 0;
             width: 100%;
             justify-content: center;
           }
-
-
         }
       }
     }
 
     .container-six {
-      height: 45rem;
       margin: 3rem;
       margin-bottom:10rem;
 
+      @include media('<=tablet') {
+        margin: 0;
+      }
+
       .row-img2 {
         max-width: 107rem;
-        height: 45rem;
         margin: 3rem;
         margin-bottom: 3rem;
         display: flex;
+        flex-wrap: wrap;
+
+          @include media('<=tablet') {
+            margin: 0;
+            max-width: 100%;
+          }
 
         .img-left {
           width: 48%;
           position:relative;
+
+          @include media('<=tablet') {
+            width: 100%;
+            margin-bottom: 20px;
+          }
         }
 
         .img-right {
           width: 48%;
           position:relative;
           margin-left: 4rem;
+
+          @include media('<=tablet') {
+            width: 100%;
+            margin-left: 0;
+            margin-bottom: 60px;
+          }
         }
       }
     }
