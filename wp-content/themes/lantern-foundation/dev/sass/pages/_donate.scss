@@ -1,23 +1,15 @@
-.donate-main {
+.donate {
   .container{
-    .hero {
+    .inner-warp {
       display: flex;
       align-items: center;
-      h1 {
+      h2 {
         font-size: 6rem;
         color: $black;
         font-weight: 700;
         text-align: center;
         margin-top: 8rem;
       }
-    }
-
-    p {
-      font-size: 3rem;
-      color: $black;
-      font-weight: 300;
-      text-align: center;
-      margin-top: 8rem;
     }
   }
 }
