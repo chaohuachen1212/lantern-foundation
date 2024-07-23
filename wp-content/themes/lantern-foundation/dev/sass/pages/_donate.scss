@@ -1,14 +1,149 @@
-.donate {
+.donate--sec {
+  padding-top: 0;
   .container{
-    .inner-warp {
-      display: flex;
-      align-items: center;
-      h2 {
+    .inner-wrap {
+      h1 {
         font-size: 6rem;
         color: $black;
         font-weight: 700;
         text-align: center;
         margin-top: 8rem;
+        margin-bottom: 5rem;
+
+        @include media('<=tablet') {
+          margin-top: 40px;
+          margin-top: 70px;
+          font-size: 42px;
+        }
+      }
+      h3{
+        margin-top: 4rem;
+
+        @include media('<=tablet') {
+          margin-top: 30px;
+        }
+      }
+      .btn{
+        border: 1px solid #FE8718;
+      }
+    }
+  }
+}
+
+.group--images--wrap{
+  padding-bottom: 10rem;
+
+  @include media('<=tablet') {
+    padding-bottom: 70px;
+  }
+  .max-w-864{
+    max-width: 86.4rem;
+    margin: 0 auto;
+
+    @include media('<=tablet') {
+      max-width: 100%;
+    }
+  }
+}
+.group--images {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  &:before {
+    content: '';
+    display: block;
+    padding-top: 53%;
+  }
+
+  .two-img {
+    width: 25%;
+    position: relative;
+
+    img {
+      height: calc(50% - 1rem);
+      border-radius: 1rem;
+
+      &:last-child {
+        bottom: 0;
+        top: inherit;
+      }
+    }
+  }
+
+  .large-img {
+    width: calc(75% - 2rem);
+    position: relative;
+    margin-left: 2rem;
+  }
+
+  img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+  }
+}
+
+
+.group--images2 {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+
+  &:before {
+    content: '';
+    display: block;
+    padding-top: 47%;
+  }
+
+  .boy {
+    width: 25%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height:100%;
+    overflow: hidden;
+
+    img {
+      border-radius: 1rem;
+      position: absolute;
+      left: 0;
+      top: 0;
+      object-fit: cover;
+      height: 100%;
+    }
+  }
+
+  .girl {
+    width: 75%;
+    position: absolute;
+    justify-content: space-between;
+    right: 0;
+    top: 0;
+    height: 100%;
+
+    img {
+      width: calc(50% - 2rem);
+      border-radius: 1rem;
+      position: absolute;
+      left: 0;
+      top: 0;
+      object-fit: cover;
+      height: 100%;
+
+      &:last-child {
+        right:0;
+        left:inherit;
+      }
+
+      &:first-child {
+        margin-left: 2rem;
       }
     }
   }

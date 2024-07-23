@@ -8,7 +8,7 @@
 <section class="donate--sec" id="donate">
   <div class="container">
     <div class="inner-wrap">
-      <h2>Donate</h2>
+      <h1>Donate</h1>
       <img src="<?php echo GET_URI ?>/img/donate-img.jpg">
       <h3>Through your donation, we can make a difference in the lives of children around the world. Donations of any amount are greatly appreciated and are guaranteed to go towards one of our campaigns and projects. Thank you for your continued support!</h3>
       <div class="btn-wrap">
@@ -34,10 +34,33 @@
   </div>
 </section>
 
+<div class="group--images--wrap">
+  <div class="container">
+    <div class="max-w-864">
+      <section class="group--images">
+        <div class="two-img">
+          <img src="<?php echo GET_URI ?>/img/donate/picture1.jpg">
+          <img src="<?php echo GET_URI ?>/img/donate/picture2.jpg">
+        </div>
+
+        <div class="large-img">
+          <img src="<?php echo GET_URI ?>/img/donate/picture3.jpg">
+        </div>
+      </section>
 
 
-
-
+      <section class="group--images2">
+        <div class="boy">
+          <img src="<?php echo GET_URI ?>/img/donate/picture4.jpg">
+        </div>
+        <div class="girl">
+          <img src="<?php echo GET_URI ?>/img/donate/picture5.jpg">
+          <img src="<?php echo GET_URI ?>/img/donate/picture6.jpg">
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
 
 <?php
   get_footer();

@@ -58,6 +58,7 @@ Note that the amount you raise does not matter, what matters is the time you spe
 Here are some photos of our volunteers helping out and our ambassadors’ initiatives, including plant-selling, cookie-making, arts and crafts activities, delivering donation boxes, and backpack-packaging.</p>
     </div>
 
+<div class="volunteer--img--warp">
 
     <div class="container-four">
       <div class="innerwarp">
@@ -77,7 +78,6 @@ Here are some photos of our volunteers helping out and our ambassadors’ initia
       </div>
     </div>
 
-
     <div class="container-six">
       <div class="row-img2">
         <div class="img-left">
@@ -88,7 +88,7 @@ Here are some photos of our volunteers helping out and our ambassadors’ initia
         </div>
       </div>
     </div>
-
+</div>
 
 
   </div>
