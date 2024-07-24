@@ -30,11 +30,11 @@
           <div class="col">
             <div class="text-box">
               <p>Read about our work in Guangxi after its flash flood!</p>
-              <a class="btn">Read More</a>
+              <a class="btn" href="">Read More</a>
             </div>
             <div class="text-box">
               <p>Learn about our different campaigns and projects below!</p>
-              <a class="btn">Read More</a>
+              <a class="btn" href="/our-projects/">Read More</a>
             </div>
           </div>
         </div>
