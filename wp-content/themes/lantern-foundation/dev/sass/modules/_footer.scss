@@ -187,6 +187,10 @@ footer {
       margin-bottom: 2.5rem;
       text-transform: uppercase;
 
+      &:hover {
+        text-decoration: underline;
+      }
+
       @include media('<=tablet') {
         font-size: 18px;
       }
