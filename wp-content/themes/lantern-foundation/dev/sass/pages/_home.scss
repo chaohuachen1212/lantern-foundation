@@ -948,7 +948,7 @@
 
 .donate--sec {
   margin: 5rem 0 6rem;
-  padding-top: 10rem;
+  padding-top: 5rem;
   padding-bottom: 5rem;
 
   @include media('<tablet') {
@@ -1032,7 +1032,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: 89.5rem;
-    margin: 12rem auto 0;
+    margin: 8rem auto 0;
 
     @include media('<tablet') {
       margin-top: 20px;

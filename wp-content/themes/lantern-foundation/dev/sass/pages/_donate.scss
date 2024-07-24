@@ -17,10 +17,14 @@
         }
       }
       h3{
-        margin-top: 4rem;
+        margin-top: 6rem;
+        margin-bottom: 8rem;
+        font-size: 2.2rem;
 
         @include media('<=tablet') {
           margin-top: 30px;
+          margin-bottom: 0;
+          font-size: 20px;
         }
       }
       .btn{
@@ -65,6 +69,11 @@
       height: calc(50% - 1rem);
       border-radius: 1rem;
 
+      @include media('<=tablet') {
+        height: calc(50% - 5px);
+        border-radius: 10px;
+      }
+
       &:last-child {
         bottom: 0;
         top: inherit;
@@ -76,6 +85,11 @@
     width: calc(75% - 2rem);
     position: relative;
     margin-left: 2rem;
+
+    @include media('<=tablet') {
+      width: calc(75% - 10px);
+      margin-left: 10px;
+    }
   }
 
   img {
@@ -86,6 +100,10 @@
     width: 100%;
     height: 100%;
     border-radius: 1rem;
+
+    @include media('<=tablet') {
+      border-radius: 10px;
+    }
   }
 }
 
@@ -95,6 +113,10 @@
   display: flex;
   justify-content: space-between;
   margin-top: 2rem;
+
+  @include media('<=tablet') {
+    margin-top: 10px;
+  }
 
   &:before {
     content: '';
@@ -117,6 +139,10 @@
       top: 0;
       object-fit: cover;
       height: 100%;
+
+      @include media('<=tablet') {
+        border-radius: 10px;
+      }
     }
   }
 
@@ -137,6 +163,11 @@
       object-fit: cover;
       height: 100%;
 
+      @include media('<=tablet') {
+        border-radius: 10px;
+        width: calc(50% - 10px);
+      }
+
       &:last-child {
         right:0;
         left:inherit;
@@ -144,6 +175,10 @@
 
       &:first-child {
         margin-left: 2rem;
+
+        @include media('<=tablet') {
+          margin-left: 10px;
+        }
       }
     }
   }
