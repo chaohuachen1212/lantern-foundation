@@ -1,6 +1,15 @@
 .our-project-main {
-  .container{
     max-width: 110rem;
+    margin: 0 auto;
+
+    &.color-bg {
+        background-color: #F9F9F9;
+    }
+
+    @include media('<=tablet') {
+        max-width: 100%;
+    }
+
     .hero {
       margin-top: 10rem;
       justify-content: center;
@@ -10,13 +19,14 @@
       @include media('<=tablet') {
         margin-bottom: 20px;
         font-size: 30px;
+        margin-top: 50px;
       }
 
       h3 {
         font-size: 2.4rem;
         color: $black;
         font-weight: 700;
-        line-height: 4rem;
+        line-height: 1.5;
 
         @include media('<=tablet') {
           margin-bottom: 3px;
@@ -26,12 +36,12 @@
     }
 
     .campaign1 {
-      margin: 8rem auto;
+      margin: 8rem auto 12rem;
       text-align: center;
       justify-content: center;
 
       @include media('<=tablet') {
-        margin-bottom: 20px;
+        margin: 60px auto;
       }
 
 
@@ -48,14 +58,15 @@
       }
 
       h4 {
-
         color: $black;
         font-weight: 700;
         text-align: center;
         margin-top: 4rem;
+        font-size: 3rem;
+        font-family: $base-font;
 
         @include media('<=tablet') {
-          margin-bottom: 20px;
+          margin-top: 25px;
           font-size: 20px;
         }
       }
@@ -64,11 +75,13 @@
         color: $black;
         text-align: center;
         margin-top: 3rem;
-        font-weight: 700;
+        font-weight: 600;
+        font-family: $base-font;
+        font-size: 2rem;
 
         @include media('<=tablet') {
-          margin-bottom: 20px;
-          font-size: 15px;
+          margin-top: 35px;
+          font-size: 16px;
         }
       }
 
@@ -78,17 +91,20 @@
         margin-right: 8rem;
         align-items: center;
 
+        @include media('<=tablet') {
+          margin: 0;
+        }
+
         p{
-          font-size: 2rem;
+          font-size: 2.2rem;
           color: $black;
           text-align: left;
           font-weight: normal;
-          line-height: 3.5rem;
+          line-height: 1.5;
 
           @include media('<=tablet') {
-            margin-bottom: 5px;
-            font-size: 12px;
-            line-height: 20px;
+            margin-bottom: 20px;
+            font-size: 16px;
           }
         }
 
@@ -101,7 +117,7 @@
           max-width: 65rem;
 
           @include media('<=tablet') {
-            margin-bottom: 20px;
+            margin: 30px auto;
             max-width: 100%;
           }
         }
@@ -115,7 +131,7 @@
           margin: 6rem auto;
 
           @include media('<=tablet') {
-            margin-bottom: 20px;
+            margin: 30px auto;
             max-width: 100%;
           }
         }
@@ -128,7 +144,7 @@
           max-width: 50rem;
 
           @include media('<=tablet') {
-            margin-bottom: 20px;
+            margin: 30px auto;
             max-width: 100%;
           }
         }
@@ -141,7 +157,7 @@
           max-width: 50rem;
 
           @include media('<=tablet') {
-            margin-bottom: 20px;
+            margin: 30px auto;
             max-width: 100%;
           }
         }
@@ -152,10 +168,11 @@
     .campaign2 {
       margin: 8rem auto;
       text-align: center;
-      background-color: #f9f9f9;
+      padding: 10rem 0;
 
       @include media('<=tablet') {
-        margin-bottom: 20px;
+        margin: 60px auto 0;
+        padding: 60px 0;
       }
 
       h2 {
@@ -176,9 +193,11 @@
         font-weight: 700;
         text-align: center;
         margin-top: 4rem;
+        font-family: $base-font;
+        font-size: 3rem;
 
         @include media('<=tablet') {
-          margin-bottom: 20px;
+          margin-top: 25px;
           font-size: 20px;
         }
       }
@@ -187,11 +206,13 @@
         color: $black;
         text-align: center;
         margin-top: 3rem;
-        font-weight: 700;
+        font-weight: 600;
+        font-family: $base-font;
+        font-size: 2rem;
 
         @include media('<=tablet') {
-          margin-bottom: 20px;
-          font-size: 15px;
+          margin-top: 35px;
+          font-size: 16px;
         }
       }
 
@@ -201,17 +222,20 @@
         margin-right: 8rem;
         align-items: center;
 
+        @include media('<=tablet') {
+          margin: 0;
+        }
+
         p{
-          font-size: 2rem;
+          font-size: 2.2rem;
           color: $black;
           text-align: left;
           font-weight: normal;
-          line-height: 3.5rem;
+          line-height: 1.5;
 
           @include media('<=tablet') {
             margin-bottom: 20px;
-            font-size: 12px;
-            line-height: 20px;
+            font-size: 16px;
           }
         }
 
@@ -224,7 +248,7 @@
           max-width: 65rem;
 
           @include media('<=tablet') {
-            margin-bottom: 20px;
+            margin: 30px auto;
             max-width: 100%;
           }
         }
@@ -237,7 +261,7 @@
           max-width: 50rem;
 
           @include media('<=tablet') {
-            margin-bottom: 20px;
+            margin: 30px auto;
             max-width: 100%;
           }
         }
@@ -249,7 +273,7 @@
           max-width: 50rem;
 
           @include media('<=tablet') {
-            margin-bottom: 20px;
+            margin: 30px auto;
             max-width: 100%;
           }
         }
@@ -259,11 +283,11 @@
 
     .campaign3 {
       justify-content: space-between;
-      margin: 6rem auto;
+      margin: 6rem auto 10rem;
       align-items: center;
 
       @include media('<=tablet') {
-        margin-bottom: 20px;
+        margin: 60px auto 80px;
       }
 
 
@@ -285,9 +309,11 @@
         font-weight: 700;
         text-align: center;
         margin-top: 4rem;
+        font-family: $base-font;
+        font-size: 3rem;
 
         @include media('<=tablet') {
-          margin-bottom: 20px;
+          margin-top: 30px;
           font-size: 20px;
         }
       }
@@ -296,11 +322,13 @@
         color: $black;
         text-align: center;
         margin-top: 3rem;
-        font-weight: 700;
+        font-weight: 600;
+        font-family: $base-font;
+        font-size: 2rem;
 
         @include media('<=tablet') {
-          margin-bottom: 20px;
-          font-size: 15px;
+          margin-top: 35px;
+          font-size: 16px;
         }
       }
 
@@ -310,18 +338,21 @@
         margin-right: 8rem;
         align-items: center;
 
+        @include media('<=tablet') {
+          margin: 0;
+        }
+
 
         p{
           font-size: 2rem;
           color: $black;
           text-align: left;
           font-weight: normal;
-          line-height: 3.5rem;
+          line-height: 1.5;
 
           @include media('<=tablet') {
             margin-bottom: 20px;
-            font-size: 12px;
-            line-height: 20px;
+            font-size: 16px;
           }
         }
 
@@ -334,7 +365,7 @@
           max-width: 65rem;
 
           @include media('<=tablet') {
-            margin-bottom: 20px;
+            margin: 30px auto;
             max-width: 100%;
           }
         }
@@ -348,7 +379,7 @@
           max-width: 65rem;
 
           @include media('<=tablet') {
-            margin-bottom: 20px;
+            margin: 30px auto;
             max-width: 100%;
           }
         }
@@ -361,13 +392,11 @@
           max-width: 65rem;
 
           @include media('<=tablet') {
-            margin-bottom: 20px;
+            margin: 30px auto;
             max-width: 100%;
           }
         }
       }
     }
 
-
-  }
 }

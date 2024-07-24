@@ -127,7 +127,7 @@ header {
 
   nav {
     display: flex;
-    width: calc(100% - 40rem);
+
     padding-left: 3rem;
 
     @include media('<=tablet') {
@@ -161,6 +161,10 @@ header {
       text-decoration: none !important;
 
       &:hover {
+        border-bottom: 0.1rem solid $white;
+      }
+
+      &.is-active {
         border-bottom: 0.1rem solid $white;
       }
 

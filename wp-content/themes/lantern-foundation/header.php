@@ -27,19 +27,22 @@
 
       <nav>
         <li>
-          <a href="/#about-us">About us</a>
+          <a href="/about-us/">About us</a>
         </li>
         <li>
-          <a href="/#our-projects">Our Projects</a>
+          <a href="/our-projects/">Our Projects</a>
         </li>
         <li>
-          <a href="/#donate">Donate</a>
+          <a href="/news-updates/">News & Updates</a>
+        </li>
+        <li>
+          <a href="/volunteer/">Volunteer</a>
+        </li>
+        <li>
+          <a href="/donate/">Donate</a>
         </li>
         <li>
           <a href="/#contact" class="contact" href="">Contact</a>
-        </li>
-        <li>
-          <a target="_blank" href="https://square.link/u/hOHmgOj0">Donate</a>
         </li>
       </nav>
 

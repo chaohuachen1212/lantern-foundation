@@ -46,6 +46,21 @@
     }
   });
 
+  function detectNavBrowserURL() {
+    var hashTag = window.location.pathname;
+    var $targetElem = $('header nav li a');
 
+    console.log(hashTag);
+    $targetElem.each(function(){
+      var $slef = $(this);
+      var thisVal = $(this).attr('href');
+      console.log(thisVal);
+
+        if ( thisVal === hashTag ) {
+          $slef.addClass('is-active');
+        }
+    });
+  }
+  detectNavBrowserURL();
 
 }(jQuery));

@@ -17,7 +17,7 @@ Learn more about our ongoing campaigns and/or upcoming events below!</h3>
     <div class="campaign1">
       <h2>Campaign 1</h2>
       <h4>Healing Smiles, Changing Lives</h4>
-      <h5>Supporting children in need of cleft palate surgeries and giving them a reason to smile</p>
+      <h5>Supporting children in need of cleft palate surgeries and giving them a reason to smile</h5>
 
       <div class="content1">
         <img class="img1" src="<?php echo GET_URI ?>/img/our-project/image1.jpg">
@@ -31,6 +31,15 @@ Learn more about our ongoing campaigns and/or upcoming events below!</h3>
     </div>
 
 
+
+
+
+  </div>
+</section>
+
+
+<section class="our-project-main color-bg">
+  <div class="container">
     <div class="campaign2">
 
       <h2>Campaign 2</h2>
@@ -46,8 +55,12 @@ Learn more about our ongoing campaigns and/or upcoming events below!</h3>
         <p>As Rodney Naidoo, a teacher in South Africa, said, “We can only break the poverty cycle through education.” Although those that live in rural communities might not understand the value of education, we must work to ensure that kids in rural China have an equal opportunity to learn and grow.</p>
       </div>
     </div>
+  </div>
+</section>
 
 
+<section class="our-project-main">
+  <div class="container">
     <div class="campaign3">
 
       <h2>Campaign 3</h2>
@@ -63,8 +76,6 @@ Learn more about our ongoing campaigns and/or upcoming events below!</h3>
         <p>As Rodney Naidoo, a teacher in South Africa, said, “We can only break the poverty cycle through education.” Although those that live in rural communities might not understand the value of education, we must work to ensure that kids in rural China have an equal opportunity to learn and grow.</p>
       </div>
     </div>
-
-
   </div>
 </section>
 
