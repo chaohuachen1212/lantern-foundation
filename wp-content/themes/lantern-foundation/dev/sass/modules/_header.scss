@@ -4,6 +4,10 @@
 
     &.headroom--top {
       background-color: #F38B30;
+
+      &.is-active {
+        background-color: $white;
+      }
     }
   }
 

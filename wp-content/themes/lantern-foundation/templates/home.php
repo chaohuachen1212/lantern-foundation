@@ -9,6 +9,8 @@
     <video class="video" role="presentation" autoplay muted loop>
       <source id="video" src="<?php echo GET_URI ?>/videos/home-hero-bg.mp4" type="video/mp4">
     </video>
+
+    <img class="mobile-img" src="<?php echo GET_URI ?>/img/home/hero-mobile.png">
   </figure>
   <div class="container">
     <div class="hero-content">

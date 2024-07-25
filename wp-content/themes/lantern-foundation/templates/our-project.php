@@ -85,7 +85,6 @@ Learn more about our ongoing campaigns and/or upcoming events below!</h3>
         <img class="img2" src="<?php echo GET_URI ?>/img/our-project/image9.jpg">
         <p>Because of the variety of barriers that kids in rural China experience, Lantern Foundation launched an initiative to address these challenges that often go unnoticed. Our local volunteers connect us with families in rural China, and we provide financial support for a variety of causes, including increasing nutrition, purchasing medication, and buying new clothes. For some families, our donations are necessary to maintain the daily needs of families, such as having enough food or ensuring they have a place to live. We support these families either on a monthly basis or on a one-time basis depending on their needs. These families are located across many different provinces in China. In July 2024, we expanded this initiative into Guangxi by sponsoring an additional five families.</p>
         <img class="img3" src="<?php echo GET_URI ?>/img/our-project/image10.jpg">
-        <p>As Rodney Naidoo, a teacher in South Africa, said, “We can only break the poverty cycle through education.” Although those that live in rural communities might not understand the value of education, we must work to ensure that kids in rural China have an equal opportunity to learn and grow.</p>
       </div>
     </div>
   </div>
