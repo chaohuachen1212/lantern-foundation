@@ -27,7 +27,7 @@ We offer opportunities to receive volunteer hours through your contributions.</p
       <div class="col-right">
         <div>
           <p>If you’d like to become a volunteer, help us out at our next event! You can sign up for our newsletter through the ‘Contact’ section to receive updates about our future events. After participating in an event, you can fill out the form below to receive your hours.</p>
-          <a class="btn" herf="">CLICK HERE</a>
+          <a target=”_blank” class="btn" href="https://forms.gle/4fBePFfTRGx8LmAH8">CLICK HERE</a>
         </div>
       </div>
     </div>
@@ -46,7 +46,7 @@ We offer opportunities to receive volunteer hours through your contributions.</p
         <div>
           <p>To become a Lantern Ambassador, we encourage you to lead your own initiative in raising donations for our foundation. Whether it be through bake sales or selling handmade crafts, we encourage you to use your own creativity and develop your own project!
 Note that the amount you raise does not matter, what matters is the time you spent on leading your own initiative and raising awareness about our cause. However, you will be required to share at least one photo of you and your project.</p>
-          <a class="btn" herf="">CLICK HERE</a>
+          <a target=”_blank”  class="btn" href="https://forms.gle/t4LVu4bgYu36TjT8A">CLICK HERE</a>
         </div>
       </div>
     </div>

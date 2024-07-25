@@ -29,7 +29,7 @@
           </div>
           <div class="col">
             <div class="text-box">
-              <p>Read about our work in Guangxi after its flash flood!</p>
+              <p>Read about our work in Guangxi after its flash flood</p>
               <a class="btn" href="/guanxi-flash-flooddisaster-relief-family-visits/">Read More</a>
             </div>
             <div class="text-box">

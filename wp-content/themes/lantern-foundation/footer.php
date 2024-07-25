@@ -30,9 +30,9 @@
           <div class="footer-nav">
             <div class="col">
               <a href="/about-us/">About us</a>
+              <a href="/our-projects">Our Projects</a>
               <a href="/news-updates/">News & Updates</a>
               <a href="/volunteer/">Volunteer</a>
-              <a href="/#our-projects">Our Projects</a>
               <a target="_blank" href="https://square.link/u/hOHmgOj0">Donate</a>
             </div>
 

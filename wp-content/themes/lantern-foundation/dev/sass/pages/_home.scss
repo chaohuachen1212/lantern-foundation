@@ -1,4 +1,16 @@
+.page-home, .about-page, .our-project {
+  header {
+    max-width: 100%;
+  }
+
+  .max-container {
+    max-width: 100%;
+  }
+}
+
+
 .page-index {
+
   h2 {
     font-size: 4.8rem;
     color: rgba(85, 34, 0, 0.50);
@@ -93,9 +105,12 @@
     p {
       color: $white;
       font-size: 1.9rem;
+      margin: 0 auto;
+      max-width: 116rem;
 
       @include media('<tablet') {
         font-size: 18px;
+        max-width: 100%;
       }
     }
 

@@ -34,6 +34,13 @@
   </div>
 </section>
 
+<section class="donate--text-sec">
+  <div class="container">
+    <p>Here are some photos of a few of the kids that we have helped with your donations. We hope you continue to support us! This is just the beginning!</p>
+  </div>
+
+</section>
+
 <div class="group--images--wrap">
   <div class="container">
     <div class="max-w-864">

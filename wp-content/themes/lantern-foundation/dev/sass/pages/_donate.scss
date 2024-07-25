@@ -1,5 +1,7 @@
 .donate--sec {
   padding-top: 0;
+  padding-bottom: 3rem;
+
   .container{
     .inner-wrap {
       h1 {
@@ -8,22 +10,48 @@
         font-weight: 700;
         text-align: center;
         margin-top: 8rem;
-        margin-bottom: 5rem;
+        margin-bottom:4rem;
 
         @include media('<=tablet') {
-          margin-top: 40px;
           margin-top: 70px;
           font-size: 42px;
+          margin-bottom: 35px;
+        }
+      }
+
+      .col {
+
+        &:first-of-type {
+          max-width: 39.8rem;
+
+          @include media('<=tablet') {
+            max-width: 100%;
+          }
+          .box {
+            padding-left: 7.5rem;
+
+            @include media('<=tablet') {
+              padding-left: 0;
+            }
+          }
+        }
+        .box {
+          padding-left: 7rem;
+
+          @include media('<=tablet') {
+            padding-left: 0;
+          }
         }
       }
       h3{
         margin-top: 6rem;
-        margin-bottom: 8rem;
+        margin-bottom: 3.5rem;
         font-size: 2.2rem;
+
 
         @include media('<=tablet') {
           margin-top: 30px;
-          margin-bottom: 0;
+          margin-bottom: 30px;
           font-size: 20px;
         }
       }
@@ -181,5 +209,17 @@
         }
       }
     }
+  }
+}
+
+.donate--text-sec {
+  padding-bottom: 8rem;
+
+  p {
+    font-size: 1.8rem;
+    max-width: 75rem;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 600;
   }
 }
