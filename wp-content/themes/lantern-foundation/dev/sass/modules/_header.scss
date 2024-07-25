@@ -74,6 +74,7 @@ header {
     }
 
     img {
+      object-fit: cover;
 
       &.mobile-logo {
         display: none;

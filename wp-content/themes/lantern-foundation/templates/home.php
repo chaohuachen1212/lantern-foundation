@@ -15,7 +15,7 @@
       <aticle>
         <div class="top-wrap">
           <h1>Lantern Foundation</h1>
-          <p>More than 70% of China’s 367 million children live in rural areas. They face countless barriers because of their remote and underresourced areas. We strive to bridge the health and educational gaps that exist between rural and urban communities.</p>
+          <p>More than 70% of China’s 367 million children live in rural areas. They face countless health and educational barriers because of their remote, underresourced areas. We strive to make a difference through medical care and education in these kids' lives.</p>
         </div>
         <div class="row">
           <div class="col video-wrap">
@@ -30,7 +30,7 @@
           <div class="col">
             <div class="text-box">
               <p>Read about our work in Guangxi after its flash flood!</p>
-              <a class="btn" href="">Read More</a>
+              <a class="btn" href="/guanxi-flash-flooddisaster-relief-family-visits/">Read More</a>
             </div>
             <div class="text-box">
               <p>Learn about our different campaigns and projects below!</p>
