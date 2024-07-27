@@ -17,7 +17,9 @@
       <div class="container">
         <div class="row">
           <div class="col-l">
-            <img class="footer-logo" src="<?php echo GET_URI ?>/img/logo-white.png">
+            <a href="/">
+              <img class="footer-logo" src="<?php echo GET_URI ?>/img/logo-white.png">
+            </a>
             <h2>Lantern Foundation</h2>
             <div class="copy-wrap">
               <p>Lantern Foundation is an established 501(c)(4) nonprofit organization dedicated to bettering the lives of underserved kids in rural China.</p>
