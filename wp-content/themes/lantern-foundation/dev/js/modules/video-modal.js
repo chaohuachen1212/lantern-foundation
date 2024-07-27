@@ -23,7 +23,7 @@
   var active      = "is-active";
 
   triggerEle.on('click', function(){
-    console.log('yes');
+
     var url = $(this).attr('data-video-url');
     modal.addClass(active);
     iframe.attr('src', url);

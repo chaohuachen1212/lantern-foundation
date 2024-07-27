@@ -35,11 +35,11 @@
            <div class="cards-wrap">
              <?php
               $post_id = get_the_ID();
-              $cat_ids = array();
 
               $options = array(
                 'post_type'      => 'post',
                 'orderby' => 'rand',
+                'post__not_in'   => array($post_id),
                 'posts_per_page' => 3
               );
 

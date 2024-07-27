@@ -82,6 +82,44 @@
               <img src="<?php echo GET_URI ?>/img/about/logos/logo12.png" alt="Logo">
           </div>
 
+          <div class="marquee-slide-card marquee-slide-card__hiw">
+              <img src="<?php echo GET_URI ?>/img/about/logos/logo1.png" alt="Logo">
+          </div>
+          <div class="marquee-slide-card marquee-slide-card__hiw">
+              <img src="<?php echo GET_URI ?>/img/about/logos/logo2.png" alt="Logo">
+          </div>
+          <div class="marquee-slide-card marquee-slide-card__hiw">
+              <img src="<?php echo GET_URI ?>/img/about/logos/logo3.png" alt="Logo">
+          </div>
+          <div class="marquee-slide-card marquee-slide-card__hiw">
+              <img src="<?php echo GET_URI ?>/img/about/logos/logo4.png" alt="Logo">
+          </div>
+          <div class="marquee-slide-card marquee-slide-card__hiw">
+              <img src="<?php echo GET_URI ?>/img/about/logos/logo5.png" alt="Logo">
+          </div>
+          <div class="marquee-slide-card marquee-slide-card__hiw">
+              <img src="<?php echo GET_URI ?>/img/about/logos/logo6.png" alt="Logo">
+          </div>
+          <div class="marquee-slide-card marquee-slide-card__hiw">
+              <img src="<?php echo GET_URI ?>/img/about/logos/logo7.png" alt="Logo">
+          </div>
+          <div class="marquee-slide-card marquee-slide-card__hiw">
+              <img src="<?php echo GET_URI ?>/img/about/logos/logo8.png" alt="Logo">
+          </div>
+          <div class="marquee-slide-card marquee-slide-card__hiw">
+              <img src="<?php echo GET_URI ?>/img/about/logos/logo9.png" alt="Logo">
+          </div>
+          <div class="marquee-slide-card marquee-slide-card__hiw">
+              <img src="<?php echo GET_URI ?>/img/about/logos/logo10.png" alt="Logo">
+          </div>
+          <div class="marquee-slide-card marquee-slide-card__hiw">
+              <img src="<?php echo GET_URI ?>/img/about/logos/logo11.png" alt="Logo">
+          </div>
+          <div class="marquee-slide-card marquee-slide-card__hiw">
+              <img src="<?php echo GET_URI ?>/img/about/logos/logo12.png" alt="Logo">
+          </div>
+
+
         </div>
     </div>
 </section>

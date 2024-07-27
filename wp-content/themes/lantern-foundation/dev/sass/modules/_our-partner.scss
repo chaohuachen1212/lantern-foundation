@@ -24,7 +24,7 @@
     text-align: center;
 
     @include media('<=tablet') {
-      font-size: 18px;
+      font-size: 16px;
     }
 
   }
@@ -134,7 +134,7 @@ section.logo-scroller--module .marquee-slide-card-wrap.marquee-active .marquee-s
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
 }
 section.logo-scroller--module .marquee-slide-card-wrap .marquee-slide-card-wrap-inner {
   display: flex;
@@ -150,7 +150,7 @@ section.logo-scroller--module .marquee-slide-card-wrap.marquee-active .marquee-s
   overflow: hidden;
   white-space: nowrap;
   flex-wrap: nowrap;
-  animation: marquee 20s linear infinite;
+  animation: marquee 45s linear infinite;
 }
 section.logo-scroller--module .marquee-slide-card-wrap.marquee-active .marquee-slide-card-wrap-inner:hover {
   animation-play-state: paused;

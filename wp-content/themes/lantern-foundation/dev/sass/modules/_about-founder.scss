@@ -24,7 +24,7 @@
       color: #120202;
 
       @include media('<=tablet') {
-        font-size: 18px;
+        font-size: 16px;
       }
 
       &.note {
@@ -47,7 +47,7 @@
 
     img {
       margin-bottom: 25px;
-      
+
       @include media('>tablet') {
         float: right;
         max-width: 38.6rem;

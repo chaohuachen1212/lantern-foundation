@@ -12,16 +12,16 @@
         return totalCardsWidth;
     });
 
-    $('.marquee-slide-card--second-set').css('display', 'flex');
+    // $('.marquee-slide-card--second-set').css('display', 'flex');
   }
 
 
-  if ($(".logo-scroller--module").length) {
-      logoScrollerModule();
-
-      $(window).on('resize', function() {
-          logoScrollerModule();
-      });
-  }
+  // if ($(".logo-scroller--module").length) {
+  //     logoScrollerModule();
+  //
+  //     $(window).on('resize', function() {
+  //         logoScrollerModule();
+  //     });
+  // }
 
 }(jQuery));
