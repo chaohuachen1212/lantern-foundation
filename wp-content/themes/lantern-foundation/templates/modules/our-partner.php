@@ -24,14 +24,14 @@
         <div class="col">
           <p>Kajiken<br>
             Ti-Bear<br>
-            sekaido<br>
+            Sekaido<br>
             Venus Café<br>
             MIND Coffee<br>
             Pop Kitchen<br>
           Teavoli Boba</p>
         </div>
         <div class="col">
-          <p>Shushi Garden<br>
+          <p>Sushi Garden<br>
             Noodle Dynasty<br>
           Mayflower Restaurant<br>
           Myeongrang Hotdogs<br>
