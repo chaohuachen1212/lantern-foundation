@@ -35,7 +35,7 @@
               <a href="/our-projects">Our Projects</a>
               <a href="/news-updates/">News & Updates</a>
               <a href="/volunteer/">Volunteer</a>
-              <a target="_blank" href="https://square.link/u/hOHmgOj0">Donate</a>
+              <a href="/donate/">Donate</a>
             </div>
 
             <div class="col">
