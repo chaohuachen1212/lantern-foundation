@@ -85,6 +85,15 @@
           <div class="marquee-slide-card marquee-slide-card__hiw">
               <img src="<?php echo GET_URI ?>/img/about/logos/logo12.png" alt="Logo">
           </div>
+          <div class="marquee-slide-card marquee-slide-card__hiw">
+              <img src="<?php echo GET_URI ?>/img/about/logos/logo13.png" alt="Logo">
+          </div>
+          <div class="marquee-slide-card marquee-slide-card__hiw">
+              <img src="<?php echo GET_URI ?>/img/about/logos/logo14.png" alt="Logo">
+          </div>
+          <div class="marquee-slide-card marquee-slide-card__hiw">
+              <img src="<?php echo GET_URI ?>/img/about/logos/logo15.png" alt="Logo">
+          </div>
 
           <div class="marquee-slide-card marquee-slide-card__hiw">
               <img src="<?php echo GET_URI ?>/img/about/logos/logo1.png" alt="Logo">
@@ -121,6 +130,15 @@
           </div>
           <div class="marquee-slide-card marquee-slide-card__hiw">
               <img src="<?php echo GET_URI ?>/img/about/logos/logo12.png" alt="Logo">
+          </div>
+          <div class="marquee-slide-card marquee-slide-card__hiw">
+              <img src="<?php echo GET_URI ?>/img/about/logos/logo13.png" alt="Logo">
+          </div>
+          <div class="marquee-slide-card marquee-slide-card__hiw">
+              <img src="<?php echo GET_URI ?>/img/about/logos/logo14.png" alt="Logo">
+          </div>
+          <div class="marquee-slide-card marquee-slide-card__hiw">
+              <img src="<?php echo GET_URI ?>/img/about/logos/logo15.png" alt="Logo">
           </div>
 
 
