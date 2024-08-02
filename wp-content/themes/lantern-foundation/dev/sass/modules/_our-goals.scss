@@ -31,7 +31,13 @@
 
     img {
       margin: 0 auto;
-      max-width: 5.6rem;
+      width: 5.1rem;
+      height: 5.1rem;
+
+      @include media('<=tablet') {
+        width: 51px;
+        height: 51px;
+      }
     }
 
     h3 {

@@ -51,20 +51,21 @@ Learn more about our ongoing campaigns and/or upcoming events below!</h3>
 
 
 <section class="our-project-main color-bg">
-  <div class="container">
-    <div class="campaign2">
+  <div class="max-with-110">
+    <div class="container">
+      <div class="campaign2">
+        <h2>Campaign 2</h2>
+        <h4>Education for Every Child</h4>
+        <h5>Breaking the cycle of poverty by providing education to young children</h5>
 
-      <h2>Campaign 2</h2>
-      <h4>Education for Every Child</h4>
-      <h5>Breaking the cycle of poverty by providing education to young children</h5>
-
-      <div class="content2">
-        <img class="img1" src="<?php echo GET_URI ?>/img/our-project/image5.jpg">
-        <p>Millions of children in rural China face many challenges when it comes to obtaining a strong education. Some of these challenges include lack of funds for school, long and treacherous transportation routes, and the lack of school materials. Although the government does provide education until sixth grade, many students in rural areas drop out of school afterward to provide for their families instead. Attending university poses even more difficulties, as the costs of attending are very high. Many families also do not view education as significant since they believe that they will have to return to their families in rural areas and become agricultural laborers anyway. Since education is not valued as highly and performance has statistically been lower, many schools are run-down, lacking books and materials and well-trained teachers.</p>
-        <img class="img2" src="<?php echo GET_URI ?>/img/our-project/image6.jpg">
-        <p>Lantern Foundation addresses this educational gap first through providing better school materials for students. With the help of our local volunteers, we have donated backpacks, pencil cases, pens and pencils, notebooks and more to over 60 students in rural communities. Additionally, Lantern Foundation partners with the Shanxi Education Foundation, an organization that helps rural schools in the Shanxi Province, to provide books and textbooks for students, training for teachers, and better establishments for classrooms. We are currently working with them on a Book Donation Project with the goal of increasing the number of books in classroom libraries.</p>
-        <img class="img3" src="<?php echo GET_URI ?>/img/our-project/image7.jpg">
-        <p>As Rodney Naidoo, a teacher in South Africa, said, “We can only break the poverty cycle through education.” Although those that live in rural communities might not understand the value of education, we must work to ensure that kids in rural China have an equal opportunity to learn and grow.</p>
+        <div class="content2">
+          <img class="img1" src="<?php echo GET_URI ?>/img/our-project/image5.jpg">
+          <p>Millions of children in rural China face many challenges when it comes to obtaining a strong education. Some of these challenges include lack of funds for school, long and treacherous transportation routes, and the lack of school materials. Although the government does provide education until sixth grade, many students in rural areas drop out of school afterward to provide for their families instead. Attending university poses even more difficulties, as the costs of attending are very high. Many families also do not view education as significant since they believe that they will have to return to their families in rural areas and become agricultural laborers anyway. Since education is not valued as highly and performance has statistically been lower, many schools are run-down, lacking books and materials and well-trained teachers.</p>
+          <img class="img2" src="<?php echo GET_URI ?>/img/our-project/image6.jpg">
+          <p>Lantern Foundation addresses this educational gap first through providing better school materials for students. With the help of our local volunteers, we have donated backpacks, pencil cases, pens and pencils, notebooks and more to over 78 students in rural communities. Additionally, Lantern Foundation partners with the Shanxi Education Foundation, an organization that helps rural schools in the Shanxi Province, to provide books and textbooks for students, training for teachers, and better establishments for classrooms. We are currently working with them on a Book Donation Project with the goal of increasing the number of books in classroom libraries.</p>
+          <img class="img3" src="<?php echo GET_URI ?>/img/our-project/image7.jpg">
+          <p>As Rodney Naidoo, a teacher in South Africa, said, “We can only break the poverty cycle through education.” Although those that live in rural communities might not understand the value of education, we must work to ensure that kids in rural China have an equal opportunity to learn and grow.</p>
+        </div>
       </div>
     </div>
   </div>

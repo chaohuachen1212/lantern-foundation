@@ -4,6 +4,16 @@
 
     &.color-bg {
         background-color: #F9F9F9;
+        max-width: 100%;
+
+        .max-with-110 {
+            max-width: 110rem;
+            margin: 0 auto;
+
+            @include media('<=tablet') {
+                max-width: 100%;
+            }
+        }
     }
 
     @include media('<=tablet') {

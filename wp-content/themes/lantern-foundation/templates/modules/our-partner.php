@@ -24,15 +24,19 @@
         <div class="col">
           <p>Kajiken<br>
             Ti-Bear<br>
+            sekaido<br>
             Venus Café<br>
             MIND Coffee<br>
+            Pop Kitchen<br>
           Teavoli Boba</p>
         </div>
         <div class="col">
-          <p>Noodle Dynasty<br>
+          <p>Shushi Garden<br>
+            Noodle Dynasty<br>
           Mayflower Restaurant<br>
           Myeongrang Hotdogs<br>
           H.L. Peninsula Restaurant<br>
+          Just Perfect Relax Center<br>
           Elite Real Estate & Financial Group
           </p>
         </div>

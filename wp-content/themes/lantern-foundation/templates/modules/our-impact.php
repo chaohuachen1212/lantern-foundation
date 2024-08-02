@@ -28,7 +28,7 @@
           <img src="<?php echo GET_URI ?>/img/about/impact3.png">
         </figure>
         <article>
-          <h3>153+</h3>
+          <h3>293+</h3>
           <h4>kids in rural China impacted across 6 different provinces</h4>
           <p>Anhui, Henan, Gansu, Shanxi, Guangxi, Tibet</p>
         </article>
