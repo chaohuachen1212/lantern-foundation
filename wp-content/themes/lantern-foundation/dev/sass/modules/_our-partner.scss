@@ -70,6 +70,7 @@
     @include media('<=tablet') {
       max-width: 100%;
       margin: 30px auto 0;
+      justify-content: center;
     }
   }
 
@@ -93,6 +94,9 @@
 
     p {
       text-align: left;
+      @include media('<=tablet') {
+         text-align: center;
+      }
     }
   }
 }
