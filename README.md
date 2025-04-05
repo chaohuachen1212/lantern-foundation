@@ -25,10 +25,6 @@ Setup for Local
 - Go to Settings > Reading
   - Homepage display: Static
   - Homepage: Styleguide
-- Activate plugins
-  - activate advanced custom fields pro
-  - wp migrate db + all addons
-    - Enter License key: `5bedcb5e-3637-447c-a969-02908831a111`
 
 To sync with a live site database
 -------------
