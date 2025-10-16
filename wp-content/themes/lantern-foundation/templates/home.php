@@ -31,12 +31,12 @@
           </div>
           <div class="col">
             <div class="text-box">
-              <p>Read about our work in Guangxi after its flash flood</p>
-              <a class="btn" href="/guanxi-flash-flooddisaster-relief-family-visits/">Read More</a>
+              <p>Attend our 2025 Youth Benefit Concert!</p>
+              <a class="btn" href="https://lanternfoundationus.org/save-the-date-lanterns-2025-benefit-concert/">Click Here</a>
             </div>
             <div class="text-box">
-              <p>Check out our upcoming plans and trips for Summer 2025!</p>
-              <a class="btn" href="https://drive.google.com/file/d/1wrXp7Y9-IgXquVPGBU0l-K9dKvU6EG_3/view?usp=drivesdk" target="_blank">Click Here</a>
+              <p>Read about our work in China this summer!</p>
+              <a class="btn" href="https://lanternfoundationus.org/lighting-the-way-our-summer-2025-in-china/">Read More</a>
             </div>
           </div>
         </div>
