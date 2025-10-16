@@ -1028,6 +1028,22 @@
     }
   }
 
+  .top-copy {
+    max-width: 89.5rem;
+    margin: 8rem auto 0;
+    text-align: center;
+
+    h3 {
+      color: #120202;
+      font-weight: 700;
+    }
+
+    p {
+      color: #120202;
+      font-size: 1.8rem;
+    }
+  }
+
   .btn {
     border-radius: 6.661px;
     padding: 2.2rem 4.5rem;
@@ -1057,6 +1073,7 @@
       padding: 20px;
     }
   }
+
 
   .row {
     display: flex;

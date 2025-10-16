@@ -14,6 +14,12 @@
       <div class="btn-wrap">
         <a class="btn" target="_blank" href="https://square.link/u/hOHmgOj0">Donate to Lantern Foundation</a>
       </div>
+      <div class="top-copy">
+        <h3>Donation Information</h3>
+        <p>Since we are a 501(c)(3), all donations are considered tax deductible. Please ensure checks and tax forms have the correct information as listed below.</p>
+        <p>Organization Name: Lantern Foundation for Children</p>
+        <p>Federal EIN Number: 33-3239420</p>
+      </div>
       <div class="row">
         <div class="col">
           <h3>Other Ways to Donate</h3>

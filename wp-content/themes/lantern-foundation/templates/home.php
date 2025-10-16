@@ -35,8 +35,8 @@
               <a class="btn" href="/guanxi-flash-flooddisaster-relief-family-visits/">Read More</a>
             </div>
             <div class="text-box">
-              <p>Purchase tickets to our 2024 Kids Benefit Concert!</p>
-              <a class="btn" href="https://square.link/u/I15cdCAT" target="_blank">Click Here</a>
+              <p>Check out our upcoming plans and trips for Summer 2025!</p>
+              <a class="btn" href="https://drive.google.com/file/d/1wrXp7Y9-IgXquVPGBU0l-K9dKvU6EG_3/view?usp=drivesdk" target="_blank">Click Here</a>
             </div>
           </div>
         </div>
