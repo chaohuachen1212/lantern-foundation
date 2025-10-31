@@ -1,5 +1,8 @@
 <?php
-defined( 'ABSPATH' ) || die( 'Cheatin’ uh?' );
+
+if ( ! class_exists( 'WP_List_Table' ) ) {
+	require_once ABSPATH . 'wp-admin/includes/class-wp-list-table.php';
+}
 
 /**
  * Class that display the "custom folders" files.
@@ -56,10 +59,12 @@ class Imagify_Files_List_Table extends WP_List_Table {
 	 * @param array $args An associative array of arguments.
 	 */
 	public function __construct( $args = array() ) {
-		parent::__construct( array(
-			'plural' => 'imagify-files',
-			'screen' => isset( $args['screen'] ) ? convert_to_screen( $args['screen'] ) : null,
-		) );
+		parent::__construct(
+			[
+				'plural' => 'imagify-files',
+				'screen' => isset( $args['screen'] ) ? convert_to_screen( $args['screen'] ) : null,
+			]
+		);
 
 		$this->modes = array(
 			'list' => __( 'List View', 'imagify' ),
@@ -77,11 +82,14 @@ class Imagify_Files_List_Table extends WP_List_Table {
 	public function prepare_items() {
 		global $wpdb;
 
-		add_screen_option( 'per_page', array(
-			'label'   => __( 'Number of files per page', 'imagify' ),
-			'default' => 20,
-			'option'  => self::PER_PAGE_OPTION,
-		) );
+		add_screen_option(
+			'per_page',
+			[
+				'label'   => __( 'Number of files per page', 'imagify' ),
+				'default' => 20,
+				'option'  => self::PER_PAGE_OPTION,
+			]
+		);
 
 		$files_db      = Imagify_Files_DB::get_instance();
 		$files_table   = $files_db->get_table_name();
@@ -140,10 +148,12 @@ class Imagify_Files_List_Table extends WP_List_Table {
 		}
 
 		// Pagination.
-		$this->set_pagination_args( array(
-			'total_items' => (int) $wpdb->get_var( "SELECT COUNT($files_key_esc) FROM $files_table $where" ), // WPCS: unprepared SQL ok.
-			'per_page'    => $per_page,
-		) );
+		$this->set_pagination_args(
+			[
+				'total_items' => (int) $wpdb->get_var( "SELECT COUNT($files_key_esc) FROM $files_table $where" ), // WPCS: unprepared SQL ok.
+				'per_page'    => $per_page,
+			]
+		);
 
 		// Get items.
 		$this->items = $wpdb->get_results( $wpdb->prepare( "SELECT * FROM $files_table $where ORDER BY $orderby $order LIMIT %d, %d", $offset, $per_page ) ); // WPCS: unprepared SQL ok.
@@ -310,6 +320,7 @@ class Imagify_Files_List_Table extends WP_List_Table {
 		foreach ( $folders as $folder ) {
 			if ( '{{ROOT}}/' === $folder->path ) {
 				$root_id = $folder->folder_id;
+
 				$folder_filters[ $folder->folder_id ] = '/';
 			} else {
 				$folder_filters[ $folder->folder_id ] = '/' . trim( $this->filesystem->make_path_relative( Imagify_Files_Scan::remove_placeholder( $folder->path ) ), '/' );
@@ -606,11 +617,11 @@ class Imagify_Files_List_Table extends WP_List_Table {
 				</li>
 				<?php
 				if ( $item->process->get_media()->is_image() ) {
-					$has_webp = $item->process->has_webp() ? __( 'Yes', 'imagify' ) : __( 'No', 'imagify' );
+					$has_nextgen = $item->process->has_next_gen() ? __( 'Yes', 'imagify' ) : __( 'No', 'imagify' );
 					?>
 					<li class="imagify-data-item">
-						<span class="data"><?php esc_html_e( 'WebP generated:', 'imagify' ); ?></span>
-						<strong class="data-value"><?php echo esc_html( $has_webp ); ?></strong>
+						<span class="data"><?php esc_html_e( 'Next-Gen generated:', 'imagify' ); ?></span>
+						<strong class="data-value"><?php echo esc_html( $has_nextgen ); ?></strong>
 					</li>
 					<?php
 				}
@@ -691,17 +702,20 @@ class Imagify_Files_List_Table extends WP_List_Table {
 		}
 
 		if ( $item->process->is_locked() ) {
-			Imagify_Views::get_instance()->print_template( 'button-processing', [
-				'label' => __( 'Optimizing...', 'imagify' ),
-			] );
+			Imagify_Views::get_instance()->print_template(
+				'button-processing',
+				[
+					'label' => __( 'Optimizing...', 'imagify' ),
+				]
+			);
 			return;
 		}
 
 		$this->optimize_button( $item );
 		$this->retry_button( $item );
 		$this->reoptimize_buttons( $item );
-		$this->generate_webp_versions_button( $item );
-		$this->delete_webp_versions_button( $item );
+		$this->generate_nextgen_versions_button( $item );
+		$this->delete_nextgen_versions_button( $item );
 		$this->restore_button( $item );
 	}
 
@@ -720,16 +734,22 @@ class Imagify_Files_List_Table extends WP_List_Table {
 
 		$media = $item->process->get_media();
 		$class = $media->has_backup() ? ' file-has-backup' : '';
-		$url   = get_imagify_admin_url( 'optimize-file', [
-			'attachment_id' => $media->get_id(),
-		] );
+		$url   = get_imagify_admin_url(
+			'optimize-file',
+			[
+				'attachment_id' => $media->get_id(),
+			]
+		);
 
-		echo $this->views->get_template( 'button/optimize', [
-			'url'  => $url,
-			'atts' => [
-				'class' => 'button-primary button-imagify-optimize' . $class,
-			],
-		] );
+		echo $this->views->get_template(
+			'button/optimize',
+			[
+				'url'  => $url,
+				'atts' => [
+					'class' => 'button-primary button-imagify-optimize' . $class,
+				],
+			]
+		);
 	}
 
 	/**
@@ -749,16 +769,22 @@ class Imagify_Files_List_Table extends WP_List_Table {
 
 		$media = $item->process->get_media();
 		$class = $media->has_backup() ? ' file-has-backup' : '';
-		$url   = get_imagify_admin_url( 'optimize-file', [
-			'attachment_id' => $media->get_id(),
-		] );
+		$url   = get_imagify_admin_url(
+			'optimize-file',
+			[
+				'attachment_id' => $media->get_id(),
+			]
+		);
 
-		echo $this->views->get_template( 'button/retry-optimize', [
-			'url'  => $url,
-			'atts' => [
-				'class' => 'button button-imagify-optimize' . $class,
-			],
-		] );
+		echo $this->views->get_template(
+			'button/retry-optimize',
+			[
+				'url'  => $url,
+				'atts' => [
+					'class' => 'button button-imagify-optimize' . $class,
+				],
+			]
+		);
 		echo '<br/>';
 	}
 
@@ -806,14 +832,14 @@ class Imagify_Files_List_Table extends WP_List_Table {
 	}
 
 	/**
-	 * Prints a button to generate WebP versions if they are missing.
+	 * Prints a button to generate Next gen versions if they are missing.
 	 *
 	 * @since 1.7
 	 *
 	 * @param object $item The current item. It must contain at least a $process property.
 	 */
-	protected function generate_webp_versions_button( $item ) {
-		$button = get_imagify_attachment_generate_webp_versions_link( $item->process );
+	protected function generate_nextgen_versions_button( $item ) {
+		$button = get_imagify_attachment_generate_nextgen_versions_link( $item->process );
 
 		if ( $button ) {
 			echo $button . '<br/>';
@@ -821,14 +847,14 @@ class Imagify_Files_List_Table extends WP_List_Table {
 	}
 
 	/**
-	 * Prints a button to delete WebP versions when the status is "already_optimized".
+	 * Prints a button to delete next-gen versions when the status is "already_optimized".
 	 *
 	 * @since 1.9.6
 	 *
 	 * @param object $item The current item. It must contain at least a $process property.
 	 */
-	protected function delete_webp_versions_button( $item ) {
-		$button = get_imagify_attachment_delete_webp_versions_link( $item->process );
+	protected function delete_nextgen_versions_button( $item ) {
+		$button = get_imagify_attachment_delete_nextgen_versions_link( $item->process );
 
 		if ( $button ) {
 			echo $button . '<br/>';
@@ -850,9 +876,12 @@ class Imagify_Files_List_Table extends WP_List_Table {
 			return;
 		}
 
-		$url = get_imagify_admin_url( 'restore-file', array(
-			'attachment_id' => $media->get_id(),
-		) );
+		$url = get_imagify_admin_url(
+			'restore-file',
+			array(
+				'attachment_id' => $media->get_id(),
+			)
+		);
 
 		echo $this->views->get_template( 'button/restore', [ 'url' => $url ] );
 	}
@@ -865,9 +894,12 @@ class Imagify_Files_List_Table extends WP_List_Table {
 	 * @param object $item The current item. It must contain at least a $process property.
 	 */
 	protected function refresh_status_button( $item ) {
-		$url = get_imagify_admin_url( 'refresh-file-modified', array(
-			'attachment_id' => $item->process->get_media()->get_id(),
-		) );
+		$url = get_imagify_admin_url(
+			'refresh-file-modified',
+			array(
+				'attachment_id' => $item->process->get_media()->get_id(),
+			)
+		);
 
 		echo '<br/>';
 		echo $this->views->get_template( 'button/refresh-status', [ 'url' => $url ] );
@@ -902,14 +934,17 @@ class Imagify_Files_List_Table extends WP_List_Table {
 
 		$backup_url = $media->get_backup_url();
 
-		echo $this->views->get_template( 'button/compare-images', [
-			'url'          => $backup_url,
-			'backup_url'   => $backup_url,
-			'original_url' => $media->get_fullsize_url(),
-			'media_id'     => $media->get_id(),
-			'width'        => $dimensions['width'],
-			'height'       => $dimensions['height'],
-		] );
+		echo $this->views->get_template(
+			'button/compare-images',
+			[
+				'url'          => $backup_url,
+				'backup_url'   => $backup_url,
+				'original_url' => $media->get_fullsize_url(),
+				'media_id'     => $media->get_id(),
+				'width'        => $dimensions['width'],
+				'height'       => $dimensions['height'],
+			]
+		);
 
 		if ( wp_doing_ajax() ) {
 			?>

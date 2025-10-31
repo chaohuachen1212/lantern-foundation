@@ -16,7 +16,7 @@
     <div class="hero-content">
       <aticle>
         <div class="top-wrap">
-          <h1>Lantern Foundation</h1>
+          <h1>Lantern Foundation for Children</h1>
           <p>More than 70% of China’s 367 million children live in rural areas. They face countless health and educational barriers because of their remote, underresourced areas. We strive to make a difference through medical care and education in these kids' lives.</p>
         </div>
         <div class="row">

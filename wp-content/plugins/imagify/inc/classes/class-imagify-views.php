@@ -1,8 +1,8 @@
 <?php
 
 use Imagify\User\User;
+use Imagify\Dependencies\WPMedia\PluginFamily\Model\PluginFamily;
 
-defined( 'ABSPATH' ) || die( 'Cheatin’ uh?' );
 
 /**
  * Class that handles templates and menus.
@@ -75,6 +75,13 @@ class Imagify_Views {
 	 */
 	protected static $_instance;
 
+	/**
+	 * Imagify admin bar menu.
+	 *
+	 * @var bool
+	 */
+	private $admin_menu_is_present = false;
+
 
 	/** ----------------------------------------------------------------------------------------- */
 	/** INSTANCE/INIT =========================================================================== */
@@ -120,16 +127,13 @@ class Imagify_Views {
 			add_action( 'network_admin_menu', [ $this, 'add_network_menus' ] );
 		}
 
-		// Action links in plugins list.
-		$basename = plugin_basename( IMAGIFY_FILE );
-		add_filter( 'plugin_action_links_' . $basename,               [ $this, 'plugin_action_links' ] );
-		add_filter( 'network_admin_plugin_action_links_' . $basename, [ $this, 'plugin_action_links' ] );
-
 		// Save the "per page" option value from the files list screen.
 		add_filter( 'set-screen-option', [ 'Imagify_Files_List_Table', 'save_screen_options' ], 10, 3 );
 
 		// JS templates in footer.
 		add_action( 'admin_print_footer_scripts', [ $this, 'print_js_templates' ] );
+		add_action( 'admin_footer', [ $this, 'print_modal_payment' ] );
+		add_action( 'wp_before_admin_bar_render', [ $this, 'maybe_print_modal_payment' ] );
 	}
 
 
@@ -199,7 +203,7 @@ class Imagify_Views {
 
 		// Change the sub-menu label.
 		if ( ! empty( $submenu[ $this->get_bulk_page_slug() ] ) ) {
-			$submenu[ $this->get_bulk_page_slug() ][0][0] = __( 'Bulk Optimization', 'imagify' ); // WPCS: override ok.
+			$submenu[ $this->get_bulk_page_slug() ][0][0] = __( 'Bulk Optimization', 'imagify' ); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited
 		}
 
 		if ( $screen_id ) {
@@ -207,27 +211,6 @@ class Imagify_Views {
 			add_action( 'load-' . $screen_id, array( $this, 'load_files_list' ) );
 		}
 	}
-
-
-	/** ----------------------------------------------------------------------------------------- */
-	/** PLUGIN ACTION LINKS ===================================================================== */
-	/** ----------------------------------------------------------------------------------------- */
-
-	/**
-	 * Add links to the plugin row in the plugins list.
-	 *
-	 * @since 1.7
-	 *
-	 * @param  array $actions An array of action links.
-	 * @return array
-	 */
-	public function plugin_action_links( $actions ) {
-		array_unshift( $actions, sprintf( '<a href="%s" target="_blank">%s</a>', esc_url( imagify_get_external_url( 'documentation' ) ), __( 'Documentation', 'imagify' ) ) );
-		array_unshift( $actions, sprintf( '<a href="%s">%s</a>', esc_url( get_imagify_admin_url( 'bulk-optimization' ) ), __( 'Bulk Optimization', 'imagify' ) ) );
-		array_unshift( $actions, sprintf( '<a href="%s">%s</a>', esc_url( get_imagify_admin_url() ), __( 'Settings', 'imagify' ) ) );
-		return $actions;
-	}
-
 
 	/** ----------------------------------------------------------------------------------------- */
 	/** MAIN PAGE TEMPLATES ===================================================================== */
@@ -239,7 +222,14 @@ class Imagify_Views {
 	 * @since 1.7
 	 */
 	public function display_settings_page() {
-		$this->print_template( 'page-settings' );
+		$plugin_family = new PluginFamily();
+		$plugins_array = $plugin_family->get_filtered_plugins( 'imagify/imagify' );
+
+		$data = [
+			'plugin_family' => $plugins_array['uncategorized'],
+		];
+
+		$this->print_template( 'page-settings', $data );
 	}
 
 	/**
@@ -266,7 +256,15 @@ class Imagify_Views {
 				$types['library|wp'] = 1;
 			}
 
-			if ( imagify_can_optimize_custom_folders() && ( imagify_is_active_for_network() && is_network_admin() || ! imagify_is_active_for_network() ) ) {
+			if (
+				imagify_can_optimize_custom_folders()
+				&&
+				(
+					( imagify_is_active_for_network() && is_network_admin() )
+					||
+					! imagify_is_active_for_network()
+				)
+			) {
 				/**
 				 * Custom folders: in network admin only if network activated, in each site otherwise.
 				 */
@@ -304,7 +302,6 @@ class Imagify_Views {
 
 		if ( isset( $types['custom-folders|custom-folders'] ) ) {
 			if ( ! Imagify_Folders_DB::get_instance()->has_items() ) {
-				// New Feature!
 				$data['no-custom-folders'] = true;
 			} elseif ( Imagify_Folders_DB::get_instance()->has_active_folders() ) {
 				// Group.
@@ -319,9 +316,15 @@ class Imagify_Views {
 		}
 
 		// Add generic stats.
-		$data = array_merge( $data, imagify_get_bulk_stats( $types, array(
-			'fullset' => true,
-		) ) );
+		$data = array_merge(
+			$data,
+			imagify_get_bulk_stats(
+				$types,
+				[
+					'fullset' => true,
+				]
+			)
+		);
 
 		/**
 		 * Filter the data to use on the bulk optimization page.
@@ -354,9 +357,11 @@ class Imagify_Views {
 	 */
 	public function load_files_list() {
 		// Instantiate the list.
-		$this->list_table = new Imagify_Files_List_Table( array(
-			'screen' => 'imagify-files',
-		) );
+		$this->list_table = new Imagify_Files_List_Table(
+			[
+				'screen' => 'imagify-files',
+			]
+		);
 
 		// Query the Items.
 		$this->list_table->prepare_items();
@@ -554,7 +559,7 @@ class Imagify_Views {
 		$quota = $this->get_quota_percent();
 
 		if ( $quota <= 20 ) {
-			$icon = '<img src="' . IMAGIFY_ASSETS_IMG_URL . 'stormy.svg" width="64" height="63" alt="" />';
+			$icon = '<img src="' . IMAGIFY_ASSETS_IMG_URL . 'stormy.svg" width="40" height="63" alt="" />';
 		} elseif ( $quota <= 50 ) {
 			$icon = '<img src="' . IMAGIFY_ASSETS_IMG_URL . 'cloudy-sun.svg" width="63" height="64" alt="" />';
 		} else {
@@ -578,7 +583,7 @@ class Imagify_Views {
 	 * @param  mixed  $data     Some data to pass to the template.
 	 * @return string|bool      The page contents. False if the template doesn't exist.
 	 */
-	public function get_template( $template, $data = array() ) {
+	public function get_template( $template, $data = array() ) { // phpcs:ignore Generic.CodeAnalysis.UnusedFunctionParameter.FoundAfterLastUsed
 		$path = str_replace( '_', '-', $template );
 		$path = IMAGIFY_PATH . 'views/' . $template . '.php';
 
@@ -651,6 +656,67 @@ class Imagify_Views {
 		}
 	}
 
+	/**
+	 * Get imagify user info
+	 *
+	 * @return bool
+	 */
+	private function get_user_info(): bool {
+		$user             = new User();
+		$unconsumed_quota = $user->get_percent_unconsumed_quota();
+
+		return ( ! $user->is_infinite() && $unconsumed_quota <= 20 )
+			|| ( $user->is_free() && $unconsumed_quota > 20 );
+	}
+
+	/**
+	 * Start print the payment modal process.
+	 */
+	public function maybe_print_modal_payment() {
+		if ( $this->get_user_info() ) {
+			global $wp_admin_bar;
+			$this->admin_menu_is_present = $wp_admin_bar && $wp_admin_bar->get_node( 'imagify' );
+
+			return;
+		}
+
+		$this->admin_menu_is_present = false;
+	}
+
+	/**
+	 * Print the payment modal.
+	 *
+	 * @return void
+	 */
+	public function print_modal_payment() {
+		if ( is_admin_bar_showing() && $this->admin_menu_is_present ) {
+			$this->print_template(
+				'modal-payment',
+				[
+					'attachments_number' => $this->get_attachments_number_modal(),
+				]
+			);
+		}
+	}
+
+	/**
+	 * Get the number of attachments to display in the payment modal.
+	 *
+	 * @return int
+	 */
+	private function get_attachments_number_modal() {
+		$transient = get_transient( 'imagify_attachments_number_modal' );
+
+		if ( false !== $transient ) {
+			return $transient;
+		}
+
+		$attachments_number = imagify_count_attachments() + Imagify_Files_Stats::count_all_files();
+
+		set_transient( 'imagify_attachments_number_modal', $attachments_number, 1 * DAY_IN_SECONDS );
+
+		return $attachments_number;
+	}
 
 	/** ----------------------------------------------------------------------------------------- */
 	/** TOOLS =================================================================================== */

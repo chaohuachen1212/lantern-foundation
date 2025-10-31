@@ -5,6 +5,10 @@
      class CPT_Compatibility
         {
          
+            /**
+            * Constructor
+            * 
+            */
             function __construct()
                 {
                     
@@ -13,13 +17,19 @@
                 }
                 
                 
-                
+            /**
+            * Initialisation function
+            *     
+            */
             function init()
                 {
                     
+                    include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+                        
                     $CompatibilityFiles  =  array(
                                                     'the-events-calendar.php',
                                                     'LiteSpeed_Cache.php',
+                                                    'formidable.php'
                                                  
                                                     );
                     foreach( $CompatibilityFiles as $CompatibilityFile ) 
@@ -27,6 +37,11 @@
                             if  ( is_file( CPTPATH . 'compatibility/' . $CompatibilityFile ) )
                                 include_once( CPTPATH . 'compatibility/' . $CompatibilityFile );
                         }
+                        
+                    
+                    if ( $this->is_plugin_active( 'advanced-custom-fields-pro/acf.php' ) )
+                        include_once( CPTPATH . 'compatibility/acf.php' );
+
                       
                     /**
                     * Themes
@@ -55,6 +70,21 @@
                           
                     do_action('cpt/compatibility/init');
                     
+                }
+                
+            
+            /**
+            * Check if the plugin is active
+            * 
+            */
+            private function is_plugin_active( $plugin )
+                {
+                    
+                    if ( is_plugin_active ( $plugin ) )
+                        return TRUE;
+                        else
+                        return FALSE;
+                        
                 }
             
     

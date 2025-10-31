@@ -11,13 +11,17 @@ if ( ! class_exists( 'TwentyTwenty_SVG_Icons' ) ) {
 	/**
 	 * SVG ICONS CLASS
 	 * Retrieve the SVG code for the specified icon. Based on a solution in Twenty Nineteen.
+	 *
+	 * @since Twenty Twenty 1.0
 	 */
 	class TwentyTwenty_SVG_Icons {
 		/**
 		 * GET SVG CODE
 		 * Get the SVG code for the specified icon
 		 *
-		 * @param string $icon Icon name.
+		 * @since Twenty Twenty 1.0
+		 *
+		 * @param string $icon  Icon name.
 		 * @param string $group Icon group.
 		 * @param string $color Color.
 		 */
@@ -29,6 +33,30 @@ if ( ! class_exists( 'TwentyTwenty_SVG_Icons' ) ) {
 			} else {
 				$arr = array();
 			}
+
+			/**
+			 * Filters Twenty Twenty's array of icons.
+			 *
+			 * The dynamic portion of the hook name, `$group`, refers to
+			 * the name of the group of icons, either "ui" or "social".
+			 *
+			 * @since Twenty Twenty 1.5
+			 *
+			 * @param array $arr Array of icons.
+			 */
+			$arr = apply_filters( "twentytwenty_svg_icons_{$group}", $arr );
+
+			/**
+			 * Filters an SVG icon's color.
+			 *
+			 * @since Twenty Twenty 1.5
+			 *
+			 * @param string $color The icon color.
+			 * @param string $icon  The icon name.
+			 * @param string $group The icon group.
+			 */
+			$color = apply_filters( 'twentytwenty_svg_icon_color', $color, $icon, $group );
+
 			if ( array_key_exists( $icon, $arr ) ) {
 				$repl = '<svg class="svg-icon" aria-hidden="true" role="img" focusable="false" ';
 				$svg  = preg_replace( '/^<svg /', $repl, trim( $arr[ $icon ] ) ); // Add extra attributes to SVG code.
@@ -45,14 +73,37 @@ if ( ! class_exists( 'TwentyTwenty_SVG_Icons' ) ) {
 		 * GET SOCIAL LINK SVG
 		 * Detects the social network from a URL and returns the SVG code for its icon.
 		 *
+		 * @since Twenty Twenty 1.0
+		 *
 		 * @param string $uri The URL to retrieve SVG for.
 		 */
 		public static function get_social_link_svg( $uri ) {
 			static $regex_map; // Only compute regex map once, for performance.
 			if ( ! isset( $regex_map ) ) {
 				$regex_map = array();
-				$map       = &self::$social_icons_map; // Use reference instead of copy, to save memory.
-				foreach ( array_keys( self::$social_icons ) as $icon ) {
+
+				/**
+				 * Filters Twenty Twenty's array of domain mappings for social icons.
+				 *
+				 * By default, each Icon ID is matched against a .com TLD. To override this behavior,
+				 * specify all the domains it covers (including the .com TLD too, if applicable).
+				 *
+				 * @since Twenty Twenty 1.5
+				 *
+				 * @param array $social_icons_map Array of default social icons.
+				 */
+				$map = apply_filters( 'twentytwenty_social_icons_map', self::$social_icons_map );
+
+				/**
+				 * Filters Twenty Twenty's array of social icons.
+				 *
+				 * @since Twenty Twenty 1.5
+				 *
+				 * @param array $social_icons Array of default social icons.
+				 */
+				$social_icons = apply_filters( 'twentytwenty_svg_icons_social', self::$social_icons );
+
+				foreach ( array_keys( $social_icons ) as $icon ) {
 					$domains            = array_key_exists( $icon, $map ) ? $map[ $icon ] : array( sprintf( '%s.com', $icon ) );
 					$domains            = array_map( 'trim', $domains ); // Remove leading/trailing spaces, to prevent regex from failing to match.
 					$domains            = array_map( 'preg_quote', $domains );
@@ -71,6 +122,7 @@ if ( ! class_exists( 'TwentyTwenty_SVG_Icons' ) ) {
 		 * ICON STORAGE
 		 * Store the code for all SVGs in an array.
 		 *
+		 * @since Twenty Twenty 1.0
 		 * @var array
 		 */
 		public static $ui_icons = array(
@@ -124,6 +176,7 @@ if ( ! class_exists( 'TwentyTwenty_SVG_Icons' ) ) {
 		 * By default, each Icon ID is matched against a .com TLD. To override this behavior,
 		 * specify all the domains it covers (including the .com TLD too, if applicable).
 		 *
+		 * @since Twenty Twenty 1.0
 		 * @var array
 		 */
 		public static $social_icons_map = array(
@@ -161,11 +214,30 @@ if ( ! class_exists( 'TwentyTwenty_SVG_Icons' ) ) {
 			'mail'      => array(
 				'mailto:',
 			),
+			'mastodon'  => array(
+				'mastodon.social',
+				'pawoo.net',
+				'mstdn.jp',
+				'mastodon.cloud',
+				'mastodon.online',
+				'counter.social',
+				'mstdn.social',
+				'mas.to',
+				'mastodon.world',
+				'gc2.jp',
+			),
 			'pocket'    => array(
 				'getpocket.com',
 			),
+			'tiktok'    => array(
+				'tiktok.com',
+			),
 			'twitch'    => array(
 				'twitch.tv',
+			),
+			'whatsapp'  => array(
+				'wa.me',
+				'whatsapp.com',
 			),
 			'wordpress' => array(
 				'wordpress.com',
@@ -176,6 +248,7 @@ if ( ! class_exists( 'TwentyTwenty_SVG_Icons' ) ) {
 		/**
 		 * Social Icons – svg sources.
 		 *
+		 * @since Twenty Twenty 1.0
 		 * @var array
 		 */
 		public static $social_icons = array(
@@ -262,6 +335,5 @@ if ( ! class_exists( 'TwentyTwenty_SVG_Icons' ) ) {
 			'youtube'    => '<svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M21.8,8.001c0,0-0.195-1.378-0.795-1.985c-0.76-0.797-1.613-0.801-2.004-0.847c-2.799-0.202-6.997-0.202-6.997-0.202 h-0.009c0,0-4.198,0-6.997,0.202C4.608,5.216,3.756,5.22,2.995,6.016C2.395,6.623,2.2,8.001,2.2,8.001S2,9.62,2,11.238v1.517 c0,1.618,0.2,3.237,0.2,3.237s0.195,1.378,0.795,1.985c0.761,0.797,1.76,0.771,2.205,0.855c1.6,0.153,6.8,0.201,6.8,0.201 s4.203-0.006,7.001-0.209c0.391-0.047,1.243-0.051,2.004-0.847c0.6-0.607,0.795-1.985,0.795-1.985s0.2-1.618,0.2-3.237v-1.517 C22,9.62,21.8,8.001,21.8,8.001z M9.935,14.594l-0.001-5.62l5.404,2.82L9.935,14.594z"></path></svg>',
 
 		);
-
 	}
 }

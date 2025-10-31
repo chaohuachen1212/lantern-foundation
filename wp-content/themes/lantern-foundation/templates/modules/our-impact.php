@@ -29,7 +29,7 @@
         </figure>
         <article>
           <h3>355+</h3>
-          <h4>kids in rural China impacted across 7 different processes</h4>
+          <h4>kids in rural China impacted across 7 different provinces</h4>
           <p>Anhui, Henan, Gansu, Shanxi, Guangxi, Tibet, Guizhou</p>
         </article>
       </div>

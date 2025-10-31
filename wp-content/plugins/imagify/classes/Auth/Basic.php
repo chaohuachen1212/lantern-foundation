@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || die( 'Cheatin’ uh?' );
  * @since  1.9.5
  * @author Grégory Viguier
  */
-class Basic {
+final class Basic {
 	use \Imagify\Traits\InstanceGetterTrait;
 
 	/**
@@ -22,9 +22,9 @@ class Basic {
 	 */
 	public function init() {
 		add_filter( 'imagify_background_process_url', [ $this, 'get_auth_url' ] );
-		add_filter( 'imagify_async_job_url',          [ $this, 'get_auth_url' ] );
-		add_filter( 'imagify_internal_request_url',   [ $this, 'get_auth_url' ] );
-		add_filter( 'cron_request',                   [ $this, 'cron_request_args' ] );
+		add_filter( 'imagify_async_job_url', [ $this, 'get_auth_url' ] );
+		add_filter( 'imagify_internal_request_url', [ $this, 'get_auth_url' ] );
+		add_filter( 'cron_request', [ $this, 'cron_request_args' ] );
 	}
 
 	/**
@@ -48,6 +48,9 @@ class Basic {
 			return $url;
 		}
 
+		$user = '';
+		$pass = '';
+
 		if ( defined( 'IMAGIFY_AUTH_USER' ) && defined( 'IMAGIFY_AUTH_PASSWORD' ) && IMAGIFY_AUTH_USER && IMAGIFY_AUTH_PASSWORD ) {
 			$user = IMAGIFY_AUTH_USER;
 			$pass = IMAGIFY_AUTH_PASSWORD;
@@ -60,7 +63,7 @@ class Basic {
 			}
 		}
 
-		if ( empty( $user ) || empty( $pass ) ) {
+		if ( empty( $user ) ) {
 			// No credentials.
 			return $url;
 		}
