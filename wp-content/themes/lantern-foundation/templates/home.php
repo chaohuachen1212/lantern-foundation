@@ -16,8 +16,8 @@
     <div class="hero-content">
       <aticle>
         <div class="top-wrap">
-          <h1>Lantern Foundation for Children</h1>
-          <p>More than 70% of China’s 367 million children live in rural areas. They face countless health and educational barriers because of their remote, underresourced areas. We strive to make a difference through medical care and education in these kids' lives.</p>
+          <h1><?php the_field('hero_title'); ?></h1>
+          <?php the_field('hero_copy'); ?>
         </div>
         <div class="row">
           <div class="col video-wrap">
@@ -30,14 +30,28 @@
 
           </div>
           <div class="col">
-            <div class="text-box">
-              <p>Attend our 2025 Youth Benefit Concert!</p>
-              <a class="btn" href="https://lanternfoundationus.org/save-the-date-lanterns-2025-benefit-concert/">Click Here</a>
-            </div>
-            <div class="text-box">
-              <p>Read about our work in China this summer!</p>
-              <a class="btn" href="https://lanternfoundationus.org/lighting-the-way-our-summer-2025-in-china/">Read More</a>
-            </div>
+            <?php
+              if( have_rows('hero_text_boxs') ):
+              while( have_rows('hero_text_boxs') ): the_row();
+            ?>
+              <div class="text-box">
+                <p><?php the_sub_field('text'); ?></p>
+                <?php 
+
+                $link = get_sub_field('button');
+
+                if( $link ): 
+                  $link_url = $link['url'];
+                  $link_title = $link['title'];
+                  $link_target = $link['target'] ? $link['target'] : '_self';
+                  ?>
+                <a class="btn" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
+                <?php endif; ?>
+              </div>
+            <?php
+              endwhile; endif;
+            ?>
+           
           </div>
         </div>
 
