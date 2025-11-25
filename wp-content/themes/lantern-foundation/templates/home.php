@@ -23,8 +23,8 @@
           <div class="col video-wrap">
 
             <p class="text-center">Check out our recap video of our trip to Linxia, Gansu</p>
-            <figure class="video-modal-trigger" data-video-url="https://www.youtube.com/embed/rkOCRmAcYEs?si=KDV7T__h135sEw5S" >
-              <img class="video-img" src="<?php echo GET_URI ?>/img/home/hero-video-img.png">
+            <figure class="video-modal-trigger" data-video-url="https://www.youtube.com/embed/bMMCFwEKqCs?si=w7KizEcVAFjEbxF_" >
+              <img class="video-img" src="<?php echo GET_URI ?>/img/home/hqdefault.jpg">
               <img class="pay-btn" src="<?php echo GET_URI ?>/img/home/play-bottom.png">
             </figure>
 

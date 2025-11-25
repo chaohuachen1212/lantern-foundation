@@ -79,11 +79,13 @@
   transition: opacity 250ms;
   transition-delay: 0.75s;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 
   svg {
     position: relative;
-    top: 13px;
-    left: 12px;
     width: 19px;
     height: 19px;
 
